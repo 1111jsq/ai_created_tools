@@ -9,6 +9,8 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
+import subprocess
+import sys
 
 
 # ----------------------------
@@ -489,6 +491,7 @@ def write_report(
     daily_counts: Dict[str, Dict[str, int]],
     use_llm: bool,
     logger: logging.Logger,
+    execution_timeline: Optional[List[Tuple[str, datetime]]] = None,
 ) -> None:
     total_papers = len(papers)
     total_news = len(news)
@@ -503,6 +506,11 @@ def write_report(
     lines.append(f"- 资讯: {total_news}  条")
     lines.append(f"- SDK 更新: {total_sdk}  条")
     lines.append("")
+    if execution_timeline:
+        lines.append("### 执行时间线")
+        for name, ts in execution_timeline:
+            lines.append(f"- {name}: {ts.astimezone(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}")
+        lines.append("")
     lines.append("### 来源占比")
     lines.append(build_mermaid_pie(total_papers, total_news, total_sdk))
     lines.append("")
@@ -552,6 +560,45 @@ def write_report(
 
 
 # ----------------------------
+# Runners (trigger sub-projects)
+# ----------------------------
+
+def _run_subprocess(args: List[str], logger: logging.Logger, env: Optional[Dict[str, str]] = None) -> int:
+    logger.info("执行命令: %s", " ".join(args))
+    try:
+        cp = subprocess.run(args, capture_output=True, text=True, env={**os.environ, **(env or {})})
+        if cp.stdout:
+            logger.info("stdout:\n%s", cp.stdout.strip())
+        if cp.stderr:
+            logger.info("stderr:\n%s", cp.stderr.strip())
+        if cp.returncode != 0:
+            logger.warning("命令返回非零状态: %s", cp.returncode)
+        return cp.returncode
+    except Exception as e:
+        logger.exception("命令执行失败: %s", e)
+        return 2
+
+
+def run_get_paper(start_dt: datetime, end_dt: datetime, logger: logging.Logger) -> None:
+    cmd = [sys.executable, "-m", "get_paper.src.monthly_run", "--start", start_dt.strftime("%Y-%m-%d"), "--end", end_dt.strftime("%Y-%m-%d")]
+    _run_subprocess(cmd, logger)
+
+
+def run_get_agent_news(news_since_days: int, logger: logging.Logger) -> None:
+    cmd = [sys.executable, "-m", "get_agent_news.src.main", "--once", "--source", "all", "--news-since-days", str(news_since_days), "--export-markdown"]
+    _run_subprocess(cmd, logger)
+
+
+def run_sdk_release_change_log(repos: List[str], start_page: int, max_pages: int, logger: logging.Logger) -> None:
+    for repo in repos:
+        repo = repo.strip()
+        if not repo:
+            continue
+        cmd = [sys.executable, "-m", "get_sdk_release_change_log.src.main", "--repo", repo, "--start-page", str(start_page), "--max-pages", str(max_pages)]
+        _run_subprocess(cmd, logger)
+
+
+# ----------------------------
 # Main
 # ----------------------------
 
@@ -567,6 +614,12 @@ def main() -> int:
     parser.add_argument("--output-root", default="reports", help="Output root directory")
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing report if present")
     parser.add_argument("--log-level", default=os.environ.get("LOG_LEVEL", "INFO"), help="Log level")
+    # Run-sources mode
+    parser.add_argument("--run-sources", action="store_true", help="Trigger sub-projects to generate data before aggregation")
+    parser.add_argument("--news-since-days", type=int, default=7, help="When running get_agent_news, use this window")
+    parser.add_argument("--sdk-start-page", type=int, default=1, help="SDK releases: start page")
+    parser.add_argument("--sdk-max-pages", type=int, default=2, help="SDK releases: max pages to fetch")
+    parser.add_argument("--name-by-exec-time", action="store_true", help="Name output directory by execution time prefix")
     args = parser.parse_args()
 
     _setup_logging(args.log_level)
@@ -579,7 +632,29 @@ def main() -> int:
         news_root = Path(args.news_root)
         sdk_root = Path(args.sdk_root)
         output_root = Path(args.output_root)
-        out_dir = output_root / label
+        exec_prefix = ""
+        execution_timeline: List[Tuple[str, datetime]] = []
+        if args.run_sources:
+            # Run in sequence and record timestamps
+            ts1 = datetime.now(timezone.utc)
+            run_get_paper(start_dt, end_dt, logger)
+            execution_timeline.append(("get_paper", ts1))
+
+            ts2 = datetime.now(timezone.utc)
+            run_get_agent_news(args.news_since_days, logger)
+            execution_timeline.append(("get_agent_news", ts2))
+
+            repos_list = [s.strip() for s in (args.repos.split(",") if args.repos else []) if s.strip()]
+            if repos_list:
+                ts3 = datetime.now(timezone.utc)
+                run_sdk_release_change_log(repos_list, args.sdk_start_page, args.sdk_max_pages, logger)
+                execution_timeline.append(("get_sdk_release_change_log", ts3))
+            # when run-sources, default to prefix with exec time
+            exec_prefix = datetime.now().strftime("%Y%m%d_%H%M%S") + "-"
+        if args.name_by_exec_time and not exec_prefix:
+            exec_prefix = datetime.now().strftime("%Y%m%d_%H%M%S") + "-"
+
+        out_dir = output_root / f"{exec_prefix}{label}"
         _ensure_dir(out_dir)
         out_path = out_dir / "weekly-intel-report.md"
         if out_path.exists() and out_path.stat().st_size > 0 and not args.overwrite:
@@ -606,6 +681,7 @@ def main() -> int:
             daily_counts=daily_counts,
             use_llm=use_llm,
             logger=logger,
+            execution_timeline=execution_timeline if args.run_sources else None,
         )
         return 0
     except Exception as exc:
