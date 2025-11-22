@@ -612,10 +612,10 @@ def main() -> int:
     parser.add_argument("--sdk-root", default=str(Path("get_sdk_release_change_log") / "data"), help="sdk release change log data root")
     parser.add_argument("--repos", default="", help="Comma separated repo list filter for SDK, e.g. org1/repo1,org2/repo2")
     parser.add_argument("--output-root", default="reports", help="Output root directory")
-    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing report if present")
+    parser.add_argument("--overwrite", default=True, action="store_true", help="Overwrite existing report if present")
     parser.add_argument("--log-level", default=os.environ.get("LOG_LEVEL", "INFO"), help="Log level")
-    # Run-sources mode
-    parser.add_argument("--run-sources", action="store_true", help="Trigger sub-projects to generate data before aggregation")
+    # Run-sources mode（默认启用执行子工程，提供 --no-run-sources 关闭）
+    parser.add_argument("--no-run-sources", action="store_true", help="Do NOT trigger sub-projects; only aggregate existing outputs")
     parser.add_argument("--news-since-days", type=int, default=7, help="When running get_agent_news, use this window")
     parser.add_argument("--sdk-start-page", type=int, default=1, help="SDK releases: start page")
     parser.add_argument("--sdk-max-pages", type=int, default=2, help="SDK releases: max pages to fetch")
@@ -634,7 +634,8 @@ def main() -> int:
         output_root = Path(args.output_root)
         exec_prefix = ""
         execution_timeline: List[Tuple[str, datetime]] = []
-        if args.run_sources:
+        run_sources = not args.no_run_sources
+        if run_sources:
             # Run in sequence and record timestamps
             ts1 = datetime.now(timezone.utc)
             run_get_paper(start_dt, end_dt, logger)
@@ -681,7 +682,7 @@ def main() -> int:
             daily_counts=daily_counts,
             use_llm=use_llm,
             logger=logger,
-            execution_timeline=execution_timeline if args.run_sources else None,
+            execution_timeline=execution_timeline if run_sources else None,
         )
         return 0
     except Exception as exc:

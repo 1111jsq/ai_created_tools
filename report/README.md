@@ -16,7 +16,7 @@
 
 ## 二、快速开始
 
-默认聚合最近 7 天（含当天），输出到 `reports/<YYYYMMDD-YYYYMMDD>/weekly-intel-report.md`：
+默认会先执行三子工程生成数据，再聚合最近 7 天（含当天），输出到 `reports/<执行时间前缀>-<YYYYMMDD-YYYYMMDD>/weekly-intel-report.md`：
 
 ```bash
 uv run python -m report.main
@@ -32,6 +32,12 @@ uv run python -m report.main --start 2025-11-01 --end 2025-11-07
 
 ```bash
 uv run python -m report.main --repos langchain-ai/langchain,openai/openai-python --overwrite
+```
+
+仅聚合（不执行三子工程）：
+
+```bash
+uv run python -m report.main --no-run-sources
 ```
 
 启用 LLM 深度洞察（可选）：
@@ -54,10 +60,12 @@ uv run python -m report.main
 - `--output-root PATH`：输出根目录，默认 `reports`
 - `--overwrite`：目标报告已存在且非空时允许覆盖
 - `--log-level LEVEL`：日志级别，默认 `INFO`
+- `--no-run-sources`：仅聚合既有产出（默认会先执行子工程）
+- `--name-by-exec-time`：即使不执行子工程，也按执行时间前缀命名输出目录
 
 ## 四、输出与目录约定
 
-- 报告：`reports/<YYYYMMDD-YYYYMMDD>/weekly-intel-report.md`
+- 报告：`reports/<执行时间前缀>-<YYYYMMDD-YYYYMMDD>/weekly-intel-report.md`（默认运行模式带前缀；仅聚合可用 `--name-by-exec-time`）
 - Mermaid 图表：内嵌于 Markdown（不输出图片快照）
 - 幂等：若报告已存在且非空，默认不覆盖；`--overwrite` 可强制覆盖
 
