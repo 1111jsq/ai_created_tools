@@ -150,13 +150,9 @@ def _parse_label_to_range(label: str) -> Optional[Tuple[datetime, datetime]]:
 
 
 def _read_paper_dir(dir_path: Path, logger: logging.Logger) -> List[Dict[str, Any]]:
-    """Return raw dict entries from ranked-all.json if exists; empty otherwise."""
+    """Return raw dict entries from ranked-all.json or agents-papers.json if exists; empty otherwise."""
     data: List[Dict[str, Any]] = []
-    ranked_all = None
-    # find first *-ranked-all.json
-    for p in dir_path.glob("*-ranked-all.json"):
-        ranked_all = p
-        break
+    ranked_all = next(iter(dir_path.glob("*-ranked-all.json")), None)
     if ranked_all and ranked_all.exists():
         try:
             data = json.loads(ranked_all.read_text(encoding="utf-8")) or []
@@ -164,6 +160,17 @@ def _read_paper_dir(dir_path: Path, logger: logging.Logger) -> List[Dict[str, An
                 data = []
         except Exception as e:
             logger.exception("读取论文 ranked-all 失败: %s", e)
+            data = []
+    if not data:
+        # fallback to <label>-agents-papers.json
+        agents_json = next(iter(dir_path.glob("*-agents-papers.json")), None)
+        if agents_json and agents_json.exists():
+            try:
+                j = json.loads(agents_json.read_text(encoding="utf-8")) or []
+                if isinstance(j, list):
+                    data = j
+            except Exception as e:
+                logger.exception("读取论文 agents-papers.json 失败: %s", e)
     return data
 
 
@@ -178,7 +185,8 @@ def read_papers(paper_root: Path, label: str, logger: logging.Logger, start_dt: 
             pub = d.get("submitted_date") or d.get("published_at")
             pub_dt = _parse_iso_flexible(pub or "")
             if start_dt and end_dt:
-                if not _within_range(pub_dt, start_dt, end_dt):
+                # 若缺少具体时间戳，仍允许加入（因为当前目录标签已与区间重叠）
+                if pub_dt and (not _within_range(pub_dt, start_dt, end_dt)):
                     continue
             items.append(
                 PaperItem(
@@ -186,7 +194,7 @@ def read_papers(paper_root: Path, label: str, logger: logging.Logger, start_dt: 
                     authors=d.get("authors") or d.get("normalized_authors"),
                     source=d.get("source") or d.get("origin") or None,
                     published_at=pub,
-                    tags=d.get("tags"),
+                    tags=d.get("tags") or d.get("topics"),
                     score=d.get("score"),
                     rank=d.get("rank"),
                 )
