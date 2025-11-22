@@ -23,7 +23,22 @@ uv run python -m src.main --once --source all --news-since-days 7 --export-markd
 
 - 本项目不再依赖或备份任何数据库文件，所有产出为文件系统导出（CSV、JSONL、Markdown 与目录页）。
 - 不再内置定时任务调度，请使用系统级调度器或 CI 定时触发上述命令。
-- 若需启用 LLM 排序，请提供环境变量 `DEEPSEEK_API_KEY`；未提供时将自动使用启发式排序。
+- 若需启用 LLM 排序，已统一接入 `common/llm.py`，请通过环境变量配置：`LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL`、`LLM_TIMEOUT`；未提供时将自动使用启发式排序。
+
+### LLM 配置示例（可选）
+
+```bash
+# .env（示例，请勿提交到仓库）
+LLM_API_KEY=sk-xxx
+LLM_BASE_URL=https://api.deepseek.com
+LLM_MODEL=deepseek-chat
+LLM_TIMEOUT=60
+```
+
+```bash
+# 读取 .env 后运行（以 uv 为例）
+uv run python -m src.main --once --source news --news-since-days 7 --export-markdown
+```
 
 ## 内容目录结构
 

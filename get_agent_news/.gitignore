@@ -19,3 +19,9 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Local configs (do not commit secrets)
+.env
+.env.*
+configs/*.local.yaml
+configs/*.private.yaml
+
