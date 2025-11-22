@@ -1,0 +1,422 @@
+[
+  {
+    "paperId": "arxiv:2511.07685v1",
+    "title": "ResearchRubrics: A Benchmark of Prompts and Rubrics For Evaluating Deep Research Agents",
+    "authors": [
+      "Manasi Sharma",
+      "Chen Bo Calvin Zhang",
+      "Chaithanya Bandi",
+      "Clinton Wang",
+      "Ankit Aich",
+      "Huy Nghiem",
+      "Tahseen Rabbani",
+      "Ye Htet",
+      "Brian Jang",
+      "Sumana Basu",
+      "Aishwarya Balwani",
+      "Denis Peskoff",
+      "Marcos Ayestaran",
+      "Sean M. Hendryx",
+      "Brad Kenstler",
+      "Bing Liu"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.07685v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.07685v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "evaluation",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.03958v1",
+    "title": "Multi-Agent Collaborative Framework For Math Problem Generation",
+    "authors": [
+      "Kia Karbasi",
+      "Kevin Hong",
+      "Mohammad Amin Samadi",
+      "Gregory Pottie"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.03958v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.03958v1",
+    "tags": [
+      "agent",
+      "evaluation",
+      "multi-agent",
+      "workflow"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.03690v1",
+    "title": "The OpenHands Software Agent SDK: A Composable and Extensible Foundation for Production Agents",
+    "authors": [
+      "Xingyao Wang",
+      "Simon Rosenberg",
+      "Juan Michelini",
+      "Calvin Smith",
+      "Hoang Tran",
+      "Engel Nyst",
+      "Rohit Malhotra",
+      "Xuhui Zhou",
+      "Valerie Chen",
+      "Robert Brennan",
+      "Graham Neubig"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.03690v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.03690v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "memory",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.01093v1",
+    "title": "Continual Learning, Not Training: Online Adaptation For Agents",
+    "authors": [
+      "Aman Jaglan",
+      "Jarrod Barnes"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.01093v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.01093v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "memory",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.07904v1",
+    "title": "Test-driven Reinforcement Learning",
+    "authors": [
+      "Zhao Yu",
+      "Xiuping Wu",
+      "Liangjun Ke"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.07904v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.07904v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.10002v1",
+    "title": "PustakAI: Curriculum-Aligned and Interactive Textbooks Using Large Language Models",
+    "authors": [
+      "Shivam Sharma",
+      "Riya Naik",
+      "Tejas Gawas",
+      "Heramb Patil",
+      "Kunal Korgaonkar"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.10002v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.10002v1",
+    "tags": [
+      "evaluation",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.04481v1",
+    "title": "Promoting Sustainable Web Agents: Benchmarking and Estimating Energy Consumption through Empirical and Theoretical Analysis",
+    "authors": [
+      "Lars Krupp",
+      "Daniel Geißler",
+      "Vishal Banwari",
+      "Paul Lukowicz",
+      "Jakob Karolus"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.04481v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.04481v1",
+    "tags": [
+      "agent",
+      "autonomy",
+      "benchmark"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.03497v1",
+    "title": "ROSBag MCP Server: Analyzing Robot Data with LLMs for Agentic Embodied AI Applications",
+    "authors": [
+      "Lei Fu",
+      "Sahar Salimpour",
+      "Leonardo Militano",
+      "Harry Edelman",
+      "Jorge Peña Queralta",
+      "Giovanni Toffetti"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.03497v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.03497v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.02303v1",
+    "title": "Unlocking the Power of Multi-Agent LLM for Reasoning: From Lazy Agents to Deliberation",
+    "authors": [
+      "Zhiwei Zhang",
+      "Xiaomin Li",
+      "Yudi Lin",
+      "Hui Liu",
+      "Ramraj Chandradevan",
+      "Linlin Wu",
+      "Minhua Lin",
+      "Fali Wang",
+      "Xianfeng Tang",
+      "Qi He",
+      "Suhang Wang"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.02303v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.02303v1",
+    "tags": [
+      "agent",
+      "multi-agent",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.01999v1",
+    "title": "TRACE: Textual Reasoning for Affordance Coordinate Extraction",
+    "authors": [
+      "Sangyun Park",
+      "Jin Kim",
+      "Yuchen Cui",
+      "Matthew S. Brown"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.01999v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.01999v1",
+    "tags": [
+      "autonomy",
+      "benchmark",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.01006v1",
+    "title": "None To Optima in Few Shots: Bayesian Optimization with MDP Priors",
+    "authors": [
+      "Diantong Li",
+      "Kyunghyun Cho",
+      "Chong Liu"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.01006v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.01006v1",
+    "tags": [
+      "benchmark",
+      "evaluation",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.03434v1",
+    "title": "Inter-Agent Trust Models: A Comparative Study of Brief, Claim, Proof, Stake, Reputation and Constraint in Agentic Web Protocol Design-A2A, AP2, ERC-8004, and Beyond",
+    "authors": [
+      "Botao 'Amber' Hu",
+      "Helena Rong"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.03434v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.03434v1",
+    "tags": [
+      "agent",
+      "autonomy"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.02781v1",
+    "title": "Measuring AI Diffusion: A Population-Normalized Metric for Tracking Global AI Usage",
+    "authors": [
+      "Amit Misra",
+      "Jane Wang",
+      "Scott McCullers",
+      "Kevin White",
+      "Juan Lavista Ferres"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.02781v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.02781v1",
+    "tags": [
+      "benchmark",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.02606v1",
+    "title": "A Multi-Agent Psychological Simulation System for Human Behavior Modeling",
+    "authors": [
+      "Xiangen Hu",
+      "Jiarui Tong",
+      "Sheng Xu"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.02606v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.02606v1",
+    "tags": [
+      "agent",
+      "multi-agent"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.02560v1",
+    "title": "SigmaCollab: An Application-Driven Dataset for Physically Situated Collaboration",
+    "authors": [
+      "Dan Bohus",
+      "Sean Andrist",
+      "Ann Paradiso",
+      "Nick Saw",
+      "Tim Schoonbeek",
+      "Maia Stiber"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.02560v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.02560v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.01078v1",
+    "title": "Predictive Auxiliary Learning for Belief-based Multi-Agent Systems",
+    "authors": [
+      "Qinwei Huang",
+      "Stefan Wang",
+      "Simon Khan",
+      "Garrett Katz",
+      "Qinru Qiu"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.01078v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.01078v1",
+    "tags": [
+      "agent",
+      "multi-agent"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.09450v1",
+    "title": "How does the Performance of the Data-driven Traffic Flow Forecasting Models deteriorate with Increasing Forecasting Horizon? An Extensive Approach Considering Statistical, Machine Learning and Deep Learning Models",
+    "authors": [
+      "Amanta Sherfenaz",
+      "Nazmul Haque",
+      "Protiva Sadhukhan Prova",
+      "Md Asif Raihan",
+      "Md. Hadiuzzaman"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.09450v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.09450v1",
+    "tags": [
+      "planning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.07090v4",
+    "title": "Green AI: A systematic review and meta-analysis of its definitions, lifecycle models, hardware and measurement attempts",
+    "authors": [
+      "Marcel Rojahn",
+      "Marcus Grum"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.07090v4",
+    "pdfUrl": "https://arxiv.org/pdf/2511.07090v4",
+    "tags": [
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.00423v1",
+    "title": "Bootstrap Off-policy with World Model",
+    "authors": [
+      "Guojian Zhan",
+      "Likun Wang",
+      "Xiangteng Zhang",
+      "Jiaxin Gao",
+      "Masayoshi Tomizuka",
+      "Shengbo Eben Li"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "https://arxiv.org/abs/2511.00423v1",
+    "pdfUrl": "https://arxiv.org/pdf/2511.00423v1",
+    "tags": [
+      "planning"
+    ],
+    "analysis": {}
+  }
+]

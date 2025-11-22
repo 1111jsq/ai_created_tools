@@ -1,0 +1,1791 @@
+[
+  {
+    "arxiv_id": "2012.13490v2",
+    "entry_id": "http://arxiv.org/abs/2012.13490v2",
+    "title": "Towards Continual Reinforcement Learning: A Review and Perspectives",
+    "summary": "In this article, we aim to provide a literature review of different formulations and approaches to continual reinforcement learning (RL), also known as lifelong or non-stationary RL. We begin by discussing our perspective on why RL is a natural fit for studying continual learning. We then provide a taxonomy of different continual RL formulations by mathematically characterizing two key properties of non-stationarity, namely, the scope and driver non-stationarity. This offers a unified view of various formulations. Next, we review and present a taxonomy of continual RL approaches. We go on to discuss evaluation of continual RL agents, providing an overview of benchmarks used in the literature and important metrics for understanding agent performance. Finally, we highlight open problems and challenges in bridging the gap between the current state of continual RL and findings in neuroscience. While still in its early days, the study of continual RL has the promise to develop better incremental reinforcement learners that can function in increasingly realistic applications where non-stationarity plays a vital role. These include applications such as those in the fields of healthcare, education, logistics, and robotics.",
+    "authors": [
+      "Khimya Khetarpal",
+      "Matthew Riemer",
+      "Irina Rish",
+      "Doina Precup"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2020-12-25T02:35:27Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.13490v2"
+  },
+  {
+    "arxiv_id": "2012.13475v1",
+    "entry_id": "http://arxiv.org/abs/2012.13475v1",
+    "title": "Evolution Is All You Need: Phylogenetic Augmentation for Contrastive Learning",
+    "summary": "Self-supervised representation learning of biological sequence embeddings alleviates computational resource constraints on downstream tasks while circumventing expensive experimental label acquisition. However, existing methods mostly borrow directly from large language models designed for NLP, rather than with bioinformatics philosophies in mind. Recently, contrastive mutual information maximization methods have achieved state-of-the-art representations for ImageNet. In this perspective piece, we discuss how viewing evolution as natural sequence augmentation and maximizing information across phylogenetic \"noisy channels\" is a biologically and theoretically desirable objective for pretraining encoders. We first provide a review of current contrastive learning literature, then provide an illustrative example where we show that contrastive learning using evolutionary augmentation can be used as a representation learning objective which maximizes the mutual information between biological sequences and their conserved function, and finally outline rationale for this approach.",
+    "authors": [
+      "Amy X. Lu",
+      "Alex X. Lu",
+      "Alan Moses"
+    ],
+    "categories": [
+      "q-bio.BM",
+      "cs.LG",
+      "cs.NE"
+    ],
+    "published": "2020-12-25T01:35:06Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.13475v1"
+  },
+  {
+    "arxiv_id": "2012.12718v1",
+    "entry_id": "http://arxiv.org/abs/2012.12718v1",
+    "title": "Compliance Generation for Privacy Documents under GDPR: A Roadmap for Implementing Automation and Machine Learning",
+    "summary": "Most prominent research today addresses compliance with data protection laws through consumer-centric and public-regulatory approaches. We shift this perspective with the Privatech project to focus on corporations and law firms as agents of compliance. To comply with data protection laws, data processors must implement accountability measures to assess and document compliance in relation to both privacy documents and privacy practices. In this paper, we survey, on the one hand, current research on GDPR automation, and on the other hand, the operational challenges corporations face to comply with GDPR, and that may benefit from new forms of automation. We attempt to bridge the gap. We provide a roadmap for compliance assessment and generation by identifying compliance issues, breaking them down into tasks that can be addressed through machine learning and automation, and providing notes about related developments in the Privatech project.",
+    "authors": [
+      "David Restrepo Amariles",
+      "Aurore Clément Troussel",
+      "Rajaa El Hamdani"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2020-12-23T14:46:51Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.12718v1"
+  },
+  {
+    "arxiv_id": "2012.12305v2",
+    "entry_id": "http://arxiv.org/abs/2012.12305v2",
+    "title": "Confronting Abusive Language Online: A Survey from the Ethical and Human Rights Perspective",
+    "summary": "The pervasiveness of abusive content on the internet can lead to severe psychological and physical harm. Significant effort in Natural Language Processing (NLP) research has been devoted to addressing this problem through abusive content detection and related sub-areas, such as the detection of hate speech, toxicity, cyberbullying, etc. Although current technologies achieve high classification performance in research studies, it has been observed that the real-life application of this technology can cause unintended harms, such as the silencing of under-represented groups. We review a large body of NLP research on automatic abuse detection with a new focus on ethical challenges, organized around eight established ethical principles: privacy, accountability, safety and security, transparency and explainability, fairness and non-discrimination, human control of technology, professional responsibility, and promotion of human values. In many cases, these principles relate not only to situational ethical codes, which may be context-dependent, but are in fact connected to universal human rights, such as the right to privacy, freedom from discrimination, and freedom of expression. We highlight the need to examine the broad social impacts of this technology, and to bring ethical and human rights considerations to every stage of the application life-cycle, from task formulation and dataset design, to model training and evaluation, to application deployment. Guided by these principles, we identify several opportunities for rights-respecting, socio-technical solutions to detect and confront online abuse, including `nudging', `quarantining', value sensitive design, counter-narratives, style transfer, and AI-driven public education applications.",
+    "authors": [
+      "Svetlana Kiritchenko",
+      "Isar Nejadgholi",
+      "Kathleen C. Fraser"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CY"
+    ],
+    "published": "2020-12-22T19:27:11Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.12305v2"
+  },
+  {
+    "arxiv_id": "2012.11527v1",
+    "entry_id": "http://arxiv.org/abs/2012.11527v1",
+    "title": "Can we learn where people come from? Retracing of origins in merging situations",
+    "summary": "One crucial information for a pedestrian crowd simulation is the number of agents moving from an origin to a certain target. While this setup has a large impact on the simulation, it is in most setups challenging to find the number of agents that should be spawned at a source in the simulation. Often, number are chosen based on surveys and experience of modelers and event organizers. These approaches are important and useful but reach their limits when we want to perform real-time predictions. In this case, a static information about the inflow is not sufficient. Instead, we need a dynamic information that can be retrieved each time the prediction is started. Nowadays, sensor data such as video footage or GPS tracks of a crowd are often available. If we can estimate the number of pedestrians who stem from a certain origin from this sensor data, we can dynamically initialize the simulation. In this study, we use density heatmaps that can be derived from sensor data as input for a random forest regressor to predict the origin distributions. We study three different datasets: A simulated dataset, experimental data, and a hybrid approach with both experimental and simulated data. In the hybrid setup, the model is trained with simulated data and then tested on experimental data. The results demonstrate that the random forest model is able to predict the origin distribution based on a single density heatmap for all three configurations. This is especially promising for applying the approach on real data since there is often only a limited amount of data available.",
+    "authors": [
+      "Marion Gödel",
+      "Luca Spataro",
+      "Gerta Köster"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "published": "2020-12-21T17:42:14Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.11527v1"
+  },
+  {
+    "arxiv_id": "2012.10147v2",
+    "entry_id": "http://arxiv.org/abs/2012.10147v2",
+    "title": "Hierarchical principles of embodied reinforcement learning: A review",
+    "summary": "Cognitive Psychology and related disciplines have identified several critical mechanisms that enable intelligent biological agents to learn to solve complex problems. There exists pressing evidence that the cognitive mechanisms that enable problem-solving skills in these species build on hierarchical mental representations. Among the most promising computational approaches to provide comparable learning-based problem-solving abilities for artificial agents and robots is hierarchical reinforcement learning. However, so far the existing computational approaches have not been able to equip artificial agents with problem-solving abilities that are comparable to intelligent animals, including human and non-human primates, crows, or octopuses. Here, we first survey the literature in Cognitive Psychology, and related disciplines, and find that many important mental mechanisms involve compositional abstraction, curiosity, and forward models. We then relate these insights with contemporary hierarchical reinforcement learning methods, and identify the key machine intelligence approaches that realise these mechanisms. As our main result, we show that all important cognitive mechanisms have been implemented independently in isolated computational architectures, and there is simply a lack of approaches that integrate them appropriately. We expect our results to guide the development of more sophisticated cognitively inspired hierarchical methods, so that future artificial agents achieve a problem-solving performance on the level of intelligent animals.",
+    "authors": [
+      "Manfred Eppe",
+      "Christian Gumbsch",
+      "Matthias Kerzel",
+      "Phuong D. H. Nguyen",
+      "Martin V. Butz",
+      "Stefan Wermter"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2020-12-18T10:19:38Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.10147v2"
+  },
+  {
+    "arxiv_id": "2012.09830v7",
+    "entry_id": "http://arxiv.org/abs/2012.09830v7",
+    "title": "Autotelic Agents with Intrinsically Motivated Goal-Conditioned Reinforcement Learning: a Short Survey",
+    "summary": "Building autonomous machines that can explore open-ended environments, discover possible interactions and build repertoires of skills is a general objective of artificial intelligence. Developmental approaches argue that this can only be achieved by $autotelic$ $agents$: intrinsically motivated learning agents that can learn to represent, generate, select and solve their own problems. In recent years, the convergence of developmental approaches with deep reinforcement learning (RL) methods has been leading to the emergence of a new field: $developmental$ $reinforcement$ $learning$. Developmental RL is concerned with the use of deep RL algorithms to tackle a developmental problem -- the $intrinsically$ $motivated$ $acquisition$ $of$ $open$-$ended$ $repertoires$ $of$ $skills$. The self-generation of goals requires the learning of compact goal encodings as well as their associated goal-achievement functions. This raises new challenges compared to standard RL algorithms originally designed to tackle pre-defined sets of goals using external reward signals. The present paper introduces developmental RL and proposes a computational framework based on goal-conditioned RL to tackle the intrinsically motivated skills acquisition problem. It proceeds to present a typology of the various goal representations used in the literature, before reviewing existing methods to learn to represent and prioritize goals in autonomous systems. We finally close the paper by discussing some open challenges in the quest of intrinsically motivated skills acquisition.",
+    "authors": [
+      "Cédric Colas",
+      "Tristan Karch",
+      "Olivier Sigaud",
+      "Pierre-Yves Oudeyer"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2020-12-17T18:51:40Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.09830v7"
+  },
+  {
+    "arxiv_id": "2012.09823v1",
+    "entry_id": "http://arxiv.org/abs/2012.09823v1",
+    "title": "Continual Lifelong Learning in Natural Language Processing: A Survey",
+    "summary": "Continual learning (CL) aims to enable information systems to learn from a continuous data stream across time. However, it is difficult for existing deep learning architectures to learn a new task without largely forgetting previously acquired knowledge. Furthermore, CL is particularly challenging for language learning, as natural language is ambiguous: it is discrete, compositional, and its meaning is context-dependent. In this work, we look at the problem of CL through the lens of various NLP tasks. Our survey discusses major challenges in CL and current methods applied in neural network models. We also provide a critical review of the existing CL evaluation methods and datasets in NLP. Finally, we present our outlook on future research directions.",
+    "authors": [
+      "Magdalena Biesialska",
+      "Katarzyna Biesialska",
+      "Marta R. Costa-jussà"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.NE"
+    ],
+    "published": "2020-12-17T18:44:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.09823v1"
+  },
+  {
+    "arxiv_id": "2012.08485v2",
+    "entry_id": "http://arxiv.org/abs/2012.08485v2",
+    "title": "Indecision Modeling",
+    "summary": "AI systems are often used to make or contribute to important decisions in a growing range of applications, including criminal justice, hiring, and medicine. Since these decisions impact human lives, it is important that the AI systems act in ways which align with human values. Techniques for preference modeling and social choice help researchers learn and aggregate peoples' preferences, which are used to guide AI behavior; thus, it is imperative that these learned preferences are accurate. These techniques often assume that people are willing to express strict preferences over alternatives; which is not true in practice. People are often indecisive, and especially so when their decision has moral implications. The philosophy and psychology literature shows that indecision is a measurable and nuanced behavior -- and that there are several different reasons people are indecisive. This complicates the task of both learning and aggregating preferences, since most of the relevant literature makes restrictive assumptions on the meaning of indecision. We begin to close this gap by formalizing several mathematical \\emph{indecision} models based on theories from philosophy, psychology, and economics; these models can be used to describe (indecisive) agent decisions, both when they are allowed to express indecision and when they are not. We test these models using data collected from an online survey where participants choose how to (hypothetically) allocate organs to patients waiting for a transplant.",
+    "authors": [
+      "Duncan C McElfresh",
+      "Lok Chan",
+      "Kenzie Doyle",
+      "Walter Sinnott-Armstrong",
+      "Vincent Conitzer",
+      "Jana Schaich Borg",
+      "John P Dickerson"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.GT"
+    ],
+    "published": "2020-12-15T18:32:37Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.08485v2"
+  },
+  {
+    "arxiv_id": "2012.07974v3",
+    "entry_id": "http://arxiv.org/abs/2012.07974v3",
+    "title": "A review of on-device fully neural end-to-end automatic speech recognition algorithms",
+    "summary": "In this paper, we review various end-to-end automatic speech recognition algorithms and their optimization techniques for on-device applications. Conventional speech recognition systems comprise a large number of discrete components such as an acoustic model, a language model, a pronunciation model, a text-normalizer, an inverse-text normalizer, a decoder based on a Weighted Finite State Transducer (WFST), and so on. To obtain sufficiently high speech recognition accuracy with such conventional speech recognition systems, a very large language model (up to 100 GB) is usually needed. Hence, the corresponding WFST size becomes enormous, which prohibits their on-device implementation. Recently, fully neural network end-to-end speech recognition algorithms have been proposed. Examples include speech recognition systems based on Connectionist Temporal Classification (CTC), Recurrent Neural Network Transducer (RNN-T), Attention-based Encoder-Decoder models (AED), Monotonic Chunk-wise Attention (MoChA), transformer-based speech recognition systems, and so on. These fully neural network-based systems require much smaller memory footprints compared to conventional algorithms, therefore their on-device implementation has become feasible. In this paper, we review such end-to-end speech recognition models. We extensively discuss their structures, performance, and advantages compared to conventional algorithms.",
+    "authors": [
+      "Chanwoo Kim",
+      "Dhananjaya Gowda",
+      "Dongsoo Lee",
+      "Jiyeon Kim",
+      "Ankur Kumar",
+      "Sungsoo Kim",
+      "Abhinav Garg",
+      "Changwoo Han"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "published": "2020-12-14T22:18:08Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.07974v3"
+  },
+  {
+    "arxiv_id": "2012.03468v1",
+    "entry_id": "http://arxiv.org/abs/2012.03468v1",
+    "title": "An Empirical Survey of Unsupervised Text Representation Methods on Twitter Data",
+    "summary": "The field of NLP has seen unprecedented achievements in recent years. Most notably, with the advent of large-scale pre-trained Transformer-based language models, such as BERT, there has been a noticeable improvement in text representation. It is, however, unclear whether these improvements translate to noisy user-generated text, such as tweets. In this paper, we present an experimental survey of a wide range of well-known text representation techniques for the task of text clustering on noisy Twitter data. Our results indicate that the more advanced models do not necessarily work best on tweets and that more exploration in this area is needed.",
+    "authors": [
+      "Lili Wang",
+      "Chongyang Gao",
+      "Jason Wei",
+      "Weicheng Ma",
+      "Ruibo Liu",
+      "Soroush Vosoughi"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2020-12-07T06:14:13Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.03468v1"
+  },
+  {
+    "arxiv_id": "2011.12906v3",
+    "entry_id": "http://arxiv.org/abs/2011.12906v3",
+    "title": "A Review of Open-World Learning and Steps Toward Open-World Learning Without Labels",
+    "summary": "In open-world learning, an agent starts with a set of known classes, detects, and manages things that it does not know, and learns them over time from a non-stationary stream of data. Open-world learning is related to but also distinct from a multitude of other learning problems and this paper briefly analyzes the key differences between a wide range of problems including incremental learning, generalized novelty discovery, and generalized zero-shot learning. This paper formalizes various open-world learning problems including open-world learning without labels. These open-world problems can be addressed with modifications to known elements, we present a new framework that enables agents to combine various modules for novelty-detection, novelty-characterization, incremental learning, and instance management to learn new classes from a stream of unlabeled data in an unsupervised manner, survey how to adapt a few state-of-the-art techniques to fit the framework and use them to define seven baselines for performance on the open-world learning without labels problem. We then discuss open-world learning quality and analyze how that can improve instance management. We also discuss some of the general ambiguity issues that occur in open-world learning without labels.",
+    "authors": [
+      "Mohsen Jafarzadeh",
+      "Akshay Raj Dhamija",
+      "Steve Cruz",
+      "Chunchun Li",
+      "Touqeer Ahmad",
+      "Terrance E. Boult"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG",
+      "eess.IV",
+      "eess.SP"
+    ],
+    "published": "2020-11-25T17:41:03Z",
+    "pdf_url": "https://arxiv.org/pdf/2011.12906v3"
+  },
+  {
+    "arxiv_id": "2011.12860v2",
+    "entry_id": "http://arxiv.org/abs/2011.12860v2",
+    "title": "Sensorimotor representation learning for an \"active self\" in robots: A model survey",
+    "summary": "Safe human-robot interactions require robots to be able to learn how to behave appropriately in \\sout{humans' world} \\rev{spaces populated by people} and thus to cope with the challenges posed by our dynamic and unstructured environment, rather than being provided a rigid set of rules for operations. In humans, these capabilities are thought to be related to our ability to perceive our body in space, sensing the location of our limbs during movement, being aware of other objects and agents, and controlling our body parts to interact with them intentionally. Toward the next generation of robots with bio-inspired capacities, in this paper, we first review the developmental processes of underlying mechanisms of these abilities: The sensory representations of body schema, peripersonal space, and the active self in humans. Second, we provide a survey of robotics models of these sensory representations and robotics models of the self; and we compare these models with the human counterparts. Finally, we analyse what is missing from these robotics models and propose a theoretical computational framework, which aims to allow the emergence of the sense of self in artificial agents by developing sensory representations through self-exploration.",
+    "authors": [
+      "Phuong D. H. Nguyen",
+      "Yasmin Kim Georgie",
+      "Ezgi Kayhan",
+      "Manfred Eppe",
+      "Verena Vanessa Hafner",
+      "Stefan Wermter"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "published": "2020-11-25T16:31:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2011.12860v2"
+  },
+  {
+    "arxiv_id": "2011.11976v1",
+    "entry_id": "http://arxiv.org/abs/2011.11976v1",
+    "title": "Modeling skier behavior for planning and management. Dynaski, an agent-based in congested ski-areas",
+    "summary": "In leisure spaces, particularly theme parks and museums, researchers and managers have long been using simulation tools to tackle the big issue associated with attractiveness, flow management. In this research, we present the management and planning perspective of a multi-agent simulation tool which models the behavior of skiers in a ski-area. This is the first tool able to simulate and compare management and planning scenarios as well as their impacts on the comfort of skiers, in particular ski-area waiting times. This paper aims to integrate multiple data sources to calibrate the simulation on a real case study. An original field survey of users during a week details the skier population. The first average skier speeds are calculated from GPS data on one ordinary day. The validation data are used to calibrate the parameters of the behavioral model. A demonstration of the simulation tool is conducted on the La Plagne ski-area, one of the largest in France. A test case, the construction of new housing in a station near the ski-area, is conducted. An addition of 1620 new skiers delays the skier average waiting time by 12 pourcents.",
+    "authors": [
+      "Alexis Poulhes",
+      "Paul Mirial"
+    ],
+    "categories": [
+      "cs.MA"
+    ],
+    "published": "2020-11-24T09:12:34Z",
+    "pdf_url": "https://arxiv.org/pdf/2011.11976v1"
+  },
+  {
+    "arxiv_id": "2011.11012v1",
+    "entry_id": "http://arxiv.org/abs/2011.11012v1",
+    "title": "Distributed Deep Reinforcement Learning: An Overview",
+    "summary": "Deep reinforcement learning (DRL) is a very active research area. However, several technical and scientific issues require to be addressed, amongst which we can mention data inefficiency, exploration-exploitation trade-off, and multi-task learning. Therefore, distributed modifications of DRL were introduced; agents that could be run on many machines simultaneously. In this article, we provide a survey of the role of the distributed approaches in DRL. We overview the state of the field, by studying the key research works that have a significant impact on how we can use distributed methods in DRL. We choose to overview these papers, from the perspective of distributed learning, and not the aspect of innovations in reinforcement learning algorithms. Also, we evaluate these methods on different tasks and compare their performance with each other and with single actor and learner agents.",
+    "authors": [
+      "Mohammad Reza Samsami",
+      "Hossein Alimadad"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "published": "2020-11-22T13:24:35Z",
+    "pdf_url": "https://arxiv.org/pdf/2011.11012v1"
+  },
+  {
+    "arxiv_id": "2011.07901v1",
+    "entry_id": "http://arxiv.org/abs/2011.07901v1",
+    "title": "Conversational agents for learning foreign languages -- a survey",
+    "summary": "Conversational practice, while crucial for all language learners, can be challenging to get enough of and very expensive. Chatbots are computer programs developed to engage in conversations with humans. They are designed as software avatars with limited, but growing conversational capability. The most natural and potentially powerful application of chatbots is in line with their fundamental nature - language practice. However, their role and outcomes within (in)formal language learning are currently tangential at best. Existing research in the area has generally focused on chatbots' comprehensibility and the motivation they inspire in their users. In this paper, we provide an overview of the chatbots for learning languages, critically analyze existing approaches, and discuss the major challenges for future work.",
+    "authors": [
+      "Jasna Petrovic",
+      "Mladjan Jovanovic"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "published": "2020-11-16T12:27:02Z",
+    "pdf_url": "https://arxiv.org/pdf/2011.07901v1"
+  },
+  {
+    "arxiv_id": "2011.02887v1",
+    "entry_id": "http://arxiv.org/abs/2011.02887v1",
+    "title": "Semantic and Relational Spaces in Science of Science: Deep Learning Models for Article Vectorisation",
+    "summary": "Over the last century, we observe a steady and exponentially growth of scientific publications globally. The overwhelming amount of available literature makes a holistic analysis of the research within a field and between fields based on manual inspection impossible. Automatic techniques to support the process of literature review are required to find the epistemic and social patterns that are embedded in scientific publications. In computer sciences, new tools have been developed to deal with large volumes of data. In particular, deep learning techniques open the possibility of automated end-to-end models to project observations to a new, low-dimensional space where the most relevant information of each observation is highlighted. Using deep learning to build new representations of scientific publications is a growing but still emerging field of research. The aim of this paper is to discuss the potential and limits of deep learning for gathering insights about scientific research articles. We focus on document-level embeddings based on the semantic and relational aspects of articles, using Natural Language Processing (NLP) and Graph Neural Networks (GNNs). We explore the different outcomes generated by those techniques. Our results show that using NLP we can encode a semantic space of articles, while with GNN we are able to build a relational space where the social practices of a research community are also encoded.",
+    "authors": [
+      "Diego Kozlowski",
+      "Jennifer Dusdal",
+      "Jun Pang",
+      "Andreas Zilian"
+    ],
+    "categories": [
+      "cs.SI",
+      "cs.LG",
+      "physics.soc-ph"
+    ],
+    "published": "2020-11-05T14:57:41Z",
+    "pdf_url": "https://arxiv.org/pdf/2011.02887v1"
+  },
+  {
+    "arxiv_id": "2011.01774v1",
+    "entry_id": "http://arxiv.org/abs/2011.01774v1",
+    "title": "Provenance-Based Assessment of Plans in Context",
+    "summary": "Many real-world planning domains involve diverse information sources, external entities, and variable-reliability agents, all of which may impact the confidence, risk, and sensitivity of plans. Humans reviewing a plan may lack context about these factors; however, this information is available during the domain generation, which means it can also be interwoven into the planner and its resulting plans. This paper presents a provenance-based approach to explaining automated plans. Our approach (1) extends the SHOP3 HTN planner to generate dependency information, (2) transforms the dependency information into an established PROV-O representation, and (3) uses graph propagation and TMS-inspired algorithms to support dynamic and counter-factual assessment of information flow, confidence, and support. We qualified our approach's explanatory scope with respect to explanation targets from the automated planning literature and the information analysis literature, and we demonstrate its ability to assess a plan's pertinence, sensitivity, risk, assumption support, diversity, and relative confidence.",
+    "authors": [
+      "Scott E. Friedman",
+      "Robert P. Goldman",
+      "Richard G. Freedman",
+      "Ugur Kuter",
+      "Christopher Geib",
+      "Jeffrey Rye"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.HC"
+    ],
+    "published": "2020-11-03T15:13:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2011.01774v1"
+  },
+  {
+    "arxiv_id": "2011.00583v5",
+    "entry_id": "http://arxiv.org/abs/2011.00583v5",
+    "title": "Game-Theoretic Multiagent Reinforcement Learning",
+    "summary": "Tremendous advances have been made in multiagent reinforcement learning (MARL). MARL corresponds to the learning problem in a multiagent system in which multiple agents learn simultaneously. It is an interdisciplinary field of study with a long history that includes game theory, machine learning, stochastic control, psychology, and optimization. Despite great successes in MARL, there is a lack of a self-contained overview of the literature that covers game-theoretic foundations of modern MARL methods and summarizes the recent advances. The majority of existing surveys are outdated and do not fully cover the recent developments since 2010. In this work, we provide a monograph on MARL that covers both the fundamentals and the latest developments on the research frontier. The goal of this monograph is to provide a self-contained assessment of the current state-of-the-art MARL techniques from a game-theoretic perspective. We expect this work to serve as a stepping stone for both new researchers who are about to enter this fast-growing field and experts in the field who want to obtain a panoramic view and identify new directions based on recent advances.",
+    "authors": [
+      "Yaodong Yang",
+      "Chengdong Ma",
+      "Zihan Ding",
+      "Stephen McAleer",
+      "Chi Jin",
+      "Jun Wang",
+      "Tuomas Sandholm"
+    ],
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "published": "2020-11-01T18:24:40Z",
+    "pdf_url": "https://arxiv.org/pdf/2011.00583v5"
+  },
+  {
+    "arxiv_id": "2010.14654v2",
+    "entry_id": "http://arxiv.org/abs/2010.14654v2",
+    "title": "Artificial Intelligence Systems applied to tourism: A Survey",
+    "summary": "Artificial Intelligence (AI) has been improving the performance of systems for a diverse set of tasks and introduced a more interactive generation of personal agents. Despite the current trend of applying AI for a great amount of areas, we have not seen the same quantity of work being developed for the tourism sector. This paper reports on the main applications of AI systems developed for tourism and the current state of the art for this sector. The paper also provides an up-to-date survey of this field regarding several key works and systems that are applied to tourism, like Personal Agents, for providing a more interactive experience. We also carried out an in-depth research on systems for predicting traffic human flow, more accurate recommendation systems and even how geospatial is trying to display tourism data in a more informative way and prevent problems before they arise.",
+    "authors": [
+      "Luis Duarte",
+      "Jonathan Torres",
+      "Vitor Ribeiro",
+      "Inês Moreira"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2020-10-27T22:41:12Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.14654v2"
+  },
+  {
+    "arxiv_id": "2010.14289v3",
+    "entry_id": "http://arxiv.org/abs/2010.14289v3",
+    "title": "Affordance as general value function: A computational model",
+    "summary": "General value functions (GVFs) in the reinforcement learning (RL) literature are long-term predictive summaries of the outcomes of agents following specific policies in the environment. Affordances as perceived action possibilities with specific valence may be cast into predicted policy-relative goodness and modelled as GVFs. A systematic explication of this connection shows that GVFs and especially their deep learning embodiments (1) realize affordance prediction as a form of direct perception, (2) illuminate the fundamental connection between action and perception in affordance, and (3) offer a scalable way to learn affordances using RL methods. Through an extensive review of existing literature on GVF applications and representative affordance research in robotics, we demonstrate that GVFs provide the right framework for learning affordances in real-world applications. In addition, we highlight a few new avenues of research opened up by the perspective of \"affordance as GVF\", including using GVFs for orchestrating complex behaviors.",
+    "authors": [
+      "Daniel Graves",
+      "Johannes Günther",
+      "Jun Luo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2020-10-27T13:42:58Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.14289v3"
+  },
+  {
+    "arxiv_id": "2010.12309v3",
+    "entry_id": "http://arxiv.org/abs/2010.12309v3",
+    "title": "A Survey on Recent Approaches for Natural Language Processing in Low-Resource Scenarios",
+    "summary": "Deep neural networks and huge language models are becoming omnipresent in natural language applications. As they are known for requiring large amounts of training data, there is a growing body of work to improve the performance in low-resource settings. Motivated by the recent fundamental changes towards neural models and the popular pre-train and fine-tune paradigm, we survey promising approaches for low-resource natural language processing. After a discussion about the different dimensions of data availability, we give a structured overview of methods that enable learning when training data is sparse. This includes mechanisms to create additional labeled data like data augmentation and distant supervision as well as transfer learning settings that reduce the need for target supervision. A goal of our survey is to explain how these methods differ in their requirements as understanding them is essential for choosing a technique suited for a specific low-resource setting. Further key aspects of this work are to highlight open issues and to outline promising directions for future research.",
+    "authors": [
+      "Michael A. Hedderich",
+      "Lukas Lange",
+      "Heike Adel",
+      "Jannik Strötgen",
+      "Dietrich Klakow"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2020-10-23T11:22:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.12309v3"
+  },
+  {
+    "arxiv_id": "2010.07870v2",
+    "entry_id": "http://arxiv.org/abs/2010.07870v2",
+    "title": "Deep Generative Modeling in Network Science with Applications to Public Policy Research",
+    "summary": "Network data is increasingly being used in quantitative, data-driven public policy research. These are typically very rich datasets that contain complex correlations and inter-dependencies. This richness both promises to be quite useful for policy research, while at the same time posing a challenge for the useful extraction of information from these datasets - a challenge which calls for new data analysis methods. In this report, we formulate a research agenda of key methodological problems whose solutions would enable new advances across many areas of policy research. We then review recent advances in applying deep learning to network data, and show how these methods may be used to address many of the methodological problems we identified. We particularly emphasize deep generative methods, which can be used to generate realistic synthetic networks useful for microsimulation and agent-based models capable of informing key public policy questions. We extend these recent advances by developing a new generative framework which applies to large social contact networks commonly used in epidemiological modeling. For context, we also compare and contrast these recent neural network-based approaches with the more traditional Exponential Random Graph Models. Lastly, we discuss some open problems where more progress is needed.",
+    "authors": [
+      "Gavin S. Hartnett",
+      "Raffaele Vardavas",
+      "Lawrence Baker",
+      "Michael Chaykowsky",
+      "C. Ben Gibson",
+      "Federico Girosi",
+      "David P. Kennedy",
+      "Osonde A. Osoba"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.SI"
+    ],
+    "published": "2020-10-15T16:47:34Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.07870v2"
+  },
+  {
+    "arxiv_id": "2010.06917v4",
+    "entry_id": "http://arxiv.org/abs/2010.06917v4",
+    "title": "UAV Path Planning using Global and Local Map Information with Deep Reinforcement Learning",
+    "summary": "Path planning methods for autonomous unmanned aerial vehicles (UAVs) are typically designed for one specific type of mission. This work presents a method for autonomous UAV path planning based on deep reinforcement learning (DRL) that can be applied to a wide range of mission scenarios. Specifically, we compare coverage path planning (CPP), where the UAV's goal is to survey an area of interest to data harvesting (DH), where the UAV collects data from distributed Internet of Things (IoT) sensor devices. By exploiting structured map information of the environment, we train double deep Q-networks (DDQNs) with identical architectures on both distinctly different mission scenarios to make movement decisions that balance the respective mission goal with navigation constraints. By introducing a novel approach exploiting a compressed global map of the environment combined with a cropped but uncompressed local map showing the vicinity of the UAV agent, we demonstrate that the proposed method can efficiently scale to large environments. We also extend previous results for generalizing control policies that require no retraining when scenario parameters change and offer a detailed analysis of crucial map processing parameters' effects on path planning performance.",
+    "authors": [
+      "Mirco Theile",
+      "Harald Bayerlein",
+      "Richard Nai",
+      "David Gesbert",
+      "Marco Caccamo"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "published": "2020-10-14T09:59:10Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.06917v4"
+  },
+  {
+    "arxiv_id": "2010.05328v2",
+    "entry_id": "http://arxiv.org/abs/2010.05328v2",
+    "title": "Three-Dimensional Swarming Using Cyclic Stochastic Optimization",
+    "summary": "In this paper we simulate an ensemble of cooperating, mobile sensing agents that implement the cyclic stochastic optimization (CSO) algorithm in an attempt to survey and track multiple targets. In the CSO algorithm proposed, each agent uses its sensed measurements, its shared information, and its predictions of others' future motion to decide on its next action. This decision is selected to minimize a loss function that decreases as the uncertainty in the targets' state estimates decreases. Only noisy measurements of this loss function are available to each agent, and in this study, each agent attempts to minimize this function by calculating its stochastic gradient. This paper examines, via simulation-based experiments, the implications and applicability of CSO convergence in three dimensions.",
+    "authors": [
+      "Carsten H. Botts"
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "published": "2020-10-11T19:43:05Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.05328v2"
+  },
+  {
+    "arxiv_id": "2010.04041v1",
+    "entry_id": "http://arxiv.org/abs/2010.04041v1",
+    "title": "Catch Me if I Can: Detecting Strategic Behaviour in Peer Assessment",
+    "summary": "We consider the issue of strategic behaviour in various peer-assessment tasks, including peer grading of exams or homeworks and peer review in hiring or promotions. When a peer-assessment task is competitive (e.g., when students are graded on a curve), agents may be incentivized to misreport evaluations in order to improve their own final standing. Our focus is on designing methods for detection of such manipulations. Specifically, we consider a setting in which agents evaluate a subset of their peers and output rankings that are later aggregated to form a final ordering. In this paper, we investigate a statistical framework for this problem and design a principled test for detecting strategic behaviour. We prove that our test has strong false alarm guarantees and evaluate its detection ability in practical settings. For this, we design and execute an experiment that elicits strategic behaviour from subjects and release a dataset of patterns of strategic behaviour that may be of independent interest. We then use the collected data to conduct a series of real and semi-synthetic evaluations that demonstrate a strong detection power of our test.",
+    "authors": [
+      "Ivan Stelmakh",
+      "Nihar B. Shah",
+      "Aarti Singh"
+    ],
+    "categories": [
+      "cs.MA",
+      "cs.GT",
+      "cs.LG"
+    ],
+    "published": "2020-10-08T15:08:40Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.04041v1"
+  },
+  {
+    "arxiv_id": "2010.02573v1",
+    "entry_id": "http://arxiv.org/abs/2010.02573v1",
+    "title": "The Multilingual Amazon Reviews Corpus",
+    "summary": "We present the Multilingual Amazon Reviews Corpus (MARC), a large-scale collection of Amazon reviews for multilingual text classification. The corpus contains reviews in English, Japanese, German, French, Spanish, and Chinese, which were collected between 2015 and 2019. Each record in the dataset contains the review text, the review title, the star rating, an anonymized reviewer ID, an anonymized product ID, and the coarse-grained product category (e.g., 'books', 'appliances', etc.) The corpus is balanced across the 5 possible star ratings, so each rating constitutes 20% of the reviews in each language. For each language, there are 200,000, 5,000, and 5,000 reviews in the training, development, and test sets, respectively. We report baseline results for supervised text classification and zero-shot cross-lingual transfer learning by fine-tuning a multilingual BERT model on reviews data. We propose the use of mean absolute error (MAE) instead of classification accuracy for this task, since MAE accounts for the ordinal nature of the ratings.",
+    "authors": [
+      "Phillip Keung",
+      "Yichao Lu",
+      "György Szarvas",
+      "Noah A. Smith"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.IR",
+      "cs.LG"
+    ],
+    "published": "2020-10-06T09:34:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.02573v1"
+  },
+  {
+    "arxiv_id": "2010.00622v2",
+    "entry_id": "http://arxiv.org/abs/2010.00622v2",
+    "title": "Pix2Prof: fast extraction of sequential information from galaxy imagery via a deep natural language 'captioning' model",
+    "summary": "We present 'Pix2Prof', a deep learning model that can eliminate any manual steps taken when extracting galaxy profiles. We argue that a galaxy profile of any sort is conceptually similar to a natural language image caption. This idea allows us to leverage image captioning methods from the field of natural language processing, and so we design Pix2Prof as a float sequence 'captioning' model suitable for galaxy profile inference. We demonstrate the technique by approximating a galaxy surface brightness (SB) profile fitting method that contains several manual steps. Pix2Prof processes $\\sim$1 image per second on an Intel Xeon E5 2650 v3 CPU, improving on the speed of the manual interactive method by more than two orders of magnitude. Crucially, Pix2Prof requires no manual interaction, and since galaxy profile estimation is an embarrassingly parallel problem, we can further increase the throughput by running many Pix2Prof instances simultaneously. In perspective, Pix2Prof would take under an hour to infer profiles for $10^5$ galaxies on a single NVIDIA DGX-2 system. A single human expert would take approximately two years to complete the same task. Automated methodology such as this will accelerate the analysis of the next generation of large area sky surveys expected to yield hundreds of millions of targets. In such instances, all manual approaches -- even those involving a large number of experts -- will be impractical.",
+    "authors": [
+      "Michael J. Smith",
+      "Nikhil Arora",
+      "Connor Stone",
+      "Stéphane Courteau",
+      "James E. Geach"
+    ],
+    "categories": [
+      "astro-ph.IM",
+      "astro-ph.GA",
+      "cs.LG"
+    ],
+    "published": "2020-10-01T18:05:52Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.00622v2"
+  },
+  {
+    "arxiv_id": "2010.00353v1",
+    "entry_id": "http://arxiv.org/abs/2010.00353v1",
+    "title": "When will the mist clear? On the Interpretability of Machine Learning for Medical Applications: a survey",
+    "summary": "Artificial Intelligence is providing astonishing results, with medicine being one of its favourite playgrounds. In a few decades, computers may be capable of formulating diagnoses and choosing the correct treatment, while robots may perform surgical operations, and conversational agents could interact with patients as virtual coaches. Machine Learning and, in particular, Deep Neural Networks are behind this revolution. In this scenario, important decisions will be controlled by standalone machines that have learned predictive models from provided data. Among the most challenging targets of interest in medicine are cancer diagnosis and therapies but, to start this revolution, software tools need to be adapted to cover the new requirements. In this sense, learning tools are becoming a commodity in Python and Matlab libraries, just to name two, but to exploit all their possibilities, it is essential to fully understand how models are interpreted and which models are more interpretable than others. In this survey, we analyse current machine learning models, frameworks, databases and other related tools as applied to medicine - specifically, to cancer research - and we discuss their interpretability, performance and the necessary input data. From the evidence available, ANN, LR and SVM have been observed to be the preferred models. Besides, CNNs, supported by the rapid development of GPUs and tensor-oriented programming libraries, are gaining in importance. However, the interpretability of results by doctors is rarely considered which is a factor that needs to be improved. We therefore consider this study to be a timely contribution to the issue.",
+    "authors": [
+      "Antonio-Jesús Banegas-Luna",
+      "Jorge Peña-García",
+      "Adrian Iftene",
+      "Fiorella Guadagni",
+      "Patrizia Ferroni",
+      "Noemi Scarpato",
+      "Fabio Massimo Zanzotto",
+      "Andrés Bueno-Crespo",
+      "Horacio Pérez-Sánchez"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "q-bio.QM"
+    ],
+    "published": "2020-10-01T12:42:06Z",
+    "pdf_url": "https://arxiv.org/pdf/2010.00353v1"
+  },
+  {
+    "arxiv_id": "2009.13303v2",
+    "entry_id": "http://arxiv.org/abs/2009.13303v2",
+    "title": "Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics: a Survey",
+    "summary": "Deep reinforcement learning has recently seen huge success across multiple areas in the robotics domain. Owing to the limitations of gathering real-world data, i.e., sample inefficiency and the cost of collecting it, simulation environments are utilized for training the different agents. This not only aids in providing a potentially infinite data source, but also alleviates safety concerns with real robots. Nonetheless, the gap between the simulated and real worlds degrades the performance of the policies once the models are transferred into real robots. Multiple research efforts are therefore now being directed towards closing this sim-to-real gap and accomplish more efficient policy transfer. Recent years have seen the emergence of multiple methods applicable to different domains, but there is a lack, to the best of our knowledge, of a comprehensive review summarizing and putting into context the different methods. In this survey paper, we cover the fundamental background behind sim-to-real transfer in deep reinforcement learning and overview the main methods being utilized at the moment: domain randomization, domain adaptation, imitation learning, meta-learning and knowledge distillation. We categorize some of the most relevant recent works, and outline the main application scenarios. Finally, we discuss the main opportunities and challenges of the different approaches and point to the most promising directions.",
+    "authors": [
+      "Wenshuai Zhao",
+      "Jorge Peña Queralta",
+      "Tomi Westerlund"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.RO"
+    ],
+    "published": "2020-09-24T21:05:46Z",
+    "pdf_url": "https://arxiv.org/pdf/2009.13303v2"
+  },
+  {
+    "arxiv_id": "2009.11564v2",
+    "entry_id": "http://arxiv.org/abs/2009.11564v2",
+    "title": "Machine Knowledge: Creation and Curation of Comprehensive Knowledge Bases",
+    "summary": "Equipping machines with comprehensive knowledge of the world's entities and their relationships has been a long-standing goal of AI. Over the last decade, large-scale knowledge bases, also known as knowledge graphs, have been automatically constructed from web contents and text sources, and have become a key asset for search engines. This machine knowledge can be harnessed to semantically interpret textual phrases in news, social media and web tables, and contributes to question answering, natural language processing and data analytics. This article surveys fundamental concepts and practical methods for creating and curating large knowledge bases. It covers models and methods for discovering and canonicalizing entities and their semantic types and organizing them into clean taxonomies. On top of this, the article discusses the automatic extraction of entity-centric properties. To support the long-term life-cycle and the quality assurance of machine knowledge, the article presents methods for constructing open schemas and for knowledge curation. Case studies on academic projects and industrial knowledge graphs complement the survey of concepts and methods.",
+    "authors": [
+      "Gerhard Weikum",
+      "Luna Dong",
+      "Simon Razniewski",
+      "Fabian Suchanek"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.DB"
+    ],
+    "published": "2020-09-24T09:28:13Z",
+    "pdf_url": "https://arxiv.org/pdf/2009.11564v2"
+  },
+  {
+    "arxiv_id": "2009.09689v4",
+    "entry_id": "http://arxiv.org/abs/2009.09689v4",
+    "title": "Reinforcement Learning Approaches in Social Robotics",
+    "summary": "This article surveys reinforcement learning approaches in social robotics. Reinforcement learning is a framework for decision-making problems in which an agent interacts through trial-and-error with its environment to discover an optimal behavior. Since interaction is a key component in both reinforcement learning and social robotics, it can be a well-suited approach for real-world interactions with physically embodied social robots. The scope of the paper is focused particularly on studies that include social physical robots and real-world human-robot interactions with users. We present a thorough analysis of reinforcement learning approaches in social robotics. In addition to a survey, we categorize existent reinforcement learning approaches based on the used method and the design of the reward mechanisms. Moreover, since communication capability is a prominent feature of social robots, we discuss and group the papers based on the communication medium used for reward formulation. Considering the importance of designing the reward function, we also provide a categorization of the papers based on the nature of the reward. This categorization includes three major themes: interactive reinforcement learning, intrinsically motivated methods, and task performance-driven methods. The benefits and challenges of reinforcement learning in social robotics, evaluation methods of the papers regarding whether or not they use subjective and algorithmic measures, a discussion in the view of real-world reinforcement learning challenges and proposed solutions, the points that remain to be explored, including the approaches that have thus far received less attention is also given in the paper. Thus, this paper aims to become a starting point for researchers interested in using and applying reinforcement learning methods in this particular research field.",
+    "authors": [
+      "Neziha Akalin",
+      "Amy Loutfi"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "published": "2020-09-21T08:56:18Z",
+    "pdf_url": "https://arxiv.org/pdf/2009.09689v4"
+  },
+  {
+    "arxiv_id": "2009.06732v3",
+    "entry_id": "http://arxiv.org/abs/2009.06732v3",
+    "title": "Efficient Transformers: A Survey",
+    "summary": "Transformer model architectures have garnered immense interest lately due to their effectiveness across a range of domains like language, vision and reinforcement learning. In the field of natural language processing for example, Transformers have become an indispensable staple in the modern deep learning stack. Recently, a dizzying number of \"X-former\" models have been proposed - Reformer, Linformer, Performer, Longformer, to name a few - which improve upon the original Transformer architecture, many of which make improvements around computational and memory efficiency. With the aim of helping the avid researcher navigate this flurry, this paper characterizes a large and thoughtful selection of recent efficiency-flavored \"X-former\" models, providing an organized and comprehensive overview of existing work and models across multiple domains.",
+    "authors": [
+      "Yi Tay",
+      "Mostafa Dehghani",
+      "Dara Bahri",
+      "Donald Metzler"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL",
+      "cs.CV",
+      "cs.IR"
+    ],
+    "published": "2020-09-14T20:38:14Z",
+    "pdf_url": "https://arxiv.org/pdf/2009.06732v3"
+  },
+  {
+    "arxiv_id": "2008.12610v1",
+    "entry_id": "http://arxiv.org/abs/2008.12610v1",
+    "title": "Collaborative Multi-Robot Systems for Search and Rescue: Coordination and Perception",
+    "summary": "Autonomous or teleoperated robots have been playing increasingly important roles in civil applications in recent years. Across the different civil domains where robots can support human operators, one of the areas where they can have more impact is in search and rescue (SAR) operations. In particular, multi-robot systems have the potential to significantly improve the efficiency of SAR personnel with faster search of victims, initial assessment and mapping of the environment, real-time monitoring and surveillance of SAR operations, or establishing emergency communication networks, among other possibilities. SAR operations encompass a wide variety of environments and situations, and therefore heterogeneous and collaborative multi-robot systems can provide the most advantages. In this paper, we review and analyze the existing approaches to multi-robot SAR support, from an algorithmic perspective and putting an emphasis on the methods enabling collaboration among the robots as well as advanced perception through machine vision and multi-agent active perception. Furthermore, we put these algorithms in the context of the different challenges and constraints that various types of robots (ground, aerial, surface or underwater) encounter in different SAR environments (maritime, urban, wilderness or other post-disaster scenarios). This is, to the best of our knowledge, the first review considering heterogeneous SAR robots across different environments, while giving two complimentary points of view: control mechanisms and machine perception. Based on our review of the state-of-the-art, we discuss the main open research questions, and outline our insights on the current approaches that have potential to improve the real-world performance of multi-robot SAR systems.",
+    "authors": [
+      "Jorge Peña Queralta",
+      "Jussi Taipalmaa",
+      "Bilge Can Pullinen",
+      "Victor Kathan Sarker",
+      "Tuan Nguyen Gia",
+      "Hannu Tenhunen",
+      "Moncef Gabbouj",
+      "Jenni Raitoharju",
+      "Tomi Westerlund"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "published": "2020-08-28T12:28:32Z",
+    "pdf_url": "https://arxiv.org/pdf/2008.12610v1"
+  },
+  {
+    "arxiv_id": "2008.11634v2",
+    "entry_id": "http://arxiv.org/abs/2008.11634v2",
+    "title": "Assessment of Reward Functions for Reinforcement Learning Traffic Signal Control under Real-World Limitations",
+    "summary": "Adaptive traffic signal control is one key avenue for mitigating the growing consequences of traffic congestion. Incumbent solutions such as SCOOT and SCATS require regular and time-consuming calibration, can't optimise well for multiple road use modalities, and require the manual curation of many implementation plans. A recent alternative to these approaches are deep reinforcement learning algorithms, in which an agent learns how to take the most appropriate action for a given state of the system. This is guided by neural networks approximating a reward function that provides feedback to the agent regarding the performance of the actions taken, making it sensitive to the specific reward function chosen. Several authors have surveyed the reward functions used in the literature, but attributing outcome differences to reward function choice across works is problematic as there are many uncontrolled differences, as well as different outcome metrics. This paper compares the performance of agents using different reward functions in a simulation of a junction in Greater Manchester, UK, across various demand profiles, subject to real world constraints: realistic sensor inputs, controllers, calibrated demand, intergreen times and stage sequencing. The reward metrics considered are based on the time spent stopped, lost time, change in lost time, average speed, queue length, junction throughput and variations of these magnitudes. The performance of these reward functions is compared in terms of total waiting time. We find that speed maximisation resulted in the lowest average waiting times across all demand levels, displaying significantly better performance than other rewards previously introduced in the literature.",
+    "authors": [
+      "Alvaro Cabrejas-Egea",
+      "Shaun Howell",
+      "Maksis Knutins",
+      "Colm Connaughton"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.NE",
+      "eess.SY"
+    ],
+    "published": "2020-08-26T15:47:15Z",
+    "pdf_url": "https://arxiv.org/pdf/2008.11634v2"
+  },
+  {
+    "arxiv_id": "2008.09237v1",
+    "entry_id": "http://arxiv.org/abs/2008.09237v1",
+    "title": "COOKIE: A Dataset for Conversational Recommendation over Knowledge Graphs in E-commerce",
+    "summary": "In this work, we present a new dataset for conversational recommendation over knowledge graphs in e-commerce platforms called COOKIE. The dataset is constructed from an Amazon review corpus by integrating both user-agent dialogue and custom knowledge graphs for recommendation. Specifically, we first construct a unified knowledge graph and extract key entities between user--product pairs, which serve as the skeleton of a conversation. Then we simulate conversations mirroring the human coarse-to-fine process of choosing preferred items. The proposed baselines and experiments demonstrate that our dataset is able to provide innovative opportunities for conversational recommendation.",
+    "authors": [
+      "Zuohui Fu",
+      "Yikun Xian",
+      "Yaxin Zhu",
+      "Yongfeng Zhang",
+      "Gerard de Melo"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "published": "2020-08-21T00:11:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2008.09237v1"
+  },
+  {
+    "arxiv_id": "2008.08727v3",
+    "entry_id": "http://arxiv.org/abs/2008.08727v3",
+    "title": "Assigning function to protein-protein interactions: a weakly supervised BioBERT based approach using PubMed abstracts",
+    "summary": "Motivation: Protein-protein interactions (PPI) are critical to the function of proteins in both normal and diseased cells, and many critical protein functions are mediated by interactions.Knowledge of the nature of these interactions is important for the construction of networks to analyse biological data. However, only a small percentage of PPIs captured in protein interaction databases have annotations of function available, e.g. only 4% of PPI are functionally annotated in the IntAct database. Here, we aim to label the function type of PPIs by extracting relationships described in PubMed abstracts.\n  Method: We create a weakly supervised dataset from the IntAct PPI database containing interacting protein pairs with annotated function and associated abstracts from the PubMed database. We apply a state-of-the-art deep learning technique for biomedical natural language processing tasks, BioBERT, to build a model - dubbed PPI-BioBERT - for identifying the function of PPIs. In order to extract high quality PPI functions at large scale, we use an ensemble of PPI-BioBERT models to improve uncertainty estimation and apply an interaction type-specific threshold to counteract the effects of variations in the number of training samples per interaction type.\n  Results: We scan 18 million PubMed abstracts to automatically identify 3253 new typed PPIs, including phosphorylation and acetylation interactions, with an overall precision of 46% (87% for acetylation) based on a human-reviewed sample. This work demonstrates that analysis of biomedical abstracts for PPI function extraction is a feasible approach to substantially increasing the number of interactions annotated with function captured in online databases.",
+    "authors": [
+      "Aparna Elangovan",
+      "Melissa Davis",
+      "Karin Verspoor"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG",
+      "q-bio.GN"
+    ],
+    "published": "2020-08-20T01:42:28Z",
+    "pdf_url": "https://arxiv.org/pdf/2008.08727v3"
+  },
+  {
+    "arxiv_id": "2008.06693v4",
+    "entry_id": "http://arxiv.org/abs/2008.06693v4",
+    "title": "Explainability in Deep Reinforcement Learning",
+    "summary": "A large set of the explainable Artificial Intelligence (XAI) literature is emerging on feature relevance techniques to explain a deep neural network (DNN) output or explaining models that ingest image source data. However, assessing how XAI techniques can help understand models beyond classification tasks, e.g. for reinforcement learning (RL), has not been extensively studied. We review recent works in the direction to attain Explainable Reinforcement Learning (XRL), a relatively new subfield of Explainable Artificial Intelligence, intended to be used in general public applications, with diverse audiences, requiring ethical, responsible and trustable algorithms. In critical situations where it is essential to justify and explain the agent's behaviour, better explainability and interpretability of RL models could help gain scientific insight on the inner workings of what is still considered a black box. We evaluate mainly studies directly linking explainability to RL, and split these into two categories according to the way the explanations are generated: transparent algorithms and post-hoc explainaility. We also review the most prominent XAI works from the lenses of how they could potentially enlighten the further deployment of the latest advances in RL, in the demanding present and future of everyday problems.",
+    "authors": [
+      "Alexandre Heuillet",
+      "Fabien Couthouis",
+      "Natalia Díaz-Rodríguez"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2020-08-15T10:11:42Z",
+    "pdf_url": "https://arxiv.org/pdf/2008.06693v4"
+  },
+  {
+    "arxiv_id": "2008.05221v4",
+    "entry_id": "http://arxiv.org/abs/2008.05221v4",
+    "title": "Compression of Deep Learning Models for Text: A Survey",
+    "summary": "In recent years, the fields of natural language processing (NLP) and information retrieval (IR) have made tremendous progress thanksto deep learning models like Recurrent Neural Networks (RNNs), Gated Recurrent Units (GRUs) and Long Short-Term Memory (LSTMs)networks, and Transformer [120] based models like Bidirectional Encoder Representations from Transformers (BERT) [24], GenerativePre-training Transformer (GPT-2) [94], Multi-task Deep Neural Network (MT-DNN) [73], Extra-Long Network (XLNet) [134], Text-to-text transfer transformer (T5) [95], T-NLG [98] and GShard [63]. But these models are humongous in size. On the other hand,real world applications demand small model size, low response times and low computational power wattage. In this survey, wediscuss six different types of methods (Pruning, Quantization, Knowledge Distillation, Parameter Sharing, Tensor Decomposition, andSub-quadratic Transformer based methods) for compression of such models to enable their deployment in real industry NLP projects.Given the critical need of building applications with efficient and small models, and the large amount of recently published work inthis area, we believe that this survey organizes the plethora of work done by the 'deep learning for NLP' community in the past fewyears and presents it as a coherent story.",
+    "authors": [
+      "Manish Gupta",
+      "Puneet Agrawal"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2020-08-12T10:42:14Z",
+    "pdf_url": "https://arxiv.org/pdf/2008.05221v4"
+  },
+  {
+    "arxiv_id": "2008.04162v7",
+    "entry_id": "http://arxiv.org/abs/2008.04162v7",
+    "title": "Navigating Human Language Models with Synthetic Agents",
+    "summary": "Modern natural language models such as the GPT-2/GPT-3 contain tremendous amounts of information about human belief in a consistently testable form. If these models could be shown to accurately reflect the underlying beliefs of the human beings that produced the data used to train these models, then such models become a powerful sociological tool in ways that are distinct from traditional methods, such as interviews and surveys. In this study, We train a version of the GPT-2 on a corpora of historical chess games, and then \"launch\" clusters of synthetic agents into the model, using text strings to create context and orientation. We compare the trajectories contained in the text generated by the agents/model and compare that to the known ground truth of the chess board, move legality, and historical patterns of play. We find that the percentages of moves by piece using the model are substantially similar from human patterns. We further find that the model creates an accurate latent representation of the chessboard, and that it is possible to plot trajectories of legal moves across the board using this knowledge.",
+    "authors": [
+      "Philip Feldman",
+      "Antonio Bucchiarone"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.MA"
+    ],
+    "published": "2020-08-10T14:39:53Z",
+    "pdf_url": "https://arxiv.org/pdf/2008.04162v7"
+  },
+  {
+    "arxiv_id": "2008.02311v1",
+    "entry_id": "http://arxiv.org/abs/2008.02311v1",
+    "title": "Conceptual Metaphors Impact Perceptions of Human-AI Collaboration",
+    "summary": "With the emergence of conversational artificial intelligence (AI) agents, it is important to understand the mechanisms that influence users' experiences of these agents. We study a common tool in the designer's toolkit: conceptual metaphors. Metaphors can present an agent as akin to a wry teenager, a toddler, or an experienced butler. How might a choice of metaphor influence our experience of the AI agent? Sampling metaphors along the dimensions of warmth and competence---defined by psychological theories as the primary axes of variation for human social perception---we perform a study (N=260) where we manipulate the metaphor, but not the behavior, of a Wizard-of-Oz conversational agent. Following the experience, participants are surveyed about their intention to use the agent, their desire to cooperate with the agent, and the agent's usability. Contrary to the current tendency of designers to use high competence metaphors to describe AI products, we find that metaphors that signal low competence lead to better evaluations of the agent than metaphors that signal high competence. This effect persists despite both high and low competence agents featuring human-level performance and the wizards being blind to condition. A second study confirms that intention to adopt decreases rapidly as competence projected by the metaphor increases. In a third study, we assess effects of metaphor choices on potential users' desire to try out the system and find that users are drawn to systems that project higher competence and warmth. These results suggest that projecting competence may help attract new users, but those users may discard the agent unless it can quickly correct with a lower competence metaphor. We close with a retrospective analysis that finds similar patterns between metaphors and user attitudes towards past conversational agents such as Xiaoice, Replika, Woebot, Mitsuku, and Tay.",
+    "authors": [
+      "Pranav Khadpe",
+      "Ranjay Krishna",
+      "Li Fei-Fei",
+      "Jeffrey Hancock",
+      "Michael Bernstein"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "published": "2020-08-05T18:39:56Z",
+    "pdf_url": "https://arxiv.org/pdf/2008.02311v1"
+  },
+  {
+    "arxiv_id": "2007.15780v1",
+    "entry_id": "http://arxiv.org/abs/2007.15780v1",
+    "title": "Neural Language Generation: Formulation, Methods, and Evaluation",
+    "summary": "Recent advances in neural network-based generative modeling have reignited the hopes in having computer systems capable of seamlessly conversing with humans and able to understand natural language. Neural architectures have been employed to generate text excerpts to various degrees of success, in a multitude of contexts and tasks that fulfil various user needs. Notably, high capacity deep learning models trained on large scale datasets demonstrate unparalleled abilities to learn patterns in the data even in the lack of explicit supervision signals, opening up a plethora of new possibilities regarding producing realistic and coherent texts. While the field of natural language generation is evolving rapidly, there are still many open challenges to address. In this survey we formally define and categorize the problem of natural language generation. We review particular application tasks that are instantiations of these general formulations, in which generating natural language is of practical importance. Next we include a comprehensive outline of methods and neural architectures employed for generating diverse texts. Nevertheless, there is no standard way to assess the quality of text produced by these generative models, which constitutes a serious bottleneck towards the progress of the field. To this end, we also review current approaches to evaluating natural language generation systems. We hope this survey will provide an informative overview of formulations, methods, and assessments of neural natural language generation.",
+    "authors": [
+      "Cristina Garbacea",
+      "Qiaozhu Mei"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2020-07-31T00:08:28Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.15780v1"
+  },
+  {
+    "arxiv_id": "2007.15221v1",
+    "entry_id": "http://arxiv.org/abs/2007.15221v1",
+    "title": "Swarm Intelligence for Next-Generation Wireless Networks: Recent Advances and Applications",
+    "summary": "Due to the proliferation of smart devices and emerging applications, many next-generation technologies have been paid for the development of wireless networks. Even though commercial 5G has just been widely deployed in some countries, there have been initial efforts from academia and industrial communities for 6G systems. In such a network, a very large number of devices and applications are emerged, along with heterogeneity of technologies, architectures, mobile data, etc., and optimizing such a network is of utmost importance. Besides convex optimization and game theory, swarm intelligence (SI) has recently appeared as a promising optimization tool for wireless networks. As a new subdivision of artificial intelligence, SI is inspired by the collective behaviors of societies of biological species. In SI, simple agents with limited capabilities would achieve intelligent strategies for high-dimensional and challenging problems, so it has recently found many applications in next-generation wireless networks (NGN). However, researchers may not be completely aware of the full potential of SI techniques. In this work, our primary focus will be the integration of these two domains: NGN and SI. Firstly, we provide an overview of SI techniques from fundamental concepts to well-known optimizers. Secondly, we review the applications of SI to settle emerging issues in NGN, including spectrum management and resource allocation, wireless caching and edge computing, network security, and several other miscellaneous issues. Finally, we highlight open challenges and issues in the literature, and introduce some interesting directions for future research.",
+    "authors": [
+      "Quoc-Viet Pham",
+      "Dinh C. Nguyen",
+      "Seyedali Mirjalili",
+      "Dinh Thai Hoang",
+      "Diep N. Nguyen",
+      "Pubudu N. Pathirana",
+      "Won-Joo Hwang"
+    ],
+    "categories": [
+      "cs.NI",
+      "cs.AI"
+    ],
+    "published": "2020-07-30T04:32:49Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.15221v1"
+  },
+  {
+    "arxiv_id": "2007.09604v1",
+    "entry_id": "http://arxiv.org/abs/2007.09604v1",
+    "title": "Meta-learning for Few-shot Natural Language Processing: A Survey",
+    "summary": "Few-shot natural language processing (NLP) refers to NLP tasks that are accompanied with merely a handful of labeled examples. This is a real-world challenge that an AI system must learn to handle. Usually we rely on collecting more auxiliary information or developing a more efficient learning algorithm. However, the general gradient-based optimization in high capacity models, if training from scratch, requires many parameter-updating steps over a large number of labeled examples to perform well (Snell et al., 2017). If the target task itself cannot provide more information, how about collecting more tasks equipped with rich annotations to help the model learning? The goal of meta-learning is to train a model on a variety of tasks with rich annotations, such that it can solve a new task using only a few labeled samples. The key idea is to train the model's initial parameters such that the model has maximal performance on a new task after the parameters have been updated through zero or a couple of gradient steps. There are already some surveys for meta-learning, such as (Vilalta and Drissi, 2002; Vanschoren, 2018; Hospedales et al., 2020). Nevertheless, this paper focuses on NLP domain, especially few-shot applications. We try to provide clearer definitions, progress summary and some common datasets of applying meta-learning to few-shot NLP.",
+    "authors": [
+      "Wenpeng Yin"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2020-07-19T06:36:41Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.09604v1"
+  },
+  {
+    "arxiv_id": "2007.08961v1",
+    "entry_id": "http://arxiv.org/abs/2007.08961v1",
+    "title": "A Review of Platforms for the Development of Agent Systems",
+    "summary": "Agent-based computing is an active field of research with the goal of building autonomous software of hardware entities. This task is often facilitated by the use of dedicated, specialized frameworks. For almost thirty years, many such agent platforms have been developed. Meanwhile, some of them have been abandoned, others continue their development and new platforms are released. This paper presents a up-to-date review of the existing agent platforms and also a historical perspective of this domain. It aims to serve as a reference point for people interested in developing agent systems. This work details the main characteristics of the included agent platforms, together with links to specific projects where they have been used. It distinguishes between the active platforms and those no longer under development or with unclear status. It also classifies the agent platforms as general purpose ones, free or commercial, and specialized ones, which can be used for particular types of applications.",
+    "authors": [
+      "Constantin-Valentin Pal",
+      "Florin Leon",
+      "Marcin Paprzycki",
+      "Maria Ganzha"
+    ],
+    "categories": [
+      "cs.MA"
+    ],
+    "published": "2020-07-17T13:12:16Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.08961v1"
+  },
+  {
+    "arxiv_id": "2007.07562v1",
+    "entry_id": "http://arxiv.org/abs/2007.07562v1",
+    "title": "Predicting Clinical Diagnosis from Patients Electronic Health Records Using BERT-based Neural Networks",
+    "summary": "In this paper we study the problem of predicting clinical diagnoses from textual Electronic Health Records (EHR) data. We show the importance of this problem in medical community and present comprehensive historical review of the problem and proposed methods. As the main scientific contributions we present a modification of Bidirectional Encoder Representations from Transformers (BERT) model for sequence classification that implements a novel way of Fully-Connected (FC) layer composition and a BERT model pretrained only on domain data. To empirically validate our model, we use a large-scale Russian EHR dataset consisting of about 4 million unique patient visits. This is the largest such study for the Russian language and one of the largest globally. We performed a number of comparative experiments with other text representation models on the task of multiclass classification for 265 disease subset of ICD-10. The experiments demonstrate improved performance of our models compared to other baselines, including a fine-tuned Russian BERT (RuBERT) variant. We also show comparable performance of our model with a panel of experienced medical experts. This allows us to hope that implementation of this system will reduce misdiagnosis.",
+    "authors": [
+      "Pavel Blinov",
+      "Manvel Avetisian",
+      "Vladimir Kokh",
+      "Dmitry Umerenkov",
+      "Alexander Tuzhilin"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2020-07-15T09:22:55Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.07562v1"
+  },
+  {
+    "arxiv_id": "2007.05411v1",
+    "entry_id": "http://arxiv.org/abs/2007.05411v1",
+    "title": "AGI Agent Safety by Iteratively Improving the Utility Function",
+    "summary": "While it is still unclear if agents with Artificial General Intelligence (AGI) could ever be built, we can already use mathematical models to investigate potential safety systems for these agents. We present an AGI safety layer that creates a special dedicated input terminal to support the iterative improvement of an AGI agent's utility function. The humans who switched on the agent can use this terminal to close any loopholes that are discovered in the utility function's encoding of agent goals and constraints, to direct the agent towards new goals, or to force the agent to switch itself off. An AGI agent may develop the emergent incentive to manipulate the above utility function improvement process, for example by deceiving, restraining, or even attacking the humans involved. The safety layer will partially, and sometimes fully, suppress this dangerous incentive. The first part of this paper generalizes earlier work on AGI emergency stop buttons. We aim to make the mathematical methods used to construct the layer more accessible, by applying them to an MDP model. We discuss two provable properties of the safety layer, and show ongoing work in mapping it to a Causal Influence Diagram (CID). In the second part, we develop full mathematical proofs, and show that the safety layer creates a type of bureaucratic blindness. We then present the design of a learning agent, a design that wraps the safety layer around either a known machine learning system, or a potential future AGI-level learning system. The resulting agent will satisfy the provable safety properties from the moment it is first switched on. Finally, we show how this agent can be mapped from its model to a real-life implementation. We review the methodological issues involved in this step, and discuss how these are typically resolved.",
+    "authors": [
+      "Koen Holtman"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2020-07-10T14:30:56Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.05411v1"
+  },
+  {
+    "arxiv_id": "2007.04192v1",
+    "entry_id": "http://arxiv.org/abs/2007.04192v1",
+    "title": "Agent-Based Modelling: An Overview with Application to Disease Dynamics",
+    "summary": "Modelling and computational methods have been essential in advancing quantitative science, especially in the past two decades with the availability of vast amount of complex, voluminous, and heterogeneous data. In particular, there has been a surge of interest in agent-based modelling, largely due to its capabilities to exploit such data and make significant projections. However, any well-established quantitative method relies on theoretical frameworks for both construction and analysis. While the computational aspects of agent-based modelling have been detailed in existing literature, the underlying theoretical basis has rarely been used in its construction. In this exposition, we provide an overview of the theoretical foundation of agent-based modelling and establish a relationship with its computational implementation. In addition to detailing the main characteristics of this computational methodology, we illustrate its application to simulating the spread of an infectious disease in a simple, dynamical process. As the use of agent-based models expands to various disciplines, our review highlights the need for directed research efforts to develop theoretical methods and analytical tools for the analysis of such models.",
+    "authors": [
+      "Affan Shoukat",
+      "Seyed M. Moghadas"
+    ],
+    "categories": [
+      "cs.MA",
+      "q-bio.QM"
+    ],
+    "published": "2020-07-08T15:30:47Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.04192v1"
+  },
+  {
+    "arxiv_id": "2007.01544v2",
+    "entry_id": "http://arxiv.org/abs/2007.01544v2",
+    "title": "A Conceptual Framework for Externally-influenced Agents: An Assisted Reinforcement Learning Review",
+    "summary": "A long-term goal of reinforcement learning agents is to be able to perform tasks in complex real-world scenarios. The use of external information is one way of scaling agents to more complex problems. However, there is a general lack of collaboration or interoperability between different approaches using external information. In this work, while reviewing externally-influenced methods, we propose a conceptual framework and taxonomy for assisted reinforcement learning, aimed at fostering collaboration by classifying and comparing various methods that use external information in the learning process. The proposed taxonomy details the relationship between the external information source and the learner agent, highlighting the process of information decomposition, structure, retention, and how it can be used to influence agent learning. As well as reviewing state-of-the-art methods, we identify current streams of reinforcement learning that use external information in order to improve the agent's performance and its decision-making process. These include heuristic reinforcement learning, interactive reinforcement learning, learning from demonstration, transfer learning, and learning from multiple sources, among others. These streams of reinforcement learning operate with the shared objective of scaffolding the learner agent. Lastly, we discuss further possibilities for future work in the field of assisted reinforcement learning systems.",
+    "authors": [
+      "Adam Bignold",
+      "Francisco Cruz",
+      "Matthew E. Taylor",
+      "Tim Brys",
+      "Richard Dazeley",
+      "Peter Vamplew",
+      "Cameron Foale"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "published": "2020-07-03T08:07:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.01544v2"
+  },
+  {
+    "arxiv_id": "2006.11880v2",
+    "entry_id": "http://arxiv.org/abs/2006.11880v2",
+    "title": "A Survey on Machine Reading Comprehension: Tasks, Evaluation Metrics and Benchmark Datasets",
+    "summary": "Machine Reading Comprehension (MRC) is a challenging Natural Language Processing(NLP) research field with wide real-world applications. The great progress of this field in recent years is mainly due to the emergence of large-scale datasets and deep learning. At present, a lot of MRC models have already surpassed human performance on various benchmark datasets despite the obvious giant gap between existing MRC models and genuine human-level reading comprehension. This shows the need for improving existing datasets, evaluation metrics, and models to move current MRC models toward \"real\" understanding. To address the current lack of comprehensive survey of existing MRC tasks, evaluation metrics, and datasets, herein, (1) we analyze 57 MRC tasks and datasets and propose a more precise classification method of MRC tasks with 4 different attributes; (2) we summarized 9 evaluation metrics of MRC tasks, 7 attributes and 10 characteristics of MRC datasets; (3) We also discuss key open issues in MRC research and highlighted future research directions. In addition, we have collected, organized, and published our data on the companion website(https://mrc-datasets.github.io/) where MRC researchers could directly access each MRC dataset, papers, baseline projects, and the leaderboard.",
+    "authors": [
+      "Changchang Zeng",
+      "Shaobo Li",
+      "Qin Li",
+      "Jie Hu",
+      "Jianjun Hu"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2020-06-21T19:18:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2006.11880v2"
+  },
+  {
+    "arxiv_id": "2006.08832v3",
+    "entry_id": "http://arxiv.org/abs/2006.08832v3",
+    "title": "A Taxonomy and Review of Algorithms for Modeling and Predicting Human Driver Behavior",
+    "summary": "We present a review and taxonomy of 200 models from the literature on driver behavior modeling. We begin by introducing a mathematical framework for describing the dynamics of interactive multi-agent traffic. Based on the partially observable stochastic game, this framework provides a basis for discussing different driver modeling techniques. Our taxonomy is constructed around the core modeling tasks of state estimation, intention estimation, trait estimation, and motion prediction, and also discusses the auxiliary tasks of risk estimation, anomaly detection, behavior imitation and microscopic traffic simulation. Existing driver models are categorized based on the specific tasks they address and key attributes of their approach.",
+    "authors": [
+      "Kyle Brown",
+      "Katherine Driggs-Campbell",
+      "Mykel J. Kochenderfer"
+    ],
+    "categories": [
+      "eess.SY",
+      "cs.AI",
+      "cs.CY"
+    ],
+    "published": "2020-06-15T23:53:45Z",
+    "pdf_url": "https://arxiv.org/pdf/2006.08832v3"
+  },
+  {
+    "arxiv_id": "2006.08296v2",
+    "entry_id": "http://arxiv.org/abs/2006.08296v2",
+    "title": "Deep-CAPTCHA: a deep learning based CAPTCHA solver for vulnerability assessment",
+    "summary": "CAPTCHA is a human-centred test to distinguish a human operator from bots, attacking programs, or other computerised agents that tries to imitate human intelligence. In this research, we investigate a way to crack visual CAPTCHA tests by an automated deep learning based solution. The goal of this research is to investigate the weaknesses and vulnerabilities of the CAPTCHA generator systems; hence, developing more robust CAPTCHAs, without taking the risks of manual try and fail efforts. We develop a Convolutional Neural Network called Deep-CAPTCHA to achieve this goal. The proposed platform is able to investigate both numerical and alphanumerical CAPTCHAs. To train and develop an efficient model, we have generated a dataset of 500,000 CAPTCHAs to train our model. In this paper, we present our customised deep neural network model, we review the research gaps, the existing challenges, and the solutions to cope with the issues. Our network's cracking accuracy leads to a high rate of 98.94% and 98.31% for the numerical and the alpha-numerical test datasets, respectively. That means more works is required to develop robust CAPTCHAs, to be non-crackable against automated artificial agents. As the outcome of this research, we identify some efficient techniques to improve the security of the CAPTCHAs, based on the performance analysis conducted on the Deep-CAPTCHA model.",
+    "authors": [
+      "Zahra Noury",
+      "Mahdi Rezaei"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.CR",
+      "cs.IT",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-06-15T11:44:43Z",
+    "pdf_url": "https://arxiv.org/pdf/2006.08296v2"
+  },
+  {
+    "arxiv_id": "2006.02419v2",
+    "entry_id": "http://arxiv.org/abs/2006.02419v2",
+    "title": "Emergent Multi-Agent Communication in the Deep Learning Era",
+    "summary": "The ability to cooperate through language is a defining feature of humans. As the perceptual, motory and planning capabilities of deep artificial networks increase, researchers are studying whether they also can develop a shared language to interact. From a scientific perspective, understanding the conditions under which language evolves in communities of deep agents and its emergent features can shed light on human language evolution. From an applied perspective, endowing deep networks with the ability to solve problems interactively by communicating with each other and with us should make them more flexible and useful in everyday life.\n  This article surveys representative recent language emergence studies from\n  both of these two angles.",
+    "authors": [
+      "Angeliki Lazaridou",
+      "Marco Baroni"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2020-06-03T17:50:16Z",
+    "pdf_url": "https://arxiv.org/pdf/2006.02419v2"
+  },
+  {
+    "arxiv_id": "2006.01216v2",
+    "entry_id": "http://arxiv.org/abs/2006.01216v2",
+    "title": "Crowd simulation for crisis management: the outcomes of the last decade",
+    "summary": "The last few decades, crowd simulation for crisis management is highlighted as an important topic of interest for many scientific fields. As the continues evolution of computational resources increases, along with the capabilities of Artificial Intelligence, the demand for better and more realistic simulation has become more attractive and popular to scientists. Along those years, there have been published hundreds of research articles and have been created numerous different systems that aim to simulate crowd behaviors, crisis cases and emergency evacuation scenarios. For better outcomes, recent research has focused on the separation of the problem of crisis management, to multiple research sub-fields (categories), such as the navigation of the simulated pedestrians, their psychology, the group dynamics etc. There have been extended research works suggesting new methods and techniques for those categories of problems. In this paper, we propose three main research categories, each one consist of several sub-categories, relying on crowd simulation for crisis management aspects and we present the outcomes of the last decade, focusing mostly on works exploiting multi-agent technologies. We analyze a number of technologies, methodologies, techniques, tools and systems introduced throughout the last years. A comparative review and discussion of the proposed categories is presented towards the identification of the most efficient aspects of the proposed categories. A general framework, towards the future crowd simulation for crisis management is presented based on the most efficient to yield the most realistic outcomes of the last decades. The paper is concluded with some highlights and open questions for future directions.",
+    "authors": [
+      "George Sidiropoulos",
+      "Chairi Kiourt",
+      "Lefteris Moussiades"
+    ],
+    "categories": [
+      "cs.MA"
+    ],
+    "published": "2020-06-01T19:38:47Z",
+    "pdf_url": "https://arxiv.org/pdf/2006.01216v2"
+  },
+  {
+    "arxiv_id": "2007.04239v1",
+    "entry_id": "http://arxiv.org/abs/2007.04239v1",
+    "title": "A Survey on Transfer Learning in Natural Language Processing",
+    "summary": "Deep learning models usually require a huge amount of data. However, these large datasets are not always attainable. This is common in many challenging NLP tasks. Consider Neural Machine Translation, for instance, where curating such large datasets may not be possible specially for low resource languages. Another limitation of deep learning models is the demand for huge computing resources. These obstacles motivate research to question the possibility of knowledge transfer using large trained models. The demand for transfer learning is increasing as many large models are emerging. In this survey, we feature the recent transfer learning advances in the field of NLP. We also provide a taxonomy for categorizing different transfer learning approaches from the literature.",
+    "authors": [
+      "Zaid Alyafeai",
+      "Maged Saeed AlShaibani",
+      "Irfan Ahmad"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-05-31T21:52:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.04239v1"
+  },
+  {
+    "arxiv_id": "2005.11016v2",
+    "entry_id": "http://arxiv.org/abs/2005.11016v2",
+    "title": "Reinforcement learning with human advice: a survey",
+    "summary": "In this paper, we provide an overview of the existing methods for integrating human advice into a Reinforcement Learning process. We first propose a taxonomy of the different forms of advice that can be provided to a learning agent. We then describe the methods that can be used for interpreting advice when its meaning is not determined beforehand. Finally, we review different approaches for integrating advice into the learning process.",
+    "authors": [
+      "Anis Najar",
+      "Mohamed Chetouani"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2020-05-22T06:00:13Z",
+    "pdf_url": "https://arxiv.org/pdf/2005.11016v2"
+  },
+  {
+    "arxiv_id": "2005.10619v1",
+    "entry_id": "http://arxiv.org/abs/2005.10619v1",
+    "title": "A Survey of Reinforcement Learning Algorithms for Dynamically Varying Environments",
+    "summary": "Reinforcement learning (RL) algorithms find applications in inventory control, recommender systems, vehicular traffic management, cloud computing and robotics. The real-world complications of many tasks arising in these domains makes them difficult to solve with the basic assumptions underlying classical RL algorithms. RL agents in these applications often need to react and adapt to changing operating conditions. A significant part of research on single-agent RL techniques focuses on developing algorithms when the underlying assumption of stationary environment model is relaxed. This paper provides a survey of RL methods developed for handling dynamically varying environment models. The goal of methods not limited by the stationarity assumption is to help autonomous agents adapt to varying operating conditions. This is possible either by minimizing the rewards lost during learning by RL agent or by finding a suitable policy for the RL agent which leads to efficient operation of the underlying system. A representative collection of these algorithms is discussed in detail in this work along with their categorization and their relative merits and demerits. Additionally we also review works which are tailored to application domains. Finally, we discuss future enhancements for this field.",
+    "authors": [
+      "Sindhu Padakandla"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "published": "2020-05-19T09:42:42Z",
+    "pdf_url": "https://arxiv.org/pdf/2005.10619v1"
+  },
+  {
+    "arxiv_id": "2005.06284v3",
+    "entry_id": "http://arxiv.org/abs/2005.06284v3",
+    "title": "Pruning coupled with learning, ensembles of minimal neural networks, and future of XAI",
+    "summary": "Pruning coupled with learning aims to optimize the neural network (NN) structure for solving specific problems. This optimization can be used for various purposes: to prevent overfitting, to save resources for implementation and training, to provide explainability of the trained NN, and many others. The minimal structure that cannot be pruned further is not unique. Ensemble of minimal structures can be used as a committee of intellectual agents that solves problems by voting. Each minimal NN presents an \"empirical knowledge\" about the problem and can be verbalized. The non-uniqueness of such knowledge extracted from data is an important property of data-driven Artificial Intelligence (AI). In this work, we review an approach to pruning based on the principle: What controls training should control pruning. This principle is expected to work both for artificial NN and for selection and modification of important synaptic contacts in brain. In back-propagation artificial NN learning is controlled by the gradient of loss functions. Therefore, the first order sensitivity indicators are used for pruning and the algorithms based on these indicators are reviewed. The notion of logically transparent NN was introduced. The approach was illustrated on the problem of political forecasting: predicting the results of the US presidential election. Eight minimal NN were produced that give different forecasting algorithms. The non-uniqueness of solution can be utilised by creation of expert panels (committee). Another use of NN pluralism is to identify areas of input signals where further data collection is most useful. In Conclusion, we discuss the possible future of widely advertised XAI program.",
+    "authors": [
+      "Alexander N. Gorban",
+      "Evgeny M. Mirkes"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.NE",
+      "stat.ML"
+    ],
+    "published": "2020-05-13T12:24:40Z",
+    "pdf_url": "https://arxiv.org/pdf/2005.06284v3"
+  },
+  {
+    "arxiv_id": "2005.05842v2",
+    "entry_id": "http://arxiv.org/abs/2005.05842v2",
+    "title": "A Survey of Behavior Trees in Robotics and AI",
+    "summary": "Behavior Trees (BTs) were invented as a tool to enable modular AI in computer games, but have received an increasing amount of attention in the robotics community in the last decade. With rising demands on agent AI complexity, game programmers found that the Finite State Machines (FSM) that they used scaled poorly and were difficult to extend, adapt and reuse. In BTs, the state transition logic is not dispersed across the individual states, but organized in a hierarchical tree structure, with the states as leaves. This has a significant effect on modularity, which in turn simplifies both synthesis and analysis by humans and algorithms alike. These advantages are needed not only in game AI design, but also in robotics, as is evident from the research being done. In this paper we present a comprehensive survey of the topic of BTs in Artificial Intelligence and Robotic applications. The existing literature is described and categorized based on methods, application areas and contributions, and the paper is concluded with a list of open research challenges.",
+    "authors": [
+      "Matteo Iovino",
+      "Edvards Scukins",
+      "Jonathan Styrud",
+      "Petter Ögren",
+      "Christian Smith"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "published": "2020-05-12T15:03:20Z",
+    "pdf_url": "https://arxiv.org/pdf/2005.05842v2"
+  },
+  {
+    "arxiv_id": "2005.06022v1",
+    "entry_id": "http://arxiv.org/abs/2005.06022v1",
+    "title": "Reputation Agent: Prompting Fair Reviews in Gig Markets",
+    "summary": "Our study presents a new tool, Reputation Agent, to promote fairer reviews from requesters (employers or customers) on gig markets. Unfair reviews, created when requesters consider factors outside of a worker's control, are known to plague gig workers and can result in lost job opportunities and even termination from the marketplace. Our tool leverages machine learning to implement an intelligent interface that: (1) uses deep learning to automatically detect when an individual has included unfair factors into her review (factors outside the worker's control per the policies of the market); and (2) prompts the individual to reconsider her review if she has incorporated unfair factors. To study the effectiveness of Reputation Agent, we conducted a controlled experiment over different gig markets. Our experiment illustrates that across markets, Reputation Agent, in contrast with traditional approaches, motivates requesters to review gig workers' performance more fairly. We discuss how tools that bring more transparency to employers about the policies of a gig market can help build empathy thus resulting in reasoned discussions around potential injustices towards workers generated by these interfaces. Our vision is that with tools that promote truth and transparency we can bring fairer treatment to gig workers.",
+    "authors": [
+      "Carlos Toxtli",
+      "Angela Richmond-Fuller",
+      "Saiph Savage"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2020-05-08T01:56:10Z",
+    "pdf_url": "https://arxiv.org/pdf/2005.06022v1"
+  },
+  {
+    "arxiv_id": "2004.14884v3",
+    "entry_id": "http://arxiv.org/abs/2004.14884v3",
+    "title": "Few-Shot Learning for Opinion Summarization",
+    "summary": "Opinion summarization is the automatic creation of text reflecting subjective information expressed in multiple documents, such as user reviews of a product. The task is practically important and has attracted a lot of attention. However, due to the high cost of summary production, datasets large enough for training supervised models are lacking. Instead, the task has been traditionally approached with extractive methods that learn to select text fragments in an unsupervised or weakly-supervised way. Recently, it has been shown that abstractive summaries, potentially more fluent and better at reflecting conflicting information, can also be produced in an unsupervised fashion. However, these models, not being exposed to actual summaries, fail to capture their essential properties. In this work, we show that even a handful of summaries is sufficient to bootstrap generation of the summary text with all expected properties, such as writing style, informativeness, fluency, and sentiment preservation. We start by training a conditional Transformer language model to generate a new product review given other available reviews of the product. The model is also conditioned on review properties that are directly related to summaries; the properties are derived from reviews with no manual effort. In the second stage, we fine-tune a plug-in module that learns to predict property values on a handful of summaries. This lets us switch the generator to the summarization mode. We show on Amazon and Yelp datasets that our approach substantially outperforms previous extractive and abstractive methods in automatic and human evaluation.",
+    "authors": [
+      "Arthur Bražinskas",
+      "Mirella Lapata",
+      "Ivan Titov"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL",
+      "cs.NE",
+      "stat.ML"
+    ],
+    "published": "2020-04-30T15:37:38Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.14884v3"
+  },
+  {
+    "arxiv_id": "2004.12254v5",
+    "entry_id": "http://arxiv.org/abs/2004.12254v5",
+    "title": "Privacy in Deep Learning: A Survey",
+    "summary": "The ever-growing advances of deep learning in many areas including vision, recommendation systems, natural language processing, etc., have led to the adoption of Deep Neural Networks (DNNs) in production systems. The availability of large datasets and high computational power are the main contributors to these advances. The datasets are usually crowdsourced and may contain sensitive information. This poses serious privacy concerns as this data can be misused or leaked through various vulnerabilities. Even if the cloud provider and the communication link is trusted, there are still threats of inference attacks where an attacker could speculate properties of the data used for training, or find the underlying model architecture and parameters. In this survey, we review the privacy concerns brought by deep learning, and the mitigating techniques introduced to tackle these issues. We also show that there is a gap in the literature regarding test-time inference privacy, and propose possible future research directions.",
+    "authors": [
+      "Fatemehsadat Mireshghallah",
+      "Mohammadkazem Taram",
+      "Praneeth Vepakomma",
+      "Abhishek Singh",
+      "Ramesh Raskar",
+      "Hadi Esmaeilzadeh"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CR",
+      "stat.ML"
+    ],
+    "published": "2020-04-25T23:47:25Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.12254v5"
+  },
+  {
+    "arxiv_id": "2004.13011v1",
+    "entry_id": "http://arxiv.org/abs/2004.13011v1",
+    "title": "A Perspective on Deep Learning for Molecular Modeling and Simulations",
+    "summary": "Deep learning is transforming many areas in science, and it has great potential in modeling molecular systems. However, unlike the mature deployment of deep learning in computer vision and natural language processing, its development in molecular modeling and simulations is still at an early stage, largely because the inductive biases of molecules are completely different from those of images or texts. Footed on these differences, we first reviewed the limitations of traditional deep learning models from the perspective of molecular physics, and wrapped up some relevant technical advancement at the interface between molecular modeling and deep learning. We do not focus merely on the ever more complex neural network models, instead, we emphasize the theories and ideas behind modern deep learning. We hope that transacting these ideas into molecular modeling will create new opportunities. For this purpose, we summarized several representative applications, ranging from supervised to unsupervised and reinforcement learning, and discussed their connections with the emerging trends in deep learning. Finally, we outlook promising directions which may help address the existing issues in the current framework of deep molecular modeling.",
+    "authors": [
+      "Jun Zhang",
+      "Yao-Kun Lei",
+      "Zhen Zhang",
+      "Junhan Chang",
+      "Maodong Li",
+      "Xu Han",
+      "Lijiang Yang",
+      "Yi Isaac Yang",
+      "Yi Qin Gao"
+    ],
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.stat-mech",
+      "cs.LG"
+    ],
+    "published": "2020-04-25T22:58:25Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.13011v1"
+  },
+  {
+    "arxiv_id": "2004.10964v3",
+    "entry_id": "http://arxiv.org/abs/2004.10964v3",
+    "title": "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks",
+    "summary": "Language models pretrained on text from a wide variety of sources form the foundation of today's NLP. In light of the success of these broad-coverage models, we investigate whether it is still helpful to tailor a pretrained model to the domain of a target task. We present a study across four domains (biomedical and computer science publications, news, and reviews) and eight classification tasks, showing that a second phase of pretraining in-domain (domain-adaptive pretraining) leads to performance gains, under both high- and low-resource settings. Moreover, adapting to the task's unlabeled data (task-adaptive pretraining) improves performance even after domain-adaptive pretraining. Finally, we show that adapting to a task corpus augmented using simple data selection strategies is an effective alternative, especially when resources for domain-adaptive pretraining might be unavailable. Overall, we consistently find that multi-phase adaptive pretraining offers large gains in task performance.",
+    "authors": [
+      "Suchin Gururangan",
+      "Ana Marasović",
+      "Swabha Swayamdipta",
+      "Kyle Lo",
+      "Iz Beltagy",
+      "Doug Downey",
+      "Noah A. Smith"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2020-04-23T04:21:19Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.10964v3"
+  },
+  {
+    "arxiv_id": "2004.09705v9",
+    "entry_id": "http://arxiv.org/abs/2004.09705v9",
+    "title": "Explainable Goal-Driven Agents and Robots -- A Comprehensive Review",
+    "summary": "Recent applications of autonomous agents and robots, such as self-driving cars, scenario-based trainers, exploration robots, and service robots have brought attention to crucial trust-related challenges associated with the current generation of artificial intelligence (AI) systems. AI systems based on the connectionist deep learning neural network approach lack capabilities of explaining their decisions and actions to others, despite their great successes. Without symbolic interpretation capabilities, they are black boxes, which renders their decisions or actions opaque, making it difficult to trust them in safety-critical applications. The recent stance on the explainability of AI systems has witnessed several approaches on eXplainable Artificial Intelligence (XAI); however, most of the studies have focused on data-driven XAI systems applied in computational sciences. Studies addressing the increasingly pervasive goal-driven agents and robots are still missing. This paper reviews approaches on explainable goal-driven intelligent agents and robots, focusing on techniques for explaining and communicating agents perceptual functions (example, senses, and vision) and cognitive reasoning (example, beliefs, desires, intention, plans, and goals) with humans in the loop. The review highlights key strategies that emphasize transparency, understandability, and continual learning for explainability. Finally, the paper presents requirements for explainability and suggests a roadmap for the possible realization of effective goal-driven explainable agents and robots.",
+    "authors": [
+      "Fatai Sado",
+      "Chu Kiong Loo",
+      "Wei Shiung Liew",
+      "Matthias Kerzel",
+      "Stefan Wermter"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "published": "2020-04-21T01:41:20Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.09705v9"
+  },
+  {
+    "arxiv_id": "2004.09602v1",
+    "entry_id": "http://arxiv.org/abs/2004.09602v1",
+    "title": "Integer Quantization for Deep Learning Inference: Principles and Empirical Evaluation",
+    "summary": "Quantization techniques can reduce the size of Deep Neural Networks and improve inference latency and throughput by taking advantage of high throughput integer instructions. In this paper we review the mathematical aspects of quantization parameters and evaluate their choices on a wide range of neural network models for different application domains, including vision, speech, and language. We focus on quantization techniques that are amenable to acceleration by processors with high-throughput integer math pipelines. We also present a workflow for 8-bit quantization that is able to maintain accuracy within 1% of the floating-point baseline on all networks studied, including models that are more difficult to quantize, such as MobileNets and BERT-large.",
+    "authors": [
+      "Hao Wu",
+      "Patrick Judd",
+      "Xiaojie Zhang",
+      "Mikhail Isaev",
+      "Paulius Micikevicius"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-04-20T19:59:22Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.09602v1"
+  },
+  {
+    "arxiv_id": "2004.08900v1",
+    "entry_id": "http://arxiv.org/abs/2004.08900v1",
+    "title": "The Cost of Training NLP Models: A Concise Overview",
+    "summary": "We review the cost of training large-scale language models, and the drivers of these costs. The intended audience includes engineers and scientists budgeting their model-training experiments, as well as non-practitioners trying to make sense of the economics of modern-day Natural Language Processing (NLP).",
+    "authors": [
+      "Or Sharir",
+      "Barak Peleg",
+      "Yoav Shoham"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG",
+      "cs.NE"
+    ],
+    "published": "2020-04-19T16:28:35Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.08900v1"
+  },
+  {
+    "arxiv_id": "2004.11149v7",
+    "entry_id": "http://arxiv.org/abs/2004.11149v7",
+    "title": "A Comprehensive Overview and Survey of Recent Advances in Meta-Learning",
+    "summary": "This article reviews meta-learning also known as learning-to-learn which seeks rapid and accurate model adaptation to unseen tasks with applications in highly automated AI, few-shot learning, natural language processing and robotics. Unlike deep learning, meta-learning can be applied to few-shot high-dimensional datasets and considers further improving model generalization to unseen tasks. Deep learning is focused upon in-sample prediction and meta-learning concerns model adaptation for out-of-sample prediction. Meta-learning can continually perform self-improvement to achieve highly autonomous AI. Meta-learning may serve as an additional generalization block complementary for original deep learning model. Meta-learning seeks adaptation of machine learning models to unseen tasks which are vastly different from trained tasks. Meta-learning with coevolution between agent and environment provides solutions for complex tasks unsolvable by training from scratch. Meta-learning methodology covers a wide range of great minds and thoughts. We briefly introduce meta-learning methodologies in the following categories: black-box meta-learning, metric-based meta-learning, layered meta-learning and Bayesian meta-learning framework. Recent applications concentrate upon the integration of meta-learning with other machine learning framework to provide feasible integrated problem solutions. We briefly present recent meta-learning advances and discuss potential future research directions.",
+    "authors": [
+      "Huimin Peng"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-04-17T03:11:08Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.11149v7"
+  },
+  {
+    "arxiv_id": "2004.00994v2",
+    "entry_id": "http://arxiv.org/abs/2004.00994v2",
+    "title": "Learning to Ask Medical Questions using Reinforcement Learning",
+    "summary": "We propose a novel reinforcement learning-based approach for adaptive and iterative feature selection. Given a masked vector of input features, a reinforcement learning agent iteratively selects certain features to be unmasked, and uses them to predict an outcome when it is sufficiently confident. The algorithm makes use of a novel environment setting, corresponding to a non-stationary Markov Decision Process. A key component of our approach is a guesser network, trained to predict the outcome from the selected features and parametrizing the reward function. Applying our method to a national survey dataset, we show that it not only outperforms strong baselines when requiring the prediction to be made based on a small number of input features, but is also highly more interpretable. Our code is publicly available at \\url{https://github.com/ushaham/adaptiveFS}.",
+    "authors": [
+      "Uri Shaham",
+      "Tom Zahavy",
+      "Cesar Caraballo",
+      "Shiwani Mahajan",
+      "Daisy Massey",
+      "Harlan Krumholz"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "published": "2020-03-31T18:21:46Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.00994v2"
+  },
+  {
+    "arxiv_id": "2004.04686v1",
+    "entry_id": "http://arxiv.org/abs/2004.04686v1",
+    "title": "Machine Learning in Artificial Intelligence: Towards a Common Understanding",
+    "summary": "The application of \"machine learning\" and \"artificial intelligence\" has become popular within the last decade. Both terms are frequently used in science and media, sometimes interchangeably, sometimes with different meanings. In this work, we aim to clarify the relationship between these terms and, in particular, to specify the contribution of machine learning to artificial intelligence. We review relevant literature and present a conceptual framework which clarifies the role of machine learning to build (artificial) intelligent agents. Hence, we seek to provide more terminological clarity and a starting point for (interdisciplinary) discussions and future research.",
+    "authors": [
+      "Niklas Kühl",
+      "Marc Goutier",
+      "Robin Hirt",
+      "Gerhard Satzger"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2020-03-27T19:09:57Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.04686v1"
+  },
+  {
+    "arxiv_id": "2003.11985v1",
+    "entry_id": "http://arxiv.org/abs/2003.11985v1",
+    "title": "Is the Juice Worth the Squeeze? Machine Learning (ML) In and For Agent-Based Modelling (ABM)",
+    "summary": "In recent years, many scholars praised the seemingly endless possibilities of using machine learning (ML) techniques in and for agent-based simulation models (ABM). To get a more comprehensive understanding of these possibilities, we conduct a systematic literature review (SLR) and classify the literature on the application of ML in and for ABM according to a theoretically derived classification scheme. We do so to investigate how exactly machine learning has been utilized in and for agent-based models so far and to critically discuss the combination of these two promising methods. We find that, indeed, there is a broad range of possible applications of ML to support and complement ABMs in many different ways, already applied in many different disciplines. We see that, so far, ML is mainly used in ABM for two broad cases: First, the modelling of adaptive agents equipped with experience learning and, second, the analysis of outcomes produced by a given ABM. While these are the most frequent, there also exist a variety of many more interesting applications. This being the case, researchers should dive deeper into the analysis of when and how which kinds of ML techniques can support ABM, e.g. by conducting a more in-depth analysis and comparison of different use cases. Nonetheless, as the application of ML in and for ABM comes at certain costs, researchers should not use ML for ABMs just for the sake of doing it.",
+    "authors": [
+      "Johannes Dahlke",
+      "Kristina Bogner",
+      "Matthias Mueller",
+      "Thomas Berger",
+      "Andreas Pyka",
+      "Bernd Ebersberger"
+    ],
+    "categories": [
+      "econ.TH",
+      "cs.MA"
+    ],
+    "published": "2020-03-26T15:49:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.11985v1"
+  },
+  {
+    "arxiv_id": "2003.11959v2",
+    "entry_id": "http://arxiv.org/abs/2003.11959v2",
+    "title": "Pedestrian Models for Autonomous Driving Part II: High-Level Models of Human Behavior",
+    "summary": "Autonomous vehicles (AVs) must share space with pedestrians, both in carriageway cases such as cars at pedestrian crossings and off-carriageway cases such as delivery vehicles navigating through crowds on pedestrianized high-streets. Unlike static obstacles, pedestrians are active agents with complex, interactive motions. Planning AV actions in the presence of pedestrians thus requires modelling of their probable future behaviour as well as detecting and tracking them. This narrative review article is Part II of a pair, together surveying the current technology stack involved in this process, organising recent research into a hierarchical taxonomy ranging from low-level image detection to high-level psychological models, from the perspective of an AV designer. This self-contained Part II covers the higher levels of this stack, consisting of models of pedestrian behaviour, from prediction of individual pedestrians' likely destinations and paths, to game-theoretic models of interactions between pedestrians and autonomous vehicles. This survey clearly shows that, although there are good models for optimal walking behaviour, high-level psychological and social modelling of pedestrian behaviour still remains an open research question that requires many conceptual issues to be clarified. Early work has been done on descriptive and qualitative models of behaviour, but much work is still needed to translate them into quantitative algorithms for practical AV control.",
+    "authors": [
+      "Fanta Camara",
+      "Nicola Bellotto",
+      "Serhan Cosar",
+      "Florian Weber",
+      "Dimitris Nathanael",
+      "Matthias Althoff",
+      "Jingyuan Wu",
+      "Johannes Ruenz",
+      "André Dietrich",
+      "Gustav Markkula",
+      "Anna Schieben",
+      "Fabio Tango",
+      "Natasha Merat",
+      "Charles W. Fox"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.GT",
+      "cs.HC",
+      "cs.LG",
+      "eess.SY"
+    ],
+    "published": "2020-03-26T14:55:18Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.11959v2"
+  },
+  {
+    "arxiv_id": "2003.07019v1",
+    "entry_id": "http://arxiv.org/abs/2003.07019v1",
+    "title": "Key Phrase Classification in Complex Assignments",
+    "summary": "Complex assignments typically consist of open-ended questions with large and diverse content in the context of both classroom and online graduate programs. With the sheer scale of these programs comes a variety of problems in peer and expert feedback, including rogue reviews. As such with the hope of identifying important contents needed for the review, in this work we present a very first work on key phrase classification with a detailed empirical study on traditional and most recent language modeling approaches. From this study, we find that the task of classification of key phrases is ambiguous at a human level producing Cohen's kappa of 0.77 on a new data set. Both pretrained language models and simple TFIDF SVM classifiers produce similar results with a former producing average of 0.6 F1 higher than the latter. We finally derive practical advice from our extensive empirical and model interpretability results for those interested in key phrase classification from educational reports in the future.",
+    "authors": [
+      "Manikandan Ravikiran"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CY"
+    ],
+    "published": "2020-03-16T04:25:37Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.07019v1"
+  },
+  {
+    "arxiv_id": "2003.05258v1",
+    "entry_id": "http://arxiv.org/abs/2003.05258v1",
+    "title": "Expressiveness and machine processability of Knowledge Organization Systems (KOS): An analysis of concepts and relations",
+    "summary": "This study considers the expressiveness (that is the expressive power or expressivity) of different types of Knowledge Organization Systems (KOS) and discusses its potential to be machine-processable in the context of the Semantic Web. For this purpose, the theoretical foundations of KOS are reviewed based on conceptualizations introduced by the Functional Requirements for Subject Authority Data (FRSAD) and the Simple Knowledge Organization System (SKOS); natural language processing techniques are also implemented. Applying a comparative analysis, the dataset comprises a thesaurus (Eurovoc), a subject headings system (LCSH) and a classification scheme (DDC). These are compared with an ontology (CIDOC-CRM) by focusing on how they define and handle concepts and relations. It was observed that LCSH and DDC focus on the formalism of character strings (nomens) rather than on the modelling of semantics; their definition of what constitutes a concept is quite fuzzy, and they comprise a large number of complex concepts. By contrast, thesauri have a coherent definition of what constitutes a concept, and apply a systematic approach to the modelling of relations. Ontologies explicitly define diverse types of relations, and are by their nature machine-processable. The paper concludes that the potential of both the expressiveness and machine processability of each KOS is extensively regulated by its structural rules. It is harder to represent subject headings and classification schemes as semantic networks with nodes and arcs, while thesauri are more suitable for such a representation. In addition, a paradigm shift is revealed which focuses on the modelling of relations between concepts, rather than the concepts themselves.",
+    "authors": [
+      "Manolis Peponakis",
+      "Anna Mastora",
+      "Sarantos Kapidakis",
+      "Martin Doerr"
+    ],
+    "categories": [
+      "cs.DL",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "published": "2020-03-11T12:35:52Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.05258v1"
+  },
+  {
+    "arxiv_id": "2003.05251v3",
+    "entry_id": "http://arxiv.org/abs/2003.05251v3",
+    "title": "Explainable Agents Through Social Cues: A Review",
+    "summary": "The issue of how to make embodied agents explainable has experienced a surge of interest over the last three years, and, there are many terms that refer to this concept, e.g., transparency or legibility. One reason for this high variance in terminology is the unique array of social cues that embodied agents can access in contrast to that accessed by non-embodied agents. Another reason is that different authors use these terms in different ways. Hence, we review the existing literature on explainability and organize it by (1) providing an overview of existing definitions, (2) showing how explainability is implemented and how it exploits different social cues, and (3) showing how the impact of explainability is measured. Additionally, we present a list of open questions and challenges that highlight areas that require further investigation by the community. This provides the interested reader with an overview of the current state-of-the-art.",
+    "authors": [
+      "Sebastian Wallkotter",
+      "Silvia Tulli",
+      "Ginevra Castellano",
+      "Ana Paiva",
+      "Mohamed Chetouani"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.HC",
+      "cs.LG"
+    ],
+    "published": "2020-03-11T12:12:29Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.05251v3"
+  },
+  {
+    "arxiv_id": "2003.04960v2",
+    "entry_id": "http://arxiv.org/abs/2003.04960v2",
+    "title": "Curriculum Learning for Reinforcement Learning Domains: A Framework and Survey",
+    "summary": "Reinforcement learning (RL) is a popular paradigm for addressing sequential decision tasks in which the agent has only limited environmental feedback. Despite many advances over the past three decades, learning in many domains still requires a large amount of interaction with the environment, which can be prohibitively expensive in realistic scenarios. To address this problem, transfer learning has been applied to reinforcement learning such that experience gained in one task can be leveraged when starting to learn the next, harder task. More recently, several lines of research have explored how tasks, or data samples themselves, can be sequenced into a curriculum for the purpose of learning a problem that may otherwise be too difficult to learn from scratch. In this article, we present a framework for curriculum learning (CL) in reinforcement learning, and use it to survey and classify existing CL methods in terms of their assumptions, capabilities, and goals. Finally, we use our framework to find open problems and suggest directions for future RL curriculum learning research.",
+    "authors": [
+      "Sanmit Narvekar",
+      "Bei Peng",
+      "Matteo Leonetti",
+      "Jivko Sinapov",
+      "Matthew E. Taylor",
+      "Peter Stone"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "published": "2020-03-10T20:41:24Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.04960v2"
+  },
+  {
+    "arxiv_id": "2003.04664v2",
+    "entry_id": "http://arxiv.org/abs/2003.04664v2",
+    "title": "Automatic Curriculum Learning For Deep RL: A Short Survey",
+    "summary": "Automatic Curriculum Learning (ACL) has become a cornerstone of recent successes in Deep Reinforcement Learning (DRL).These methods shape the learning trajectories of agents by challenging them with tasks adapted to their capacities. In recent years, they have been used to improve sample efficiency and asymptotic performance, to organize exploration, to encourage generalization or to solve sparse reward problems, among others. The ambition of this work is dual: 1) to present a compact and accessible introduction to the Automatic Curriculum Learning literature and 2) to draw a bigger picture of the current state of the art in ACL to encourage the cross-breeding of existing concepts and the emergence of new ideas.",
+    "authors": [
+      "Rémy Portelas",
+      "Cédric Colas",
+      "Lilian Weng",
+      "Katja Hofmann",
+      "Pierre-Yves Oudeyer"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "published": "2020-03-10T12:38:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.04664v2"
+  },
+  {
+    "arxiv_id": "2003.03600v3",
+    "entry_id": "http://arxiv.org/abs/2003.03600v3",
+    "title": "Reinforcement Learning for Combinatorial Optimization: A Survey",
+    "summary": "Many traditional algorithms for solving combinatorial optimization problems involve using hand-crafted heuristics that sequentially construct a solution. Such heuristics are designed by domain experts and may often be suboptimal due to the hard nature of the problems. Reinforcement learning (RL) proposes a good alternative to automate the search of these heuristics by training an agent in a supervised or self-supervised manner. In this survey, we explore the recent advancements of applying RL frameworks to hard combinatorial problems. Our survey provides the necessary background for operations research and machine learning communities and showcases the works that are moving the field forward. We juxtapose recently proposed RL methods, laying out the timeline of the improvements for each problem, as well as we make a comparison with traditional algorithms, indicating that RL models can become a promising direction for solving combinatorial problems.",
+    "authors": [
+      "Nina Mazyavkina",
+      "Sergey Sviridov",
+      "Sergei Ivanov",
+      "Evgeny Burnaev"
+    ],
+    "categories": [
+      "cs.LG",
+      "math.CO",
+      "math.OC",
+      "stat.ML"
+    ],
+    "published": "2020-03-07T16:19:45Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.03600v3"
+  },
+  {
+    "arxiv_id": "2003.03546v2",
+    "entry_id": "http://arxiv.org/abs/2003.03546v2",
+    "title": "Adversarial Machine Learning: Bayesian Perspectives",
+    "summary": "Adversarial Machine Learning (AML) is emerging as a major field aimed at protecting machine learning (ML) systems against security threats: in certain scenarios there may be adversaries that actively manipulate input data to fool learning systems. This creates a new class of security vulnerabilities that ML systems may face, and a new desirable property called adversarial robustness essential to trust operations based on ML outputs. Most work in AML is built upon a game-theoretic modelling of the conflict between a learning system and an adversary, ready to manipulate input data. This assumes that each agent knows their opponent's interests and uncertainty judgments, facilitating inferences based on Nash equilibria. However, such common knowledge assumption is not realistic in the security scenarios typical of AML. After reviewing such game-theoretic approaches, we discuss the benefits that Bayesian perspectives provide when defending ML-based systems. We demonstrate how the Bayesian approach allows us to explicitly model our uncertainty about the opponent's beliefs and interests, relaxing unrealistic assumptions, and providing more robust inferences. We illustrate this approach in supervised learning settings, and identify relevant future research problems.",
+    "authors": [
+      "David Rios Insua",
+      "Roi Naveiro",
+      "Victor Gallego",
+      "Jason Poulos"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "stat.CO",
+      "stat.ML"
+    ],
+    "published": "2020-03-07T10:30:43Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.03546v2"
+  },
+  {
+    "arxiv_id": "2003.03410v1",
+    "entry_id": "http://arxiv.org/abs/2003.03410v1",
+    "title": "Experimental Studies in General Game Playing: An Experience Report",
+    "summary": "We describe nearly fifteen years of General Game Playing experimental research history in the context of reproducibility and fairness of comparisons between various GGP agents and systems designed to play games described by different formalisms. We think our survey may provide an interesting perspective of how chaotic methods were allowed when nothing better was possible. Finally, from our experience-based view, we would like to propose a few recommendations of how such specific heterogeneous branch of research should be handled appropriately in the future. The goal of this note is to point out common difficulties and problems in the experimental research in the area. We hope that our recommendations will help in avoiding them in future works and allow more fair and reproducible comparisons.",
+    "authors": [
+      "Jakub Kowalski",
+      "Marek Szykuła"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2020-03-06T19:53:28Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.03410v1"
+  },
+  {
+    "arxiv_id": "2003.01200v4",
+    "entry_id": "http://arxiv.org/abs/2003.01200v4",
+    "title": "Natural Language Processing Advancements By Deep Learning: A Survey",
+    "summary": "Natural Language Processing (NLP) helps empower intelligent machines by enhancing a better understanding of the human language for linguistic-based human-computer communication. Recent developments in computational power and the advent of large amounts of linguistic data have heightened the need and demand for automating semantic analysis using data-driven approaches. The utilization of data-driven strategies is pervasive now due to the significant improvements demonstrated through the usage of deep learning methods in areas such as Computer Vision, Automatic Speech Recognition, and in particular, NLP. This survey categorizes and addresses the different aspects and applications of NLP that have benefited from deep learning. It covers core NLP tasks and applications and describes how deep learning methods and models advance these areas. We further analyze and compare different approaches and state-of-the-art models.",
+    "authors": [
+      "Amirsina Torfi",
+      "Rouzbeh A. Shirvani",
+      "Yaser Keneshloo",
+      "Nader Tavaf",
+      "Edward A. Fox"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2020-03-02T21:32:05Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.01200v4"
+  },
+  {
+    "arxiv_id": "2003.00646v2",
+    "entry_id": "http://arxiv.org/abs/2003.00646v2",
+    "title": "A review of machine learning applications in wildfire science and management",
+    "summary": "Artificial intelligence has been applied in wildfire science and management since the 1990s, with early applications including neural networks and expert systems. Since then the field has rapidly progressed congruently with the wide adoption of machine learning (ML) in the environmental sciences. Here, we present a scoping review of ML in wildfire science and management. Our objective is to improve awareness of ML among wildfire scientists and managers, as well as illustrate the challenging range of problems in wildfire science available to data scientists. We first present an overview of popular ML approaches used in wildfire science to date, and then review their use in wildfire science within six problem domains: 1) fuels characterization, fire detection, and mapping; 2) fire weather and climate change; 3) fire occurrence, susceptibility, and risk; 4) fire behavior prediction; 5) fire effects; and 6) fire management. We also discuss the advantages and limitations of various ML approaches and identify opportunities for future advances in wildfire science and management within a data science context. We identified 298 relevant publications, where the most frequently used ML methods included random forests, MaxEnt, artificial neural networks, decision trees, support vector machines, and genetic algorithms. There exists opportunities to apply more current ML methods (e.g., deep learning and agent based learning) in wildfire science. However, despite the ability of ML models to learn on their own, expertise in wildfire science is necessary to ensure realistic modelling of fire processes across multiple scales, while the complexity of some ML methods requires sophisticated knowledge for their application. Finally, we stress that the wildfire research and management community plays an active role in providing relevant, high quality data for use by practitioners of ML methods.",
+    "authors": [
+      "Piyush Jain",
+      "Sean C P Coogan",
+      "Sriram Ganapathi Subramanian",
+      "Mark Crowley",
+      "Steve Taylor",
+      "Mike D Flannigan"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-03-02T03:59:38Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.00646v2"
+  },
+  {
+    "arxiv_id": "2002.11985v2",
+    "entry_id": "http://arxiv.org/abs/2002.11985v2",
+    "title": "Compressing Large-Scale Transformer-Based Models: A Case Study on BERT",
+    "summary": "Pre-trained Transformer-based models have achieved state-of-the-art performance for various Natural Language Processing (NLP) tasks. However, these models often have billions of parameters, and, thus, are too resource-hungry and computation-intensive to suit low-capability devices or applications with strict latency requirements. One potential remedy for this is model compression, which has attracted a lot of research attention. Here, we summarize the research in compressing Transformers, focusing on the especially popular BERT model. In particular, we survey the state of the art in compression for BERT, we clarify the current best practices for compressing large-scale Transformer models, and we provide insights into the workings of various methods. Our categorization and analysis also shed light on promising future research directions for achieving lightweight, accurate, and generic NLP models.",
+    "authors": [
+      "Prakhar Ganesh",
+      "Yao Chen",
+      "Xin Lou",
+      "Mohammad Ali Khan",
+      "Yin Yang",
+      "Hassan Sajjad",
+      "Preslav Nakov",
+      "Deming Chen",
+      "Marianne Winslett"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-02-27T09:20:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2002.11985v2"
+  },
+  {
+    "arxiv_id": "2002.11883v2",
+    "entry_id": "http://arxiv.org/abs/2002.11883v2",
+    "title": "Review, Analysis and Design of a Comprehensive Deep Reinforcement Learning Framework",
+    "summary": "The integration of deep learning to reinforcement learning (RL) has enabled RL to perform efficiently in high-dimensional environments. Deep RL methods have been applied to solve many complex real-world problems in recent years. However, development of a deep RL-based system is challenging because of various issues such as the selection of a suitable deep RL algorithm, its network configuration, training time, training methods, and so on. This paper proposes a comprehensive software framework that not only plays a vital role in designing a connect-the-dots deep RL architecture but also provides a guideline to develop a realistic RL application in a short time span. We have designed and developed a deep RL-based software framework that strictly ensures flexibility, robustness, and scalability. By inheriting the proposed architecture, software managers can foresee any challenges when designing a deep RL-based system. As a result, they can expedite the design process and actively control every stage of software development, which is especially critical in agile development environments. To enforce generalization, the proposed architecture does not depend on a specific RL algorithm, a network configuration, the number of agents, or the type of agents. Using our framework, software developers can develop and integrate new RL algorithms or new types of agents, and can flexibly change network configuration or the number of agents.",
+    "authors": [
+      "Ngoc Duy Nguyen",
+      "Thanh Thi Nguyen",
+      "Hai Nguyen",
+      "Doug Creighton",
+      "Saeid Nahavandi"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.GT",
+      "cs.RO"
+    ],
+    "published": "2020-02-27T02:38:47Z",
+    "pdf_url": "https://arxiv.org/pdf/2002.11883v2"
+  },
+  {
+    "arxiv_id": "2002.11861v1",
+    "entry_id": "http://arxiv.org/abs/2002.11861v1",
+    "title": "Simulation of Real-time Routing for UAS traffic Management with Communication and Airspace Safety Considerations",
+    "summary": "Small Unmanned Aircraft Systems (sUAS) will be an important component of the smart city and intelligent transportation environments of the near future. The demand for sUAS related applications, such as commercial delivery and land surveying, is expected to grow rapidly in next few years. In general, sUAS traffic routing and management functions are needed to coordinate the launching of sUAS from different launch sites and determine their trajectories to avoid conflict while considering several other constraints such as expected arrival time, minimum flight energy, and availability of communication resources. However, as the airborne sUAS density grows in a certain area, it is difficult to foresee the potential airspace and communications resource conflicts and make immediate decisions to avoid them. To address this challenge, we present a temporal and spatial routing algorithm and simulation platform for sUAS trajectory management in a high density urban area that plans sUAS movements in a spatial and temporal maze taking into account obstacles that are either static or dynamic in time. The routing allows the sUAS to avoid static no-fly areas (i.e. static obstacles) or other in-flight sUAS and areas that have congested communication resources (i.e. dynamic obstacles). The algorithm is evaluated using an agent-based simulation platform. The simulation results show that the proposed algorithm outperforms other route management algorithms in many areas, especially in processing speed and memory efficiency. Detailed comparisons are provided for the sUAS flight time, the overall throughput, conflict rate and communication resource utilization. The results demonstrate that our proposed algorithm can be used to address the airspace and communication resource utilization needs for a next generation smart city and smart transportation.",
+    "authors": [
+      "Zhao Jin",
+      "Ziyi Zhao",
+      "Chen Luo",
+      "Franco Basti",
+      "Adrian Solomon",
+      "M. Cenk Gursoy",
+      "Carlos Caicedo",
+      "Qinru Qiu"
+    ],
+    "categories": [
+      "cs.MA",
+      "eess.SP"
+    ],
+    "published": "2020-02-27T00:54:11Z",
+    "pdf_url": "https://arxiv.org/pdf/2002.11861v1"
+  },
+  {
+    "arxiv_id": "2002.11669v2",
+    "entry_id": "http://arxiv.org/abs/2002.11669v2",
+    "title": "Pedestrian Models for Autonomous Driving Part I: Low-Level Models, from Sensing to Tracking",
+    "summary": "Autonomous vehicles (AVs) must share space with pedestrians, both in carriageway cases such as cars at pedestrian crossings and off-carriageway cases such as delivery vehicles navigating through crowds on pedestrianized high-streets. Unlike static obstacles, pedestrians are active agents with complex, interactive motions. Planning AV actions in the presence of pedestrians thus requires modelling of their probable future behaviour as well as detecting and tracking them. This narrative review article is Part I of a pair, together surveying the current technology stack involved in this process, organising recent research into a hierarchical taxonomy ranging from low-level image detection to high-level psychology models, from the perspective of an AV designer. This self-contained Part I covers the lower levels of this stack, from sensing, through detection and recognition, up to tracking of pedestrians. Technologies at these levels are found to be mature and available as foundations for use in high-level systems, such as behaviour modelling, prediction and interaction control.",
+    "authors": [
+      "Fanta Camara",
+      "Nicola Bellotto",
+      "Serhan Cosar",
+      "Dimitris Nathanael",
+      "Matthias Althoff",
+      "Jingyuan Wu",
+      "Johannes Ruenz",
+      "André Dietrich",
+      "Charles W. Fox"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "published": "2020-02-26T17:57:42Z",
+    "pdf_url": "https://arxiv.org/pdf/2002.11669v2"
+  },
+  {
+    "arxiv_id": "2002.10433v1",
+    "entry_id": "http://arxiv.org/abs/2002.10433v1",
+    "title": "From Chess and Atari to StarCraft and Beyond: How Game AI is Driving the World of AI",
+    "summary": "This paper reviews the field of Game AI, which not only deals with creating agents that can play a certain game, but also with areas as diverse as creating game content automatically, game analytics, or player modelling. While Game AI was for a long time not very well recognized by the larger scientific community, it has established itself as a research area for developing and testing the most advanced forms of AI algorithms and articles covering advances in mastering video games such as StarCraft 2 and Quake III appear in the most prestigious journals. Because of the growth of the field, a single review cannot cover it completely. Therefore, we put a focus on important recent developments, including that advances in Game AI are starting to be extended to areas outside of games, such as robotics or the synthesis of chemicals. In this article, we review the algorithms and methods that have paved the way for these breakthroughs, report on the other important areas of Game AI research, and also point out exciting directions for the future of Game AI.",
+    "authors": [
+      "Sebastian Risi",
+      "Mike Preuss"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2020-02-24T18:28:54Z",
+    "pdf_url": "https://arxiv.org/pdf/2002.10433v1"
+  },
+  {
+    "arxiv_id": "2002.00444v2",
+    "entry_id": "http://arxiv.org/abs/2002.00444v2",
+    "title": "Deep Reinforcement Learning for Autonomous Driving: A Survey",
+    "summary": "With the development of deep representation learning, the domain of reinforcement learning (RL) has become a powerful learning framework now capable of learning complex policies in high dimensional environments. This review summarises deep reinforcement learning (DRL) algorithms and provides a taxonomy of automated driving tasks where (D)RL methods have been employed, while addressing key computational challenges in real world deployment of autonomous driving agents. It also delineates adjacent domains such as behavior cloning, imitation learning, inverse reinforcement learning that are related but are not classical RL algorithms. The role of simulators in training agents, methods to validate, test and robustify existing solutions in RL are discussed.",
+    "authors": [
+      "B Ravi Kiran",
+      "Ibrahim Sobh",
+      "Victor Talpaert",
+      "Patrick Mannion",
+      "Ahmad A. Al Sallab",
+      "Senthil Yogamani",
+      "Patrick Pérez"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "published": "2020-02-02T18:21:22Z",
+    "pdf_url": "https://arxiv.org/pdf/2002.00444v2"
+  },
+  {
+    "arxiv_id": "2002.00762v2",
+    "entry_id": "http://arxiv.org/abs/2002.00762v2",
+    "title": "Project CLAI: Instrumenting the Command Line as a New Environment for AI Agents",
+    "summary": "This whitepaper reports on Project CLAI (Command Line AI), which aims to bring the power of AI to the command line interface (CLI). The CLAI platform sets up the CLI as a new environment for AI researchers to conquer by surfacing the command line as a generic environment that researchers can interface to using a simple sense-act API, much like the traditional AI agent architecture. In this paper, we discuss the design and implementation of the platform in detail, through illustrative use cases of new end user interaction patterns enabled by this design, and through quantitative evaluation of the system footprint of a CLAI-enabled terminal. We also report on some early user feedback on CLAI's features from an internal survey.",
+    "authors": [
+      "Mayank Agarwal",
+      "Jorge J. Barroso",
+      "Tathagata Chakraborti",
+      "Eli M. Dow",
+      "Kshitij Fadnis",
+      "Borja Godoy",
+      "Madhavan Pallan",
+      "Kartik Talamadupula"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "published": "2020-01-31T05:01:05Z",
+    "pdf_url": "https://arxiv.org/pdf/2002.00762v2"
+  },
+  {
+    "arxiv_id": "2001.10474v3",
+    "entry_id": "http://arxiv.org/abs/2001.10474v3",
+    "title": "Coagent Networks Revisited",
+    "summary": "Coagent networks formalize the concept of arbitrary networks of stochastic agents that collaborate to take actions in a reinforcement learning environment. Prominent examples of coagent networks in action include approaches to hierarchical reinforcement learning (HRL), such as those using options, which attempt to address the exploration exploitation trade-off by introducing abstract actions at different levels by sequencing multiple stochastic networks within the HRL agents. We first provide a unifying perspective on the many diverse examples that fall under coagent networks. We do so by formalizing the rules of execution in a coagent network, enabled by the novel and intuitive idea of execution paths in a coagent network. Motivated by parameter sharing in the hierarchical option-critic architecture, we revisit the coagent network theory and achieve a much shorter proof of the policy gradient theorem using our idea of execution paths, without any assumption on how parameters are shared among coagents. We then generalize our setting and proof to include the scenario where coagents act asynchronously. This new perspective and theorem also lead to more mathematically accurate and performant algorithms than those in the existing literature. Lastly, by running nonstationary RL experiments, we survey the performance and properties of different generalizations of option-critic models.",
+    "authors": [
+      "Modjtaba Shokrian Zini",
+      "Mohammad Pedramfar",
+      "Matthew Riemer",
+      "Ahmadreza Moradipari",
+      "Miao Liu"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "published": "2020-01-28T17:31:23Z",
+    "pdf_url": "https://arxiv.org/pdf/2001.10474v3"
+  },
+  {
+    "arxiv_id": "2001.09957v3",
+    "entry_id": "http://arxiv.org/abs/2001.09957v3",
+    "title": "Reinforcement Learning-based Application Autoscaling in the Cloud: A Survey",
+    "summary": "Reinforcement Learning (RL) has demonstrated a great potential for automatically solving decision-making problems in complex uncertain environments. RL proposes a computational approach that allows learning through interaction in an environment with stochastic behavior, where agents take actions to maximize some cumulative short-term and long-term rewards. Some of the most impressive results have been shown in Game Theory where agents exhibited superhuman performance in games like Go or Starcraft 2, which led to its gradual adoption in many other domains, including Cloud Computing. Therefore, RL appears as a promising approach for Autoscaling in Cloud since it is possible to learn transparent (with no human intervention), dynamic (no static plans), and adaptable (constantly updated) resource management policies to execute applications. These are three important distinctive aspects to consider in comparison with other widely used autoscaling policies that are defined in an ad-hoc way or statically computed as in solutions based on meta-heuristics. Autoscaling exploits the Cloud elasticity to optimize the execution of applications according to given optimization criteria, which demands to decide when and how to scale-up/down computational resources, and how to assign them to the upcoming processing workload. Such actions have to be taken considering that the Cloud is a dynamic and uncertain environment. Motivated by this, many works apply RL to the autoscaling problem in the Cloud. In this work, we survey exhaustively those proposals from major venues, and uniformly compare them based on a set of proposed taxonomies. We also discuss open problems and prospective research in the area.",
+    "authors": [
+      "Yisel Garí",
+      "David A. Monge",
+      "Elina Pacini",
+      "Cristian Mateos",
+      "Carlos García Garino"
+    ],
+    "categories": [
+      "cs.DC",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-01-27T18:23:43Z",
+    "pdf_url": "https://arxiv.org/pdf/2001.09957v3"
+  },
+  {
+    "arxiv_id": "2001.10340v1",
+    "entry_id": "http://arxiv.org/abs/2001.10340v1",
+    "title": "Deep Learning for Hindi Text Classification: A Comparison",
+    "summary": "Natural Language Processing (NLP) and especially natural language text analysis have seen great advances in recent times. Usage of deep learning in text processing has revolutionized the techniques for text processing and achieved remarkable results. Different deep learning architectures like CNN, LSTM, and very recent Transformer have been used to achieve state of the art results variety on NLP tasks. In this work, we survey a host of deep learning architectures for text classification tasks. The work is specifically concerned with the classification of Hindi text. The research in the classification of morphologically rich and low resource Hindi language written in Devanagari script has been limited due to the absence of large labeled corpus. In this work, we used translated versions of English data-sets to evaluate models based on CNN, LSTM and Attention. Multilingual pre-trained sentence embeddings based on BERT and LASER are also compared to evaluate their effectiveness for the Hindi language. The paper also serves as a tutorial for popular text classification techniques.",
+    "authors": [
+      "Ramchandra Joshi",
+      "Purvi Goel",
+      "Raviraj Joshi"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.CL",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-01-19T09:29:12Z",
+    "pdf_url": "https://arxiv.org/pdf/2001.10340v1"
+  },
+  {
+    "arxiv_id": "2001.06487v3",
+    "entry_id": "http://arxiv.org/abs/2001.06487v3",
+    "title": "Algorithms in Multi-Agent Systems: A Holistic Perspective from Reinforcement Learning and Game Theory",
+    "summary": "Deep reinforcement learning (RL) has achieved outstanding results in recent years, which has led a dramatic increase in the number of methods and applications. Recent works are exploring learning beyond single-agent scenarios and considering multi-agent scenarios. However, they are faced with lots of challenges and are seeking for help from traditional game-theoretic algorithms, which, in turn, show bright application promise combined with modern algorithms and boosting computing power. In this survey, we first introduce basic concepts and algorithms in single agent RL and multi-agent systems; then, we summarize the related algorithms from three aspects. Solution concepts from game theory give inspiration to algorithms which try to evaluate the agents or find better solutions in multi-agent systems. Fictitious self-play becomes popular and has a great impact on the algorithm of multi-agent reinforcement learning. Counterfactual regret minimization is an important tool to solve games with incomplete information, and has shown great strength when combined with deep learning.",
+    "authors": [
+      "Yunlong Lu",
+      "Kai Yan"
+    ],
+    "categories": [
+      "cs.GT",
+      "cs.AI",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "published": "2020-01-17T15:08:04Z",
+    "pdf_url": "https://arxiv.org/pdf/2001.06487v3"
+  },
+  {
+    "arxiv_id": "2001.00461v1",
+    "entry_id": "http://arxiv.org/abs/2001.00461v1",
+    "title": "Reasoning on Knowledge Graphs with Debate Dynamics",
+    "summary": "We propose a novel method for automatic reasoning on knowledge graphs based on debate dynamics. The main idea is to frame the task of triple classification as a debate game between two reinforcement learning agents which extract arguments -- paths in the knowledge graph -- with the goal to promote the fact being true (thesis) or the fact being false (antithesis), respectively. Based on these arguments, a binary classifier, called the judge, decides whether the fact is true or false. The two agents can be considered as sparse, adversarial feature generators that present interpretable evidence for either the thesis or the antithesis. In contrast to other black-box methods, the arguments allow users to get an understanding of the decision of the judge. Since the focus of this work is to create an explainable method that maintains a competitive predictive accuracy, we benchmark our method on the triple classification and link prediction task. Thereby, we find that our method outperforms several baselines on the benchmark datasets FB15k-237, WN18RR, and Hetionet. We also conduct a survey and find that the extracted arguments are informative for users.",
+    "authors": [
+      "Marcel Hildebrandt",
+      "Jorge Andres Quintero Serna",
+      "Yunpu Ma",
+      "Martin Ringsquandl",
+      "Mitchell Joblin",
+      "Volker Tresp"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2020-01-02T14:44:23Z",
+    "pdf_url": "https://arxiv.org/pdf/2001.00461v1"
+  }
+]

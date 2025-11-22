@@ -1,0 +1,1339 @@
+[
+  {
+    "paperId": "arxiv:2511.01093v1",
+    "title": "Continual Learning, Not Training: Online Adaptation For Agents",
+    "authors": [
+      "Aman Jaglan",
+      "Jarrod Barnes"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.01093v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.01093v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "memory",
+      "reasoning"
+    ],
+    "analysis": {
+      "problem": "研究问题：持续学习方法通常通过基于梯度的再训练缓解灾难性遗忘，但不适合需实时适应的部署代理。",
+      "method": "方法：引入ATLAS（自适应教学与学习系统），双代理架构解耦推理（教师）和执行（学生），整合持久学习内存实现梯度免费持续学习。",
+      "experiments": "实验设置：系统动态调整操作策略（如监督级别或初始计划选择），在推理时实现适应。",
+      "results": "结果与贡献：ATLAS实现系统级适应，提升代理实时学习能力；贡献在于提出梯度免费持续学习框架。",
+      "limitations": "局限与未来工作：架构复杂度可能影响部署，未来需简化设计和验证在更多场景中的有效性。",
+      "novelty_score": 5
+    }
+  },
+  {
+    "paperId": "arxiv:2510.26905v1",
+    "title": "Cognition Envelopes for Bounded AI Reasoning in Autonomous UAS\n  Operations",
+    "authors": [
+      "Pedro Antonio Alarcón Granadeno",
+      "Arturo Miguel Bernal Russell",
+      "Sofia Nelson",
+      "Demetrius Hernandez",
+      "Maureen Petterson",
+      "Michael Murphy",
+      "Walter J. Scheirer",
+      "Jane Cleland-Huang"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.26905v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.26905v1",
+    "tags": [
+      "autonomy",
+      "planning",
+      "reasoning"
+    ],
+    "analysis": {
+      "problem": "研究问题：网络物理系统依赖基础模型（如LLMs和VLMs）增加自主性，但引入新错误类型（如幻觉、过度泛化、上下文错位），导致错误决策。",
+      "method": "方法：引入认知包络概念，建立推理边界约束AI生成决策，补充元认知和传统安全包络使用。",
+      "experiments": "实验设置：提供定义、验证和保证认知包络的实用指南和系统过程。",
+      "results": "结果与贡献：概念提升AI决策安全性和可靠性；贡献在于提出新安全机制应对基础模型错误。",
+      "limitations": "局限与未来工作：概念需要实证验证，未来需开发具体工具和标准。",
+      "novelty_score": 5
+    }
+  },
+  {
+    "paperId": "arxiv:2511.02606v1",
+    "title": "A Multi-Agent Psychological Simulation System for Human Behavior\n  Modeling",
+    "authors": [
+      "Xiangen Hu",
+      "Jiarui Tong",
+      "Sheng Xu"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.02606v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.02606v1",
+    "tags": [
+      "agent",
+      "multi-agent"
+    ],
+    "analysis": {
+      "problem": "研究问题：人类中心领域的培训和教育需要真实实践，但人类行为的现实模拟有限。",
+      "method": "方法：提出多代理心理模拟系统，基于心理学理论（如自我效能、心态、社会建构主义）建模内部认知-情感过程，生成可信人类行为。",
+      "experiments": "实验设置：系统架构包括'内部议会'代理，模拟关键心理因素交互；应用于教师培训等场景。",
+      "results": "结果与贡献：系统实现透明和与人类心理学对齐的行为生成；贡献在于提供可解释的人类行为模拟工具。",
+      "limitations": "局限与未来工作：系统复杂度可能限制扩展，未来需优化代理交互和验证在更多应用中的有效性。",
+      "novelty_score": 5
+    }
+  },
+  {
+    "paperId": "arxiv:2510.26603v1",
+    "title": "Agentic AI Home Energy Management System: A Large Language Model\n  Framework for Residential Load Scheduling",
+    "authors": [
+      "Reda El Makroum",
+      "Sebastian Zwickl-Bernhard",
+      "Lukas Kranzl"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.26603v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.26603v1",
+    "tags": [
+      "agent",
+      "autonomy",
+      "benchmark",
+      "evaluation",
+      "reasoning",
+      "tool-use",
+      "workflow"
+    ],
+    "analysis": {
+      "problem": "研究问题：住宅需求响应容量需增加，但家庭能源管理系统（HEMS）采用受用户交互障碍限制，缺乏从自然语言到多设备调度的自主协调。",
+      "method": "方法：提出代理AI HEMS，其中LLMs自主协调从自然语言请求到设备控制的多设备调度，采用分层架构。",
+      "experiments": "实验设置：系统实现最优调度，无需示例演示。",
+      "results": "结果与贡献：框架实现自然语言驱动的能源管理；贡献在于首次部署LLMs作为完整工作流自主协调器。",
+      "limitations": "局限与未来工作：可能受限于LLM准确性，未来需优化调度算法和集成更多设备类型。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2510.26167v1",
+    "title": "One Model to Critique Them All: Rewarding Agentic Tool-Use via Efficient\n  Reasoning",
+    "authors": [
+      "Renhao Li",
+      "Jianhong Tu",
+      "Yang Su",
+      "Hamid Alinejad-Rokny",
+      "Derek F. Wong",
+      "Junyang Lin",
+      "Min Yang"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.26167v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.26167v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "evaluation",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {
+      "problem": "研究问题：奖励模型（RMs）在工具学习领域缺乏专门设计，限制代理AI能力进步。",
+      "method": "方法：引入ToolRM，轻量级生成RMs家族，专为通用工具使用场景设计；提出新管道构建成对偏好数据，使用基于规则的评分和多维采样。",
+      "experiments": "实验设置：创建ToolPref-Pairwise-30K数据集，支持强化学习与可验证反馈；评估在TRBench$_{BFCL}$基准上。",
+      "results": "结果与贡献：ToolRM提升工具使用任务的奖励建模；贡献在于提供专门RMs和基准，促进代理AI发展。",
+      "limitations": "局限与未来工作：数据集和模型可能受限于特定工具，未来需扩展多样性和验证在真实场景中的有效性。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.03958v1",
+    "title": "Multi-Agent Collaborative Framework For Math Problem Generation",
+    "authors": [
+      "Kia Karbasi",
+      "Kevin Hong",
+      "Mohammad Amin Samadi",
+      "Gregory Pottie"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.03958v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.03958v1",
+    "tags": [
+      "agent",
+      "evaluation",
+      "multi-agent",
+      "workflow"
+    ],
+    "analysis": {
+      "problem": "研究问题：自动数学问题生成（AQG）在智能辅导系统和教育中仍具挑战性，预训练变换器模型难以精确控制问题复杂性和认知需求。",
+      "method": "方法：引入协作多代理框架，作为在AQG中整合推理时间计算的新方法，利用多个代理迭代优化生成的问题-答案对，以平衡复杂性和认知需求。",
+      "experiments": "实验设置：评估生成的问题在五个元评估标准上：相关性、重要性、清晰度、难度匹配和可回答性，以评估系统控制需求的能力。",
+      "results": "结果与贡献：框架能更好地控制问题复杂性和认知需求；贡献在于提出多代理方法改进AQG的精确性。",
+      "limitations": "局限与未来工作：可能受限于代理协作效率，未来需优化代理交互和扩展应用到其他领域。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.04481v1",
+    "title": "Promoting Sustainable Web Agents: Benchmarking and Estimating Energy\n  Consumption through Empirical and Theoretical Analysis",
+    "authors": [
+      "Lars Krupp",
+      "Daniel Geißler",
+      "Vishal Banwari",
+      "Paul Lukowicz",
+      "Jakob Karolus"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.04481v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.04481v1",
+    "tags": [
+      "agent",
+      "autonomy",
+      "benchmark"
+    ],
+    "analysis": {
+      "problem": "研究问题：网络代理（如OpenAI的Operator和Google的Project Mariner）在推动大型语言模型边界的同时，其可持续性问题（如能源消耗和二氧化碳排放）尚未得到充分探索。",
+      "method": "方法：通过理论估计和实证基准测试，从理论和经验两个角度评估网络代理的能源和二氧化碳成本。",
+      "experiments": "实验设置：对不同网络代理创建哲学进行基准测试，比较其能源消耗，并分析能源消耗与性能之间的关系。",
+      "results": "结果与贡献：结果显示不同网络代理创建哲学会显著影响能源消耗，且更多能源消耗不一定带来更好性能；贡献在于首次探索网络代理的可持续性问题，强调其紧迫性。",
+      "limitations": "局限与未来工作：研究为初步探索，未来需更深入分析不同代理设计的可持续性影响，并开发节能方法。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.03497v1",
+    "title": "ROSBag MCP Server: Analyzing Robot Data with LLMs for Agentic Embodied\n  AI Applications",
+    "authors": [
+      "Lei Fu",
+      "Sahar Salimpour",
+      "Leonardo Militano",
+      "Harry Edelman",
+      "Jorge Peña Queralta",
+      "Giovanni Toffetti"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.03497v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.03497v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "tool-use"
+    ],
+    "analysis": {
+      "problem": "研究问题：代理AI系统和物理或具身AI系统的交叉研究（代理具身AI）稀缺，缺乏工具分析机器人数据。",
+      "method": "方法：引入ROS包MCP服务器，用于分析ROS和ROS2包，通过自然语言使用LLMs和VLMs分析、可视化和处理机器人数据。",
+      "experiments": "实验设置：构建具有机器人领域知识的工具，初始发布专注于移动机器人，支持轨迹、激光扫描数据、变换或时间序列数据的分析。",
+      "results": "结果与贡献：服务器实现机器人数据的自然语言处理；贡献在于填补代理具身AI工具空白，促进该领域研究。",
+      "limitations": "局限与未来工作：初始工具可能有限，未来需扩展支持更多机器人数据类型和应用场景。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.02303v1",
+    "title": "Unlocking the Power of Multi-Agent LLM for Reasoning: From Lazy Agents\n  to Deliberation",
+    "authors": [
+      "Zhiwei Zhang",
+      "Xiaomin Li",
+      "Yudi Lin",
+      "Hui Liu",
+      "Ramraj Chandradevan",
+      "Linlin Wu",
+      "Minhua Lin",
+      "Fali Wang",
+      "Xianfeng Tang",
+      "Qi He",
+      "Suhang Wang"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.02303v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.02303v1",
+    "tags": [
+      "agent",
+      "multi-agent",
+      "reasoning"
+    ],
+    "analysis": {
+      "problem": "研究问题：多代理LLM在推理任务中存在懒惰代理行为，一个代理主导而另一个贡献少，削弱协作效果。",
+      "method": "方法：首先理论分析懒惰行为产生原因，然后引入稳定高效的因果影响测量方法，帮助改进多代理推理。",
+      "experiments": "实验设置：分析多代理设置中代理行为，测量因果影响以识别和缓解懒惰问题。",
+      "results": "结果与贡献：揭示懒惰行为机制，提出改进方法；贡献在于提升多代理LLM协作效率和性能。",
+      "limitations": "局限与未来工作：方法可能受限于特定任务，未来需实证验证和扩展到更多推理场景。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.01999v1",
+    "title": "TRACE: Textual Reasoning for Affordance Coordinate Extraction",
+    "authors": [
+      "Sangyun Park",
+      "Jin Kim",
+      "Yuchen Cui",
+      "Matthew S. Brown"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.01999v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.01999v1",
+    "tags": [
+      "autonomy",
+      "benchmark",
+      "reasoning"
+    ],
+    "analysis": {
+      "problem": "研究问题：视觉语言模型（VLMs）难以将高级指令转化为精确空间可供性，用于机器人操作。",
+      "method": "方法：引入TRACE（文本推理用于可供性坐标提取），整合文本推理链到可供性预测过程，创建TRACE数据集。",
+      "experiments": "实验设置：通过自主管道创建大规模数据集，微调VLM学习外部化空间推理；实验评估在可供性预测上的性能。",
+      "results": "结果与贡献：TRACE调整模型实现最先进性能；贡献在于提出文本推理方法改进VLM空间推理能力。",
+      "limitations": "局限与未来工作：方法可能计算密集，未来需优化推理效率和扩展应用到其他机器人任务。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.03434v1",
+    "title": "Inter-Agent Trust Models: A Comparative Study of Brief, Claim, Proof,\n  Stake, Reputation and Constraint in Agentic Web Protocol Design-A2A, AP2,\n  ERC-8004, and Beyond",
+    "authors": [
+      "Botao 'Amber' Hu",
+      "Helena Rong"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.03434v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.03434v1",
+    "tags": [
+      "agent",
+      "autonomy"
+    ],
+    "analysis": {
+      "problem": "研究问题：在'代理网络'形成中，信任从人类监督转向协议设计，但现有协议（如A2A、AP2、ERC-8004）的信任假设未充分检验。",
+      "method": "方法：进行信任模型的比较研究，包括Brief、Claim、Proof、Stake、Reputation和Constraint等模型。",
+      "experiments": "实验设置：分析多个代理协议设计中的信任模型，比较其假设和实现。",
+      "results": "结果与贡献：揭示不同信任模型的优缺点；贡献在于系统化比较代理协议信任机制，为未来设计提供指导。",
+      "limitations": "局限与未来工作：研究基于现有协议，未来需实证验证和扩展更多模型。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.02560v1",
+    "title": "SigmaCollab: An Application-Driven Dataset for Physically Situated\n  Collaboration",
+    "authors": [
+      "Dan Bohus",
+      "Sean Andrist",
+      "Ann Paradiso",
+      "Nick Saw",
+      "Tim Schoonbeek",
+      "Maia Stiber"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.02560v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.02560v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "analysis": {
+      "problem": "研究问题：物理情境下人类-AI协作研究缺乏数据集，现有数据集规模小且应用驱动挑战未充分解决。",
+      "method": "方法：引入SigmaCollab数据集，包含85个会话，参与者由混合现实辅助AI代理指导执行物理世界程序任务。",
+      "experiments": "实验设置：数据集包括多模态数据流（如音频、自我中心相机视图、深度图、头部、手和凝视跟踪信息）和后处理注释。",
+      "results": "结果与贡献：数据集提供真实测试基础，促进人类-AI协作研究；贡献在于填补物理协作数据空白。",
+      "limitations": "局限与未来工作：数据集规模较小（约14小时），未来需扩展数据量和多样性。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.01078v1",
+    "title": "Predictive Auxiliary Learning for Belief-based Multi-Agent Systems",
+    "authors": [
+      "Qinwei Huang",
+      "Stefan Wang",
+      "Simon Khan",
+      "Garrett Katz",
+      "Qinru Qiu"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.01078v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.01078v1",
+    "tags": [
+      "agent",
+      "multi-agent"
+    ],
+    "analysis": {
+      "problem": "研究问题：多代理强化学习（MARL）在部分可观察环境中性能依赖信息聚合，但现有系统主要依赖奖励作为策略训练反馈。",
+      "method": "方法：提出BEPAL（基于信念的预测辅助学习）框架，整合辅助训练目标支持策略优化，遵循集中训练分散执行范式。",
+      "experiments": "实验设置：每个代理学习信念模型预测不可观察状态信息（如其他代理奖励或运动方向）。",
+      "results": "结果与贡献：辅助任务显著提升学习效率和稳定性；贡献在于增强MARL在复杂环境中的性能。",
+      "limitations": "局限与未来工作：框架可能增加训练复杂度，未来需优化辅助任务设计和扩展到更多MARL应用。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.00126v1",
+    "title": "Dynamic Model Selection for Trajectory Prediction via Pairwise Ranking\n  and Meta-Features",
+    "authors": [
+      "Lu Bowen"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2511.00126v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.00126v1",
+    "tags": [
+      "autonomy",
+      "evaluation"
+    ],
+    "analysis": {
+      "problem": "研究问题：深度轨迹预测器在复杂长尾驾驶场景中不可靠，'一刀切'范式在安全关键城市环境中存在弱点。",
+      "method": "方法：提出动态多专家门控框架，自适应选择最可靠轨迹预测器（如物理信息LSTM、Transformer、微调GameFormer）。",
+      "experiments": "实验设置：利用内部模型信号（元特征）如稳定性和不确定性，进行每样本选择。",
+      "results": "结果与贡献：框架提升轨迹预测可靠性；贡献在于桥接简单和高级模型优势，适应不同场景。",
+      "limitations": "局限与未来工作：选择机制可能引入延迟，未来需优化实时性和扩展应用到其他预测任务。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2510.26389v1",
+    "title": "Adaptive Context Length Optimization with Low-Frequency Truncation for\n  Multi-Agent Reinforcement Learning",
+    "authors": [
+      "Wenchang Duan",
+      "Yaoliang Yu",
+      "Jiwan He",
+      "Yi Shi"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.26389v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.26389v1",
+    "tags": [
+      "agent",
+      "multi-agent"
+    ],
+    "analysis": {
+      "problem": "研究问题：深度多代理强化学习（MARL）在长期依赖和非马尔可夫环境中成功，但大固定上下文长度导致探索效率有限和冗余信息。",
+      "method": "方法：提出新颖MARL框架，通过时间梯度分析动态优化上下文长度，增强探索；整合高效输入处理。",
+      "experiments": "实验设置：设计中心代理优化上下文长度，提升收敛到全局最优。",
+      "results": "结果与贡献：框架提升MARL探索效率和性能；贡献在于自适应上下文优化方法。",
+      "limitations": "局限与未来工作：优化可能增加计算开销，未来需简化算法和验证在更多环境中的有效性。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2510.27334v1",
+    "title": "When AI Trading Agents Compete: Adverse Selection of Meta-Orders by\n  Reinforcement Learning-Based Market Making",
+    "authors": [
+      "Ali Raza Jafree",
+      "Konark Jain",
+      "Nick Firoozye"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.27334v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.27334v1",
+    "tags": [
+      "agent"
+    ],
+    "analysis": {
+      "problem": "研究问题：中频交易代理被高频交易者逆向选择的机制未充分研究，经典模型假设外生价格影响不现实。",
+      "method": "方法：使用强化学习（RL）在Hawkes限价订单簿模型中复制高频做市商行为，采用脉冲控制RL框架。",
+      "experiments": "实验设置：RL使用近端策略优化（PPO）和自模仿学习，模拟市场事件和代理策略更新。",
+      "results": "结果与贡献：揭示逆向选择机制；贡献在于结合Hawkes模型和RL提供更真实市场模拟。",
+      "limitations": "局限与未来工作：模拟可能简化市场复杂性，未来需整合更多因素和实证验证。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2511.03690v1",
+    "title": "The OpenHands Software Agent SDK: A Composable and Extensible Foundation\n  for Production Agents",
+    "authors": [
+      "Xingyao Wang",
+      "Simon Rosenberg",
+      "Juan Michelini",
+      "Calvin Smith",
+      "Hoang Tran",
+      "Engel Nyst",
+      "Rohit Malhotra",
+      "Xuhui Zhou",
+      "Valerie Chen",
+      "Robert Brennan",
+      "Graham Neubig"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.03690v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.03690v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "memory",
+      "tool-use"
+    ],
+    "analysis": {
+      "problem": "研究问题：构建生产就绪的软件工程代理复杂，需要灵活性、可靠执行和用户交互接口。",
+      "method": "方法：提出OpenHands软件代理SDK，一个用于实现软件开发代理的工具包，通过简单接口和可扩展设计满足需求。",
+      "experiments": "实验设置：作为OpenHands框架的架构重新设计，支持默认情况下仅需几行代码实现代理，并易于扩展。",
+      "results": "结果与贡献：SDK提供灵活、可靠和用户友好的代理实现基础；贡献在于简化生产代理开发，促进广泛应用。",
+      "limitations": "局限与未来工作：可能受限于特定软件开发场景，未来需增加更多功能和集成其他工具。",
+      "novelty_score": 3
+    }
+  },
+  {
+    "paperId": "arxiv:2511.00162v2",
+    "title": "ARC-GEN: A Mimetic Procedural Benchmark Generator for the Abstraction\n  and Reasoning Corpus",
+    "authors": [
+      "Michael D. Moffitt"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2511.00162v2",
+    "pdfUrl": "http://arxiv.org/pdf/2511.00162v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "evaluation",
+      "reasoning"
+    ],
+    "analysis": {
+      "problem": "研究问题：抽象与推理语料库（ARC）是评估人工通用智能的关键基准，但演示集样本有限，约束需要大量样本的算法。",
+      "method": "方法：引入ARC-GEN，一个模拟程序基准生成器，扩展ARC-AGI套件的样本对空间。",
+      "experiments": "实验设置：生成器创建更多输入-输出网格对，以支持算法训练和评估。",
+      "results": "结果与贡献：生成器增加可行样本对；贡献在于提供工具促进ARC基准研究和算法开发。",
+      "limitations": "局限与未来工作：生成样本可能缺乏多样性，未来需改进生成质量和验证在真实任务中的有效性。",
+      "novelty_score": 3
+    }
+  },
+  {
+    "paperId": "arxiv:2510.26298v1",
+    "title": "Can Agent Conquer Web? Exploring the Frontiers of ChatGPT Atlas Agent in\n  Web Games",
+    "authors": [
+      "Jingran Zhang",
+      "Ning Li",
+      "Justin Cui"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.26298v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.26298v1",
+    "tags": [
+      "agent",
+      "evaluation",
+      "reasoning",
+      "retrieval"
+    ],
+    "analysis": {
+      "problem": "研究问题：OpenAI的ChatGPT Atlas在动态交互环境（如网页游戏）中的性能未充分探索。",
+      "method": "方法：使用浏览器游戏（如Google的T-Rex Runner、Sudoku、Flappy Bird、Stein.world）作为测试场景，评估Atlas的网页交互能力。",
+      "experiments": "实验设置：以游戏性能分数作为定量指标，评估不同任务类型的表现。",
+      "results": "结果与贡献：Atlas在逻辑推理任务（如Sudoku）中表现强，完成速度显著快于人类；贡献在于早期评估Atlas在交互环境中的能力。",
+      "limitations": "局限与未来工作：评估限于少数游戏，未来需扩展测试场景和深入分析交互机制。",
+      "novelty_score": 3
+    }
+  },
+  {
+    "paperId": "arxiv:2511.00423v1",
+    "title": "Bootstrap Off-policy with World Model",
+    "authors": [
+      "Guojian Zhan",
+      "Likun Wang",
+      "Xiangteng Zhang",
+      "Jiaxin Gao",
+      "Masayoshi Tomizuka",
+      "Shengbo Eben Li"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 11,
+    "primaryUrl": "http://arxiv.org/abs/2511.00423v1",
+    "pdfUrl": "http://arxiv.org/pdf/2511.00423v1",
+    "tags": [
+      "planning"
+    ],
+    "analysis": {
+      "problem": "研究问题：在线规划在强化学习中有效，但引入数据与策略行为偏差，降低模型学习和策略改进。",
+      "method": "方法：提出BOOM（引导离线策略与世界模型）框架，通过引导循环紧密整合规划和离线学习，策略初始化规划器，规划器通过行为对齐引导策略。",
+      "experiments": "实验设置：联合学习世界模型，使规划器模拟未来轨迹并提供价值目标促进策略改进。",
+      "results": "结果与贡献：框架提升样本效率和最终性能；贡献在于解决规划-策略偏差问题。",
+      "limitations": "局限与未来工作：方法可能受限于模型准确性，未来需改进世界模型和验证在复杂环境中的鲁棒性。",
+      "novelty_score": 4
+    }
+  },
+  {
+    "paperId": "arxiv:2510.20176v2",
+    "title": "Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table\n  Understanding",
+    "authors": [
+      "Yuhang Zhou",
+      "Mingrui Zhang",
+      "Ke Li",
+      "Mingyi Wang",
+      "Qiao Liu",
+      "Qifei Wang",
+      "Jiayi Liu",
+      "Fei Liu",
+      "Serena Li",
+      "Weiwei Li",
+      "Mingze Gao",
+      "Abhishek Kumar",
+      "Xiangjun Fan",
+      "Zhuokai Zhao",
+      "Lizhu Zhang"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.20176v2",
+    "pdfUrl": "http://arxiv.org/pdf/2510.20176v2",
+    "tags": [
+      "agent",
+      "multi-agent",
+      "planning",
+      "reasoning",
+      "tool-use",
+      "workflow"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.12194v1",
+    "title": "ResearStudio: A Human-Intervenable Framework for Building Controllable\n  Deep-Research Agents",
+    "authors": [
+      "Linyi Yang",
+      "Yixuan Weng"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.12194v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.12194v1",
+    "tags": [
+      "agent",
+      "autonomy",
+      "benchmark",
+      "evaluation",
+      "planning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.08790v1",
+    "title": "COMPASS: Enhancing Agent Long-Horizon Reasoning with Evolving Context",
+    "authors": [
+      "Guangya Wan",
+      "Mingyang Ling",
+      "Xiaoqi Ren",
+      "Rujun Han",
+      "Sheng Li",
+      "Zizhao Zhang"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.08790v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.08790v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "multi-agent",
+      "planning",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.10930v1",
+    "title": "Evaluating Language Models' Evaluations of Games",
+    "authors": [
+      "Katherine M. Collins",
+      "Cedegao E. Zhang",
+      "Graham Todd",
+      "Lance Ying",
+      "Mauricio Barba da Costa",
+      "Ryan Liu",
+      "Prafull Sharma",
+      "Adrian Weller",
+      "Ionatan Kuperwajs",
+      "Lionel Wong",
+      "Joshua B. Tenenbaum",
+      "Thomas L. Griffiths"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.10930v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.10930v1",
+    "tags": [
+      "agent",
+      "evaluation",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.25726v1",
+    "title": "The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic,\n  and Long-Horizon Task Execution",
+    "authors": [
+      "Junlong Li",
+      "Wenshuo Zhao",
+      "Jian Zhao",
+      "Weihao Zeng",
+      "Haoze Wu",
+      "Xiaochen Wang",
+      "Rui Ge",
+      "Yuxuan Cao",
+      "Yuzhen Huang",
+      "Wei Liu",
+      "Junteng Liu",
+      "Zhaochen Su",
+      "Yiyang Guo",
+      "Fan Zhou",
+      "Lueyang Zhang",
+      "Juan Michelini",
+      "Xingyao Wang",
+      "Xiang Yue",
+      "Shuyan Zhou",
+      "Graham Neubig",
+      "Junxian He"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.25726v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.25726v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "evaluation",
+      "tool-use",
+      "workflow"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.24645v1",
+    "title": "FunReason-MT Technical Report: Overcoming the Complexity Barrier in\n  Multi-Turn Function Calling",
+    "authors": [
+      "Zengzhuang Xu",
+      "Bingguang Hao",
+      "Zechuan Wang",
+      "Yuntao Wen",
+      "Maolin Wang",
+      "Yang Liu",
+      "Long Chen",
+      "Dong Wang",
+      "Yicheng Chen",
+      "Cunyin Peng",
+      "Chenyi Zhuang",
+      "Jinjie Gu",
+      "Leilei Gan",
+      "Xiangyu Zhao",
+      "Shi Gu"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.24645v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.24645v1",
+    "tags": [
+      "agent",
+      "autonomy",
+      "evaluation",
+      "multi-agent",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.23870v1",
+    "title": "OraPlan-SQL: A Planning-Centric Framework for Complex Bilingual NL2SQL\n  Reasoning",
+    "authors": [
+      "Marianne Menglin Liu",
+      "Sai Ashish Somayajula",
+      "Syed Fahad Allam Shah",
+      "Sujith Ravi",
+      "Dan Roth"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.23870v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.23870v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "evaluation",
+      "planning",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.17947v2",
+    "title": "PLAGUE: Plug-and-play framework for Lifelong Adaptive Generation of\n  Multi-turn Exploits",
+    "authors": [
+      "Neeladri Bhuiya",
+      "Madhav Aggarwal",
+      "Diptanshu Purwar"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.17947v2",
+    "pdfUrl": "http://arxiv.org/pdf/2510.17947v2",
+    "tags": [
+      "agent",
+      "evaluation",
+      "planning",
+      "tool-use",
+      "workflow"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.16234v1",
+    "title": "ScholarEval: Research Idea Evaluation Grounded in Literature",
+    "authors": [
+      "Hanane Nour Moussa",
+      "Patrick Queiroz Da Silva",
+      "Daniel Adu-Ampratwum",
+      "Alyson East",
+      "Zitong Lu",
+      "Nikki Puccetti",
+      "Mingyi Xue",
+      "Huan Sun",
+      "Bodhisattwa Prasad Majumder",
+      "Sachin Kumar"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.16234v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.16234v1",
+    "tags": [
+      "agent",
+      "evaluation",
+      "reasoning",
+      "retrieval",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.15772v1",
+    "title": "Self-evolving expertise in complex non-verifiable subject domains:\n  dialogue as implicit meta-RL",
+    "authors": [
+      "Richard M. Bailey"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.15772v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.15772v1",
+    "tags": [
+      "agent",
+      "memory",
+      "planning",
+      "reflection",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.15280v1",
+    "title": "Foundation Models for Scientific Discovery: From Paradigm Enhancement to\n  Paradigm Transition",
+    "authors": [
+      "Fan Liu",
+      "Jindong Han",
+      "Tengfei Lyu",
+      "Weijia Zhang",
+      "Zhe-Rui Yang",
+      "Lu Dai",
+      "Cancheng Liu",
+      "Hao Liu"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.15280v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.15280v1",
+    "tags": [
+      "agent",
+      "autonomy",
+      "reasoning",
+      "reflection",
+      "workflow"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.09608v1",
+    "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams",
+    "authors": [
+      "Ruyi Xu",
+      "Guangxuan Xiao",
+      "Yukang Chen",
+      "Liuning He",
+      "Kelly Peng",
+      "Yao Lu",
+      "Song Han"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.09608v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.09608v1",
+    "tags": [
+      "agent",
+      "autonomy",
+      "benchmark",
+      "evaluation",
+      "memory"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.08713v1",
+    "title": "Unified World Models: Memory-Augmented Planning and Foresight for Visual\n  Navigation",
+    "authors": [
+      "Yifei Dong",
+      "Fengyi Wu",
+      "Guangyu Chen",
+      "Zhi-Qi Cheng",
+      "Qiyu Hu",
+      "Yuxuan Zhou",
+      "Jingdong Sun",
+      "Jun-Yan He",
+      "Qi Dai",
+      "Alexander G Hauptmann"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.08713v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.08713v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "memory",
+      "planning",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.05096v2",
+    "title": "Paper2Video: Automatic Video Generation from Scientific Papers",
+    "authors": [
+      "Zeyu Zhu",
+      "Kevin Qinghong Lin",
+      "Mike Zheng Shou"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.05096v2",
+    "pdfUrl": "http://arxiv.org/pdf/2510.05096v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "evaluation",
+      "memory",
+      "multi-agent"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.04935v1",
+    "title": "MARS: Optimizing Dual-System Deep Research via Multi-Agent Reinforcement\n  Learning",
+    "authors": [
+      "Guoxin Chen",
+      "Zile Qiao",
+      "Wenqing Wang",
+      "Donglei Yu",
+      "Xuanzhong Chen",
+      "Hao Sun",
+      "Minpeng Liao",
+      "Kai Fan",
+      "Yong Jiang",
+      "Penguin Xie",
+      "Wayne Xin Zhao",
+      "Ruihua Song",
+      "Fei Huang"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.04935v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.04935v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "multi-agent",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.03847v1",
+    "title": "Small Language Models for Agentic Systems: A Survey of Architectures,\n  Capabilities, and Deployment Trade offs",
+    "authors": [
+      "Raghav Sharma",
+      "Manan Mehta"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.03847v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.03847v1",
+    "tags": [
+      "agent",
+      "evaluation",
+      "planning",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.02837v1",
+    "title": "Beyond the Final Answer: Evaluating the Reasoning Trajectories of\n  Tool-Augmented Agents",
+    "authors": [
+      "Wonjoong Kim",
+      "Sangwu Park",
+      "Yeonjun In",
+      "Sein Kim",
+      "Dongha Lee",
+      "Chanyoung Park"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.02837v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.02837v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "evaluation",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.00507v2",
+    "title": "Graph2Eval: Automatic Multimodal Task Generation for Agents via\n  Knowledge Graphs",
+    "authors": [
+      "Yurun Chen",
+      "Xavier Hu",
+      "Yuhan Liu",
+      "Ziqi Wang",
+      "Zeyi Liao",
+      "Lin Chen",
+      "Feng Wei",
+      "Yuxi Qian",
+      "Bo Zheng",
+      "Keting Yin",
+      "Shengyu Zhang"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.00507v2",
+    "pdfUrl": "http://arxiv.org/pdf/2510.00507v2",
+    "tags": [
+      "agent",
+      "evaluation",
+      "multi-agent",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.25588v1",
+    "title": "Standardization of Psychiatric Diagnoses -- Role of Fine-tuned LLM\n  Consortium and OpenAI-gpt-oss Reasoning LLM Enabled Decision Support System",
+    "authors": [
+      "Eranga Bandara",
+      "Ross Gore",
+      "Atmaram Yarlagadda",
+      "Anita H. Clayton",
+      "Preston Samuel",
+      "Christopher K. Rhea",
+      "Sachin Shetty"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.25588v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.25588v1",
+    "tags": [
+      "agent",
+      "evaluation",
+      "reasoning",
+      "workflow"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.22977v1",
+    "title": "The Reasoning Trap: How Enhancing LLM Reasoning Amplifies Tool\n  Hallucination",
+    "authors": [
+      "Chenlong Yin",
+      "Zeyang Sha",
+      "Shiwen Cui",
+      "Changhua Meng"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.22977v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.22977v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2511.01884v2",
+    "title": "CudaForge: An Agent Framework with Hardware Feedback for CUDA Kernel\n  Optimization",
+    "authors": [
+      "Zijian Zhang",
+      "Rong Wang",
+      "Shiyang Li",
+      "Yuebo Luo",
+      "Mingyi Hong",
+      "Caiwen Ding"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2511.01884v2",
+    "pdfUrl": "http://arxiv.org/pdf/2511.01884v2",
+    "tags": [
+      "agent",
+      "evaluation",
+      "multi-agent",
+      "workflow"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.19897v1",
+    "title": "Learning from Supervision with Semantic and Episodic Memory: A\n  Reflective Approach to Agent Adaptation",
+    "authors": [
+      "Jackson Hassell",
+      "Dan Zhang",
+      "Hannah Kim",
+      "Tom Mitchell",
+      "Estevam Hruschka"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.19897v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.19897v1",
+    "tags": [
+      "agent",
+      "evaluation",
+      "memory",
+      "retrieval"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.19732v1",
+    "title": "Memo: Training Memory-Efficient Embodied Agents with Reinforcement\n  Learning",
+    "authors": [
+      "Gunshi Gupta",
+      "Karmesh Yadav",
+      "Zsolt Kira",
+      "Yarin Gal",
+      "Rahaf Aljundi"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.19732v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.19732v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "memory",
+      "retrieval"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.17198v1",
+    "title": "From Pixels to People: Satellite-Based Mapping and Quantification of\n  Riverbank Erosion and Lost Villages in Bangladesh",
+    "authors": [
+      "M Saifuzzaman Rafat",
+      "Mohd Ruhul Ameen",
+      "Akif Islam",
+      "Abu Saleh Musa Miah",
+      "Jungpil Shin"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.17198v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.17198v1",
+    "tags": [
+      "agent",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.15620v1",
+    "title": "GRATING: Low-Latency and Memory-Efficient Semantic Selection on Device",
+    "authors": [
+      "Jiahao Zhou",
+      "Chengliang Lin",
+      "Dingji Li",
+      "Mingkai Dong",
+      "Haibo Chen"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.15620v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.15620v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "memory",
+      "retrieval"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.14808v1",
+    "title": "Agentic NL2SQL to Reduce Computational Costs",
+    "authors": [
+      "Dominik Jehle",
+      "Lennart Purucker",
+      "Frank Hutter"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.14808v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.14808v1",
+    "tags": [
+      "agent",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.12712v3",
+    "title": "Beyond Seeing: Evaluating Multimodal LLMs on Tool-Enabled Image\n  Perception, Transformation, and Reasoning",
+    "authors": [
+      "Xingang Guo",
+      "Utkarsh Tyagi",
+      "Advait Gosai",
+      "Paula Vergara",
+      "Jayeon Park",
+      "Ernesto Gabriel Hernández Montoya",
+      "Chen Bo Calvin Zhang",
+      "Bin Hu",
+      "Yunzhong He",
+      "Bing Liu",
+      "Rakshith Sharma Srinivasa"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.12712v3",
+    "pdfUrl": "http://arxiv.org/pdf/2510.12712v3",
+    "tags": [
+      "benchmark",
+      "evaluation",
+      "reasoning",
+      "tool-use"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.12864v1",
+    "title": "From Literal to Liberal: A Meta-Prompting Framework for Eliciting\n  Human-Aligned Exception Handling in Large Language Models",
+    "authors": [
+      "Imran Khan"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.12864v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.12864v1",
+    "tags": [
+      "agent",
+      "autonomy",
+      "benchmark",
+      "reasoning"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.05746v1",
+    "title": "ARM: Discovering Agentic Reasoning Modules for Generalizable Multi-Agent\n  Systems",
+    "authors": [
+      "Bohan Yao",
+      "Shiva Krishna Reddy Malay",
+      "Vikas Yadav"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.05746v1",
+    "pdfUrl": "http://arxiv.org/pdf/2510.05746v1",
+    "tags": [
+      "agent",
+      "multi-agent",
+      "reasoning",
+      "reflection"
+    ],
+    "analysis": {}
+  },
+  {
+    "paperId": "arxiv:2510.04303v2",
+    "title": "Audit the Whisper: Detecting Steganographic Collusion in Multi-Agent\n  LLMs",
+    "authors": [
+      "Om Tailor"
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "month": 10,
+    "primaryUrl": "http://arxiv.org/abs/2510.04303v2",
+    "pdfUrl": "http://arxiv.org/pdf/2510.04303v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "multi-agent",
+      "workflow"
+    ],
+    "analysis": {}
+  }
+]

@@ -1,0 +1,163 @@
+paperId,title,authors,venue,year,month,primaryUrl,pdfUrl,tags
+arxiv:2511.04481v1,"Promoting Sustainable Web Agents: Benchmarking and Estimating Energy
+  Consumption through Empirical and Theoretical Analysis","Lars Krupp, Daniel Geißler, Vishal Banwari, Paul Lukowicz, Jakob Karolus",arXiv,2025,11,http://arxiv.org/abs/2511.04481v1,http://arxiv.org/pdf/2511.04481v1,"agent,autonomy,benchmark"
+arxiv:2511.03958v1,Multi-Agent Collaborative Framework For Math Problem Generation,"Kia Karbasi, Kevin Hong, Mohammad Amin Samadi, Gregory Pottie",arXiv,2025,11,http://arxiv.org/abs/2511.03958v1,http://arxiv.org/pdf/2511.03958v1,"agent,evaluation,multi-agent,workflow"
+arxiv:2511.03690v1,"The OpenHands Software Agent SDK: A Composable and Extensible Foundation
+  for Production Agents","Xingyao Wang, Simon Rosenberg, Juan Michelini, Calvin Smith, Hoang Tran, Engel Nyst, Rohit Malhotra, Xuhui Zhou, Valerie Chen, Robert Brennan, Graham Neubig",arXiv,2025,11,http://arxiv.org/abs/2511.03690v1,http://arxiv.org/pdf/2511.03690v1,"agent,benchmark,memory,tool-use"
+arxiv:2511.03497v1,"ROSBag MCP Server: Analyzing Robot Data with LLMs for Agentic Embodied
+  AI Applications","Lei Fu, Sahar Salimpour, Leonardo Militano, Harry Edelman, Jorge Peña Queralta, Giovanni Toffetti",arXiv,2025,11,http://arxiv.org/abs/2511.03497v1,http://arxiv.org/pdf/2511.03497v1,"agent,benchmark,tool-use"
+arxiv:2511.03434v1,"Inter-Agent Trust Models: A Comparative Study of Brief, Claim, Proof,
+  Stake, Reputation and Constraint in Agentic Web Protocol Design-A2A, AP2,
+  ERC-8004, and Beyond","Botao 'Amber' Hu, Helena Rong",arXiv,2025,11,http://arxiv.org/abs/2511.03434v1,http://arxiv.org/pdf/2511.03434v1,"agent,autonomy"
+arxiv:2511.02606v1,"A Multi-Agent Psychological Simulation System for Human Behavior
+  Modeling","Xiangen Hu, Jiarui Tong, Sheng Xu",arXiv,2025,11,http://arxiv.org/abs/2511.02606v1,http://arxiv.org/pdf/2511.02606v1,"agent,multi-agent"
+arxiv:2511.02560v1,"SigmaCollab: An Application-Driven Dataset for Physically Situated
+  Collaboration","Dan Bohus, Sean Andrist, Ann Paradiso, Nick Saw, Tim Schoonbeek, Maia Stiber",arXiv,2025,11,http://arxiv.org/abs/2511.02560v1,http://arxiv.org/pdf/2511.02560v1,"agent,benchmark"
+arxiv:2511.02303v1,"Unlocking the Power of Multi-Agent LLM for Reasoning: From Lazy Agents
+  to Deliberation","Zhiwei Zhang, Xiaomin Li, Yudi Lin, Hui Liu, Ramraj Chandradevan, Linlin Wu, Minhua Lin, Fali Wang, Xianfeng Tang, Qi He, Suhang Wang",arXiv,2025,11,http://arxiv.org/abs/2511.02303v1,http://arxiv.org/pdf/2511.02303v1,"agent,multi-agent,reasoning"
+arxiv:2511.01999v1,TRACE: Textual Reasoning for Affordance Coordinate Extraction,"Sangyun Park, Jin Kim, Yuchen Cui, Matthew S. Brown",arXiv,2025,11,http://arxiv.org/abs/2511.01999v1,http://arxiv.org/pdf/2511.01999v1,"autonomy,benchmark,reasoning"
+arxiv:2511.01093v1,"Continual Learning, Not Training: Online Adaptation For Agents","Aman Jaglan, Jarrod Barnes",arXiv,2025,11,http://arxiv.org/abs/2511.01093v1,http://arxiv.org/pdf/2511.01093v1,"agent,benchmark,memory,reasoning"
+arxiv:2511.01078v1,Predictive Auxiliary Learning for Belief-based Multi-Agent Systems,"Qinwei Huang, Stefan Wang, Simon Khan, Garrett Katz, Qinru Qiu",arXiv,2025,11,http://arxiv.org/abs/2511.01078v1,http://arxiv.org/pdf/2511.01078v1,"agent,multi-agent"
+arxiv:2511.00423v1,Bootstrap Off-policy with World Model,"Guojian Zhan, Likun Wang, Xiangteng Zhang, Jiaxin Gao, Masayoshi Tomizuka, Shengbo Eben Li",arXiv,2025,11,http://arxiv.org/abs/2511.00423v1,http://arxiv.org/pdf/2511.00423v1,planning
+arxiv:2511.00162v2,"ARC-GEN: A Mimetic Procedural Benchmark Generator for the Abstraction
+  and Reasoning Corpus",Michael D. Moffitt,arXiv,2025,10,http://arxiv.org/abs/2511.00162v2,http://arxiv.org/pdf/2511.00162v2,"agent,benchmark,evaluation,reasoning"
+arxiv:2510.27334v1,"When AI Trading Agents Compete: Adverse Selection of Meta-Orders by
+  Reinforcement Learning-Based Market Making","Ali Raza Jafree, Konark Jain, Nick Firoozye",arXiv,2025,10,http://arxiv.org/abs/2510.27334v1,http://arxiv.org/pdf/2510.27334v1,agent
+arxiv:2511.00126v1,"Dynamic Model Selection for Trajectory Prediction via Pairwise Ranking
+  and Meta-Features",Lu Bowen,arXiv,2025,10,http://arxiv.org/abs/2511.00126v1,http://arxiv.org/pdf/2511.00126v1,"autonomy,evaluation"
+arxiv:2510.26905v1,"Cognition Envelopes for Bounded AI Reasoning in Autonomous UAS
+  Operations","Pedro Antonio Alarcón Granadeno, Arturo Miguel Bernal Russell, Sofia Nelson, Demetrius Hernandez, Maureen Petterson, Michael Murphy, Walter J. Scheirer, Jane Cleland-Huang",arXiv,2025,10,http://arxiv.org/abs/2510.26905v1,http://arxiv.org/pdf/2510.26905v1,"autonomy,planning,reasoning"
+arxiv:2510.26603v1,"Agentic AI Home Energy Management System: A Large Language Model
+  Framework for Residential Load Scheduling","Reda El Makroum, Sebastian Zwickl-Bernhard, Lukas Kranzl",arXiv,2025,10,http://arxiv.org/abs/2510.26603v1,http://arxiv.org/pdf/2510.26603v1,"agent,autonomy,benchmark,evaluation,reasoning,tool-use,workflow"
+arxiv:2510.26389v1,"Adaptive Context Length Optimization with Low-Frequency Truncation for
+  Multi-Agent Reinforcement Learning","Wenchang Duan, Yaoliang Yu, Jiwan He, Yi Shi",arXiv,2025,10,http://arxiv.org/abs/2510.26389v1,http://arxiv.org/pdf/2510.26389v1,"agent,multi-agent"
+arxiv:2510.26298v1,"Can Agent Conquer Web? Exploring the Frontiers of ChatGPT Atlas Agent in
+  Web Games","Jingran Zhang, Ning Li, Justin Cui",arXiv,2025,10,http://arxiv.org/abs/2510.26298v1,http://arxiv.org/pdf/2510.26298v1,"agent,evaluation,reasoning,retrieval"
+arxiv:2510.26167v1,"One Model to Critique Them All: Rewarding Agentic Tool-Use via Efficient
+  Reasoning","Renhao Li, Jianhong Tu, Yang Su, Hamid Alinejad-Rokny, Derek F. Wong, Junyang Lin, Min Yang",arXiv,2025,10,http://arxiv.org/abs/2510.26167v1,http://arxiv.org/pdf/2510.26167v1,"agent,benchmark,evaluation,reasoning,tool-use"
+arxiv:2510.26068v1,"Learning Geometry: A Framework for Building Adaptive Manifold Models
+  through Metric Optimization",Di Zhang,arXiv,2025,10,http://arxiv.org/abs/2510.26068v1,http://arxiv.org/pdf/2510.26068v1,"autonomy,tool-use"
+arxiv:2510.25726v1,"The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic,
+  and Long-Horizon Task Execution","Junlong Li, Wenshuo Zhao, Jian Zhao, Weihao Zeng, Haoze Wu, Xiaochen Wang, Rui Ge, Yuxuan Cao, Yuzhen Huang, Wei Liu, Junteng Liu, Zhaochen Su, Yiyang Guo, Fan Zhou, Lueyang Zhang, Juan Michelini, Xingyao Wang, Xiang Yue, Shuyan Zhou, Graham Neubig, Junxian He",arXiv,2025,10,http://arxiv.org/abs/2510.25726v1,http://arxiv.org/pdf/2510.25726v1,"agent,benchmark,evaluation,tool-use,workflow"
+arxiv:2510.25588v1,"Standardization of Psychiatric Diagnoses -- Role of Fine-tuned LLM
+  Consortium and OpenAI-gpt-oss Reasoning LLM Enabled Decision Support System","Eranga Bandara, Ross Gore, Atmaram Yarlagadda, Anita H. Clayton, Preston Samuel, Christopher K. Rhea, Sachin Shetty",arXiv,2025,10,http://arxiv.org/abs/2510.25588v1,http://arxiv.org/pdf/2510.25588v1,"agent,evaluation,reasoning,workflow"
+arxiv:2510.25529v1,"Off-policy Reinforcement Learning with Model-based Exploration
+  Augmentation","Likun Wang, Xiangteng Zhang, Yinuo Wang, Guojian Zhan, Wenxuan Wang, Haoyu Gao, Jingliang Duan, Shengbo Eben Li",arXiv,2025,10,http://arxiv.org/abs/2510.25529v1,http://arxiv.org/pdf/2510.25529v1,agent
+arxiv:2510.24699v1,AgentFold: Long-Horizon Web Agents with Proactive Context Management,"Rui Ye, Zhongwang Zhang, Kuan Li, Huifeng Yin, Zhengwei Tao, Yida Zhao, Liangcai Su, Liwen Zhang, Zile Qiao, Xinyu Wang, Pengjun Xie, Fei Huang, Siheng Chen, Jingren Zhou, Yong Jiang",arXiv,2025,10,http://arxiv.org/abs/2510.24699v1,http://arxiv.org/pdf/2510.24699v1,"agent,benchmark"
+arxiv:2510.24645v1,"FunReason-MT Technical Report: Overcoming the Complexity Barrier in
+  Multi-Turn Function Calling","Zengzhuang Xu, Bingguang Hao, Zechuan Wang, Yuntao Wen, Maolin Wang, Yang Liu, Long Chen, Dong Wang, Yicheng Chen, Cunyin Peng, Chenyi Zhuang, Jinjie Gu, Leilei Gan, Xiangyu Zhao, Shi Gu",arXiv,2025,10,http://arxiv.org/abs/2510.24645v1,http://arxiv.org/pdf/2510.24645v1,"agent,autonomy,evaluation,multi-agent,tool-use"
+arxiv:2510.23870v1,"OraPlan-SQL: A Planning-Centric Framework for Complex Bilingual NL2SQL
+  Reasoning","Marianne Menglin Liu, Sai Ashish Somayajula, Syed Fahad Allam Shah, Sujith Ravi, Dan Roth",arXiv,2025,10,http://arxiv.org/abs/2510.23870v1,http://arxiv.org/pdf/2510.23870v1,"agent,benchmark,evaluation,planning,reasoning"
+arxiv:2510.22977v1,"The Reasoning Trap: How Enhancing LLM Reasoning Amplifies Tool
+  Hallucination","Chenlong Yin, Zeyang Sha, Shiwen Cui, Changhua Meng",arXiv,2025,10,http://arxiv.org/abs/2510.22977v1,http://arxiv.org/pdf/2510.22977v1,"agent,benchmark,reasoning,tool-use"
+arxiv:2510.22940v4,Generating Auxiliary Tasks with Reinforcement Learning,"Judah Goldfeder, Matthew So, Hod Lipson",arXiv,2025,10,http://arxiv.org/abs/2510.22940v4,http://arxiv.org/pdf/2510.22940v4,agent
+arxiv:2510.22781v2,Agentic Meta-Orchestrator for Multi-task Copilots,"Xiaofeng Zhu, Yunshen Zhou",arXiv,2025,10,http://arxiv.org/abs/2510.22781v2,http://arxiv.org/pdf/2510.22781v2,"agent,planning,retrieval"
+arxiv:2510.22654v1,UCB-type Algorithm for Budget-Constrained Expert Learning,"Ilgam Latypov, Alexandra Suvorikova, Alexey Kroshnin, Alexander Gasnikov, Yuriy Dorn",arXiv,2025,10,http://arxiv.org/abs/2510.22654v1,http://arxiv.org/pdf/2510.22654v1,agent
+arxiv:2510.22039v1,"Predictive Coding Enhances Meta-RL To Achieve Interpretable
+  Bayes-Optimal Belief Representation Under Partial Observability","Po-Chen Kuo, Han Hou, Will Dabney, Edgar Y. Walker",arXiv,2025,10,http://arxiv.org/abs/2510.22039v1,http://arxiv.org/pdf/2510.22039v1,"agent,planning"
+arxiv:2510.21557v1,"Co-Sight: Enhancing LLM-Based Agents via Conflict-Aware
+  Meta-Verification and Trustworthy Reasoning with Structured Facts","Hongwei Zhang, Ji Lu, Shiqing Jiang, Chenxiang Zhu, Li Xie, Chen Zhong, Haoran Chen, Yurui Zhu, Yongsheng Du, Yanqin Gao, Lingjun Huang, Baoli Wang, Fang Tan, Peng Zou",arXiv,2025,10,http://arxiv.org/abs/2510.21557v1,http://arxiv.org/pdf/2510.21557v1,"agent,benchmark,reasoning"
+arxiv:2510.21427v1,"Causality Meets Locality: Provably Generalizable and Scalable Policy
+  Learning for Networked Systems","Hao Liang, Shuqing Shi, Yudi Zhang, Biwei Huang, Yali Du",arXiv,2025,10,http://arxiv.org/abs/2510.21427v1,http://arxiv.org/pdf/2510.21427v1,agent
+arxiv:2511.01884v2,"CudaForge: An Agent Framework with Hardware Feedback for CUDA Kernel
+  Optimization","Zijian Zhang, Rong Wang, Shiyang Li, Yuebo Luo, Mingyi Hong, Caiwen Ding",arXiv,2025,10,http://arxiv.org/abs/2511.01884v2,http://arxiv.org/pdf/2511.01884v2,"agent,evaluation,multi-agent,workflow"
+arxiv:2510.20579v1,"Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal
+  Evidence","Jiahao Meng, Xiangtai Li, Haochen Wang, Yue Tan, Tao Zhang, Lingdong Kong, Yunhai Tong, Anran Wang, Zhiyang Teng, Yujing Wang, Zhuochen Wang",arXiv,2025,10,http://arxiv.org/abs/2510.20579v1,http://arxiv.org/pdf/2510.20579v1,"agent,benchmark,reasoning"
+arxiv:2510.20205v1,Merge and Conquer: Evolutionarily Optimizing AI for 2048,"Maggie Bai, Ava Kim Cohen, Eleanor Koss, Charlie Lichtenbaum",arXiv,2025,10,http://arxiv.org/abs/2510.20205v1,http://arxiv.org/pdf/2510.20205v1,"agent,planning"
+arxiv:2510.20176v2,"Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table
+  Understanding","Yuhang Zhou, Mingrui Zhang, Ke Li, Mingyi Wang, Qiao Liu, Qifei Wang, Jiayi Liu, Fei Liu, Serena Li, Weiwei Li, Mingze Gao, Abhishek Kumar, Xiangjun Fan, Zhuokai Zhao, Lizhu Zhang",arXiv,2025,10,http://arxiv.org/abs/2510.20176v2,http://arxiv.org/pdf/2510.20176v2,"agent,multi-agent,planning,reasoning,tool-use,workflow"
+arxiv:2510.19897v1,"Learning from Supervision with Semantic and Episodic Memory: A
+  Reflective Approach to Agent Adaptation","Jackson Hassell, Dan Zhang, Hannah Kim, Tom Mitchell, Estevam Hruschka",arXiv,2025,10,http://arxiv.org/abs/2510.19897v1,http://arxiv.org/pdf/2510.19897v1,"agent,evaluation,memory,retrieval"
+arxiv:2510.19732v1,"Memo: Training Memory-Efficient Embodied Agents with Reinforcement
+  Learning","Gunshi Gupta, Karmesh Yadav, Zsolt Kira, Yarin Gal, Rahaf Aljundi",arXiv,2025,10,http://arxiv.org/abs/2510.19732v1,http://arxiv.org/pdf/2510.19732v1,"agent,benchmark,memory,retrieval"
+arxiv:2510.18488v1,"AndroidControl-Curated: Revealing the True Potential of GUI Agents
+  through Benchmark Purification","Ho Fai Leung, Xiaoyan Xi, Fei Zuo",arXiv,2025,10,http://arxiv.org/abs/2510.18488v1,http://arxiv.org/pdf/2510.18488v1,"agent,benchmark"
+arxiv:2510.17947v2,"PLAGUE: Plug-and-play framework for Lifelong Adaptive Generation of
+  Multi-turn Exploits","Neeladri Bhuiya, Madhav Aggarwal, Diptanshu Purwar",arXiv,2025,10,http://arxiv.org/abs/2510.17947v2,http://arxiv.org/pdf/2510.17947v2,"agent,evaluation,planning,tool-use,workflow"
+arxiv:2510.17198v1,"From Pixels to People: Satellite-Based Mapping and Quantification of
+  Riverbank Erosion and Lost Villages in Bangladesh","M Saifuzzaman Rafat, Mohd Ruhul Ameen, Akif Islam, Abu Saleh Musa Miah, Jungpil Shin",arXiv,2025,10,http://arxiv.org/abs/2510.17198v1,http://arxiv.org/pdf/2510.17198v1,"agent,tool-use"
+arxiv:2510.16276v1,What Limits Agentic Systems Efficiency?,"Song Bian, Minghao Yan, Anand Jayarajan, Gennady Pekhimenko, Shivaram Venkataraman",arXiv,2025,10,http://arxiv.org/abs/2510.16276v1,http://arxiv.org/pdf/2510.16276v1,"agent,benchmark,evaluation,reasoning"
+arxiv:2510.16234v1,ScholarEval: Research Idea Evaluation Grounded in Literature,"Hanane Nour Moussa, Patrick Queiroz Da Silva, Daniel Adu-Ampratwum, Alyson East, Zitong Lu, Nikki Puccetti, Mingyi Xue, Huan Sun, Bodhisattwa Prasad Majumder, Sachin Kumar",arXiv,2025,10,http://arxiv.org/abs/2510.16234v1,http://arxiv.org/pdf/2510.16234v1,"agent,evaluation,reasoning,retrieval,tool-use"
+arxiv:2510.15772v1,"Self-evolving expertise in complex non-verifiable subject domains:
+  dialogue as implicit meta-RL",Richard M. Bailey,arXiv,2025,10,http://arxiv.org/abs/2510.15772v1,http://arxiv.org/pdf/2510.15772v1,"agent,memory,planning,reflection,tool-use"
+arxiv:2510.15620v1,GRATING: Low-Latency and Memory-Efficient Semantic Selection on Device,"Jiahao Zhou, Chengliang Lin, Dingji Li, Mingkai Dong, Haibo Chen",arXiv,2025,10,http://arxiv.org/abs/2510.15620v1,http://arxiv.org/pdf/2510.15620v1,"agent,benchmark,memory,retrieval"
+arxiv:2510.15280v1,"Foundation Models for Scientific Discovery: From Paradigm Enhancement to
+  Paradigm Transition","Fan Liu, Jindong Han, Tengfei Lyu, Weijia Zhang, Zhe-Rui Yang, Lu Dai, Cancheng Liu, Hao Liu",arXiv,2025,10,http://arxiv.org/abs/2510.15280v1,http://arxiv.org/pdf/2510.15280v1,"agent,autonomy,reasoning,reflection,workflow"
+arxiv:2510.16047v1,"Algorithms for dynamic scheduling in manufacturing, towards digital
+  factories Improving Deadline Feasibility and Responsiveness via Temporal
+  Networks",Ioan Hedea,arXiv,2025,10,http://arxiv.org/abs/2510.16047v1,http://arxiv.org/pdf/2510.16047v1,"benchmark,reasoning"
+arxiv:2510.14900v1,"Mapping Smarter, Not Harder: A Test-Time Reinforcement Learning Agent
+  That Improves Without Labels or Model Updates","Wen-Kwang Tsao, Yao-Ching Yu, Chien-Ming Huang",arXiv,2025,10,http://arxiv.org/abs/2510.14900v1,http://arxiv.org/pdf/2510.14900v1,agent
+arxiv:2510.14808v1,Agentic NL2SQL to Reduce Computational Costs,"Dominik Jehle, Lennart Purucker, Frank Hutter",arXiv,2025,10,http://arxiv.org/abs/2510.14808v1,http://arxiv.org/pdf/2510.14808v1,"agent,reasoning"
+arxiv:2510.14150v1,"CodeEvolve: An open source evolutionary coding agent for algorithm
+  discovery and optimization","Henrique Assumpção, Diego Ferreira, Leandro Campos, Fabricio Murai",arXiv,2025,10,http://arxiv.org/abs/2510.14150v1,http://arxiv.org/pdf/2510.14150v1,"agent,benchmark,evaluation"
+arxiv:2510.13400v1,"From Minimal Existence to Human Definition: The CES-IMU-HSG Theoretical
+  Framework",Kei Itoh,arXiv,2025,10,http://arxiv.org/abs/2510.13400v1,http://arxiv.org/pdf/2510.13400v1,autonomy
+arxiv:2510.12712v3,"Beyond Seeing: Evaluating Multimodal LLMs on Tool-Enabled Image
+  Perception, Transformation, and Reasoning","Xingang Guo, Utkarsh Tyagi, Advait Gosai, Paula Vergara, Jayeon Park, Ernesto Gabriel Hernández Montoya, Chen Bo Calvin Zhang, Bin Hu, Yunzhong He, Bing Liu, Rakshith Sharma Srinivasa",arXiv,2025,10,http://arxiv.org/abs/2510.12712v3,http://arxiv.org/pdf/2510.12712v3,"benchmark,evaluation,reasoning,tool-use"
+arxiv:2510.12864v1,"From Literal to Liberal: A Meta-Prompting Framework for Eliciting
+  Human-Aligned Exception Handling in Large Language Models",Imran Khan,arXiv,2025,10,http://arxiv.org/abs/2510.12864v1,http://arxiv.org/pdf/2510.12864v1,"agent,autonomy,benchmark,reasoning"
+arxiv:2510.12624v1,Learning-To-Measure: In-context Active Feature Acquisition,"Yuta Kobayashi, Zilin Jing, Jiayu Yao, Hongseok Namkoong, Shalmali Joshi",arXiv,2025,10,http://arxiv.org/abs/2510.12624v1,http://arxiv.org/pdf/2510.12624v1,"agent,benchmark"
+arxiv:2510.12246v1,PromptFlow: Training Prompts Like Neural Networks,"Jingyi Wang, Hongyuan Zhu, Ye Niu, Yunhui Deng",arXiv,2025,10,http://arxiv.org/abs/2510.12246v1,http://arxiv.org/pdf/2510.12246v1,autonomy
+arxiv:2510.12194v1,"ResearStudio: A Human-Intervenable Framework for Building Controllable
+  Deep-Research Agents","Linyi Yang, Yixuan Weng",arXiv,2025,10,http://arxiv.org/abs/2510.12194v1,http://arxiv.org/pdf/2510.12194v1,"agent,autonomy,benchmark,evaluation,planning,tool-use"
+arxiv:2510.11558v1,"Zero Data Retention in LLM-based Enterprise AI Assistants: A Comparative
+  Study of Market Leading Agentic AI Products","Komal Gupta, Aditya Shrivastava",arXiv,2025,10,http://arxiv.org/abs/2510.11558v1,http://arxiv.org/pdf/2510.11558v1,agent
+arxiv:2510.10930v1,Evaluating Language Models' Evaluations of Games,"Katherine M. Collins, Cedegao E. Zhang, Graham Todd, Lance Ying, Mauricio Barba da Costa, Ryan Liu, Prafull Sharma, Adrian Weller, Ionatan Kuperwajs, Lionel Wong, Joshua B. Tenenbaum, Thomas L. Griffiths",arXiv,2025,10,http://arxiv.org/abs/2510.10930v1,http://arxiv.org/pdf/2510.10930v1,"agent,evaluation,reasoning"
+arxiv:2510.10813v1,"LLMs as Strategic Agents: Beliefs, Best Response Behavior, and Emergent
+  Heuristics","Enric Junque de Fortuny, Veronica Roberta Cappelli",arXiv,2025,10,http://arxiv.org/abs/2510.10813v1,http://arxiv.org/pdf/2510.10813v1,"agent,evaluation,reasoning"
+arxiv:2510.10570v1,Multitask Learning with Learned Task Relationships,"Zirui Wan, Stefan Vlaski",arXiv,2025,10,http://arxiv.org/abs/2510.10570v1,http://arxiv.org/pdf/2510.10570v1,agent
+arxiv:2510.10197v1,"Don't Just Fine-tune the Agent, Tune the Environment","Siyuan Lu, Zechuan Wang, Hongxuan Zhang, Qintong Wu, Leilei Gan, Chenyi Zhuang, Jinjie Gu, Tao Lin",arXiv,2025,10,http://arxiv.org/abs/2510.10197v1,http://arxiv.org/pdf/2510.10197v1,"agent,benchmark,tool-use"
+arxiv:2510.10158v1,"Multi-Scale Diffusion Transformer for Jointly Simulating User Mobility
+  and Mobile Traffic Pattern","Ziyi Liu, Qingyue Long, Zhiwen Xue, Huandong Wang, Yong Li",arXiv,2025,10,http://arxiv.org/abs/2510.10158v1,http://arxiv.org/pdf/2510.10158v1,planning
+arxiv:2510.09608v1,StreamingVLM: Real-Time Understanding for Infinite Video Streams,"Ruyi Xu, Guangxuan Xiao, Yukang Chen, Liuning He, Kelly Peng, Yao Lu, Song Han",arXiv,2025,10,http://arxiv.org/abs/2510.09608v1,http://arxiv.org/pdf/2510.09608v1,"agent,autonomy,benchmark,evaluation,memory"
+arxiv:2510.09709v1,"The Idola Tribus of AI: Large Language Models tend to perceive order
+  where none exists","Shin-nosuke Ishikawa, Masato Todo, Taiki Ogihara, Hirotsugu Ohba",arXiv,2025,10,http://arxiv.org/abs/2510.09709v1,http://arxiv.org/pdf/2510.09709v1,"agent,reasoning,retrieval"
+arxiv:2510.08790v1,COMPASS: Enhancing Agent Long-Horizon Reasoning with Evolving Context,"Guangya Wan, Mingyang Ling, Xiaoqi Ren, Rujun Han, Sheng Li, Zizhao Zhang",arXiv,2025,10,http://arxiv.org/abs/2510.08790v1,http://arxiv.org/pdf/2510.08790v1,"agent,benchmark,multi-agent,planning,reasoning,tool-use"
+arxiv:2510.08713v1,"Unified World Models: Memory-Augmented Planning and Foresight for Visual
+  Navigation","Yifei Dong, Fengyi Wu, Guangyu Chen, Zhi-Qi Cheng, Qiyu Hu, Yuxuan Zhou, Jingdong Sun, Jun-Yan He, Qi Dai, Alexander G Hauptmann",arXiv,2025,10,http://arxiv.org/abs/2510.08713v1,http://arxiv.org/pdf/2510.08713v1,"agent,benchmark,memory,planning,reasoning"
+arxiv:2510.07091v1,"The Cognitive Bandwidth Bottleneck: Shifting Long-Horizon Agent from
+  Planning with Actions to Planning with Schemas","Baixuan Xu, Tianshi Zheng, Zhaowei Wang, Hong Ting Tsang, Weiqi Wang, Tianqing Fang, Yangqiu Song",arXiv,2025,10,http://arxiv.org/abs/2510.07091v1,http://arxiv.org/pdf/2510.07091v1,"agent,benchmark,planning"
+arxiv:2510.06912v1,Utilizing Large Language Models for Machine Learning Explainability,"Alexandros Vassiliades, Nikolaos Polatidis, Stamatios Samaras, Sotiris Diplaris, Ignacio Cabrera Martin, Yannis Manolopoulos, Stefanos Vrochidis, Ioannis Kompatsiaris",arXiv,2025,10,http://arxiv.org/abs/2510.06912v1,http://arxiv.org/pdf/2510.06912v1,"autonomy,memory,tool-use"
+arxiv:2510.06711v1,Inefficiencies of Meta Agents for Agent Design,"Batu El, Mert Yuksekgonul, James Zou",arXiv,2025,10,http://arxiv.org/abs/2510.06711v1,http://arxiv.org/pdf/2510.06711v1,agent
+arxiv:2510.06649v1,"Local Reinforcement Learning with Action-Conditioned Root Mean Squared
+  Q-Functions","Frank Wu, Mengye Ren",arXiv,2025,10,http://arxiv.org/abs/2510.06649v1,http://arxiv.org/pdf/2510.06649v1,"agent,benchmark"
+arxiv:2510.06214v1,"Stratified GRPO: Handling Structural Heterogeneity in Reinforcement
+  Learning of LLM Search Agents","Mingkang Zhu, Xi Chen, Bei Yu, Hengshuang Zhao, Jiaya Jia",arXiv,2025,10,http://arxiv.org/abs/2510.06214v1,http://arxiv.org/pdf/2510.06214v1,"agent,benchmark,tool-use"
+arxiv:2510.06187v1,Automated Program Repair of Uncompilable Student Code,"Griffin Pitts, Aum Pandya, Darsh Rank, Tirth Bhatt, Muntasir Hoq, Bita Akram",arXiv,2025,10,http://arxiv.org/abs/2510.06187v1,http://arxiv.org/pdf/2510.06187v1,agent
+arxiv:2510.06135v1,"Pushing Test-Time Scaling Limits of Deep Search with Asymmetric
+  Verification","Weihao Zeng, Keqing He, Chuqiao Kuang, Xiaoguang Li, Junxian He",arXiv,2025,10,http://arxiv.org/abs/2510.06135v1,http://arxiv.org/pdf/2510.06135v1,"agent,benchmark"
+arxiv:2510.05921v1,Prompt reinforcing for long-term planning of large language models,"Hsien-Chin Lin, Benjamin Matthias Ruppik, Carel van Niekerk, Chia-Hao Shen, Michael Heck, Nurul Lubis, Renato Vukovic, Shutong Feng, Milica Gašić",arXiv,2025,10,http://arxiv.org/abs/2510.05921v1,http://arxiv.org/pdf/2510.05921v1,"agent,planning"
+arxiv:2510.05746v1,"ARM: Discovering Agentic Reasoning Modules for Generalizable Multi-Agent
+  Systems","Bohan Yao, Shiva Krishna Reddy Malay, Vikas Yadav",arXiv,2025,10,http://arxiv.org/abs/2510.05746v1,http://arxiv.org/pdf/2510.05746v1,"agent,multi-agent,reasoning,reflection"
+arxiv:2510.05580v1,MetaVLA: Unified Meta Co-training For Efficient Embodied Adaption,"Chen Li, Zhantao Yang, Han Zhang, Fangyi Chen, Chenchen Zhu, Anudeepsekhar Bolimera, Marios Savvides",arXiv,2025,10,http://arxiv.org/abs/2510.05580v1,http://arxiv.org/pdf/2510.05580v1,"agent,benchmark,reasoning"
+arxiv:2510.05442v1,Adversarial Reinforcement Learning for Large Language Model Agent Safety,"Zizhao Wang, Dingcheng Li, Vaishakh Keshava, Phillip Wallis, Ananth Balashankar, Peter Stone, Lukas Rutishauser",arXiv,2025,10,http://arxiv.org/abs/2510.05442v1,http://arxiv.org/pdf/2510.05442v1,"agent,autonomy,tool-use"
+arxiv:2510.05327v1,"DeepV: A Model-Agnostic Retrieval-Augmented Framework for Verilog Code
+  Generation with a High-Quality Knowledge Base","Zahin Ibnat, Paul E. Calzada, Rasin Mohammed Ihtemam, Sujan Kumar Saha, Jingbo Zhou, Farimah Farahmandi, Mark Tehranipoor",arXiv,2025,10,http://arxiv.org/abs/2510.05327v1,http://arxiv.org/pdf/2510.05327v1,"agent,benchmark,retrieval"
+arxiv:2510.05096v2,Paper2Video: Automatic Video Generation from Scientific Papers,"Zeyu Zhu, Kevin Qinghong Lin, Mike Zheng Shou",arXiv,2025,10,http://arxiv.org/abs/2510.05096v2,http://arxiv.org/pdf/2510.05096v2,"agent,benchmark,evaluation,memory,multi-agent"
+arxiv:2510.04935v1,"MARS: Optimizing Dual-System Deep Research via Multi-Agent Reinforcement
+  Learning","Guoxin Chen, Zile Qiao, Wenqing Wang, Donglei Yu, Xuanzhong Chen, Hao Sun, Minpeng Liao, Kai Fan, Yong Jiang, Penguin Xie, Wayne Xin Zhao, Ruihua Song, Fei Huang",arXiv,2025,10,http://arxiv.org/abs/2510.04935v1,http://arxiv.org/pdf/2510.04935v1,"agent,benchmark,multi-agent,reasoning,tool-use"
+arxiv:2510.04607v1,"A Case for Declarative LLM-friendly Interfaces for Improved Efficiency
+  of Computer-Use Agents","Yuan Wang, Mingyu Li, Haibo Chen",arXiv,2025,10,http://arxiv.org/abs/2510.04607v1,http://arxiv.org/pdf/2510.04607v1,"agent,planning"
+arxiv:2510.04542v1,Code World Models for General Game Playing,"Wolfgang Lehrach, Daniel Hennes, Miguel Lazaro-Gredilla, Xinghua Lou, Carter Wendelken, Zun Li, Antoine Dedieu, Jordi Grau-Moya, Marc Lanctot, Atil Iscen, John Schultz, Marcus Chiam, Ian Gemp, Piotr Zielinski, Satinder Singh, Kevin P. Murphy",arXiv,2025,10,http://arxiv.org/abs/2510.04542v1,http://arxiv.org/pdf/2510.04542v1,"agent,planning,reasoning"
+arxiv:2510.04303v2,"Audit the Whisper: Detecting Steganographic Collusion in Multi-Agent
+  LLMs",Om Tailor,arXiv,2025,10,http://arxiv.org/abs/2510.04303v2,http://arxiv.org/pdf/2510.04303v2,"agent,benchmark,multi-agent,workflow"
+arxiv:2510.04284v1,"Doctor-R1: Mastering Clinical Inquiry with Experiential Agentic
+  Reinforcement Learning","Yunghwei Lai, Kaiming Liu, Ziyue Wang, Weizhi Ma, Yang Liu",arXiv,2025,10,http://arxiv.org/abs/2510.04284v1,http://arxiv.org/pdf/2510.04284v1,"agent,benchmark,evaluation,multi-agent"
+arxiv:2510.03847v1,"Small Language Models for Agentic Systems: A Survey of Architectures,
+  Capabilities, and Deployment Trade offs","Raghav Sharma, Manan Mehta",arXiv,2025,10,http://arxiv.org/abs/2510.03847v1,http://arxiv.org/pdf/2510.03847v1,"agent,evaluation,planning,reasoning,tool-use"
+arxiv:2510.03776v1,"Trajectory prediction for heterogeneous agents: A performance analysis
+  on small and imbalanced datasets","Tiago Rodrigues de Almeida, Yufei Zhu, Andrey Rudenko, Tomasz P. Kucner, Johannes A. Stork, Martin Magnusson, Achim J. Lilienthal",arXiv,2025,10,http://arxiv.org/abs/2510.03776v1,http://arxiv.org/pdf/2510.03776v1,agent
+arxiv:2510.03217v1,"Abstain and Validate: A Dual-LLM Policy for Reducing Noise in Agentic
+  Program Repair","José Cambronero, Michele Tufano, Sherry Shi, Renyao Wei, Grant Uy, Runxiang Cheng, Chin-Jung Liu, Shiying Pan, Satish Chandra, Pat Rondon",arXiv,2025,10,http://arxiv.org/abs/2510.03217v1,http://arxiv.org/pdf/2510.03217v1,agent
+arxiv:2510.03064v1,"Comparative Analysis of Parameterized Action Actor-Critic Reinforcement
+  Learning Algorithms for Web Search Match Plan Generation","Ubayd Bapoo, Clement N Nyirenda",arXiv,2025,10,http://arxiv.org/abs/2510.03064v1,http://arxiv.org/pdf/2510.03064v1,benchmark
+arxiv:2510.02837v1,"Beyond the Final Answer: Evaluating the Reasoning Trajectories of
+  Tool-Augmented Agents","Wonjoong Kim, Sangwu Park, Yeonjun In, Sein Kim, Dongha Lee, Chanyoung Park",arXiv,2025,10,http://arxiv.org/abs/2510.02837v1,http://arxiv.org/pdf/2510.02837v1,"agent,benchmark,evaluation,reasoning,tool-use"
+arxiv:2510.05157v1,"Adversarial Reinforcement Learning for Offensive and Defensive Agents in
+  a Simulated Zero-Sum Network Environment","Abrar Shahid, Ibteeker Mahir Ishum, AKM Tahmidul Haque, M Sohel Rahman, A. B. M. Alim Al Islam",arXiv,2025,10,http://arxiv.org/abs/2510.05157v1,http://arxiv.org/pdf/2510.05157v1,"agent,autonomy,evaluation"
+arxiv:2510.01141v1,Apriel-1.5-15b-Thinker,"Shruthan Radhakrishna, Aman Tiwari, Aanjaneya Shukla, Masoud Hashemi, Rishabh Maheshwary, Shiva Krishna Reddy Malay, Jash Mehta, Pulkit Pattnaik, Saloni Mittal, Khalil Slimi, Kelechi Ogueji, Akintunde Oladipo, Soham Parikh, Oluwanifemi Bamgbose, Toby Liang, Ahmed Masry, Khyati Mahajan, Sai Rajeswar Mudumba, Vikas Yadav, Sathwik Tejaswi Madhusudhan, Torsten Scholak, Sagar Davasam, Srinivas Sunkara, Nicholas Chapados",arXiv,2025,10,http://arxiv.org/abs/2510.01141v1,http://arxiv.org/pdf/2510.01141v1,"benchmark,evaluation,reasoning,tool-use"
+arxiv:2510.01051v1,GEM: A Gym for Agentic LLMs,"Zichen Liu, Anya Sims, Keyu Duan, Changyu Chen, Simon Yu, Xiangxin Zhou, Haotian Xu, Shaopan Xiong, Bo Liu, Chenmien Tan, Chuen Yang Beh, Weixun Wang, Hao Zhu, Weiyan Shi, Diyi Yang, Michael Shieh, Yee Whye Teh, Wee Sun Lee, Min Lin",arXiv,2025,10,http://arxiv.org/abs/2510.01051v1,http://arxiv.org/pdf/2510.01051v1,"agent,benchmark,evaluation,tool-use"
+arxiv:2510.00615v2,ACON: Optimizing Context Compression for Long-horizon LLM Agents,"Minki Kang, Wei-Ning Chen, Dongge Han, Huseyin A. Inan, Lukas Wutschitz, Yanzhi Chen, Robert Sim, Saravan Rajmohan",arXiv,2025,10,http://arxiv.org/abs/2510.00615v2,http://arxiv.org/pdf/2510.00615v2,"agent,memory,reasoning,tool-use"
+arxiv:2510.00507v2,"Graph2Eval: Automatic Multimodal Task Generation for Agents via
+  Knowledge Graphs","Yurun Chen, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang",arXiv,2025,10,http://arxiv.org/abs/2510.00507v2,http://arxiv.org/pdf/2510.00507v2,"agent,evaluation,multi-agent,reasoning,tool-use"
