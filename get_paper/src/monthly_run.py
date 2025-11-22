@@ -11,6 +11,10 @@ import os
 _SRC_DIR = Path(__file__).resolve().parent
 if str(_SRC_DIR) not in sys.path:
     sys.path.insert(0, str(_SRC_DIR))
+# 同时将仓库根目录加入 sys.path 以便导入顶层 common 模块
+_REPO_ROOT = _SRC_DIR.parents[1]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
 
 from agents_papers.pipeline.fetch import fetch_all_sources
 from agents_papers.pipeline.parse import parse_records

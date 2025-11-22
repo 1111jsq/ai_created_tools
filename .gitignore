@@ -1,5 +1,7 @@
 # Ignore legacy/outdated data directory under get_paper/src
 get_paper/src/data/
+get_paper/NUL
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

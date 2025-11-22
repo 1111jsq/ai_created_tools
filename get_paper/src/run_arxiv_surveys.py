@@ -9,6 +9,10 @@ import sys
 _SRC_DIR = Path(__file__).resolve().parent
 if str(_SRC_DIR) not in sys.path:
     sys.path.insert(0, str(_SRC_DIR))
+# 同时添加仓库根目录，便于导入顶层 common
+_REPO_ROOT = _SRC_DIR.parents[1]
+if str(_REPO_ROOT) not in sys.path:
+	sys.path.insert(0, str(_REPO_ROOT))
 
 from agents_papers.sources.arxiv_surveys import fetch_arxiv_surveys_for_year, write_year_file
 

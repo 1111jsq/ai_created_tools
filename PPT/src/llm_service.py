@@ -1,27 +1,14 @@
-import os
-from dotenv import load_dotenv
-from openai import OpenAI
+from __future__ import annotations
+
+from common.llm import LLMClient
 from .models import PresentationRequest
 
-# Load environment variables
-load_dotenv()
 
 class LLMService:
     def __init__(self, api_key: str = None, base_url: str = None, model: str = None):
-        self.api_key = api_key or os.getenv("LLM_API_KEY")
-        self.base_url = base_url or os.getenv("LLM_BASE_URL")
-        self.model = model or os.getenv("LLM_MODEL", "deepseek-chat")
-        
-        if not self.api_key:
-            # For local testing without key, or rely on env
-            pass 
-        
-        self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
+        self.client = LLMClient(api_key=api_key, base_url=base_url, model=model)
 
     def analyze_data(self, text: str) -> PresentationRequest:
-        """
-        Analyzes natural language text and extracts structured data for a presentation.
-        """
         system_prompt = (
             "You are an expert data analyst and presentation designer. "
             "Your goal is to extract data from the user's description and structure it for a PowerPoint slide. "
@@ -42,21 +29,12 @@ class LLMService:
             "}"
         )
 
-        try:
-            # DeepSeek and others may not support beta.parse / structured outputs fully
-            # So we use standard JSON mode
-            completion = self.client.chat.completions.create(
-                model=self.model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": text},
-                ],
-                response_format={"type": "json_object"},
-            )
-            
-            content = completion.choices[0].message.content
-            return PresentationRequest.model_validate_json(content)
-        except Exception as e:
-            print(f"Error calling LLM: {e}")
-            raise e
-
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": text},
+        ]
+        data = self.client.chat_json(messages)
+        # 兼容 raw 返回
+        if "raw" in data and isinstance(data["raw"], str):
+            return PresentationRequest.model_validate_json(data["raw"])
+        return PresentationRequest.model_validate(data)
