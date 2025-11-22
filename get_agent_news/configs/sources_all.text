@@ -1,0 +1,97 @@
+rss: []
+
+web:
+
+  - name: 36氪（AI）
+    url: https://www.36kr.com/information/AI/
+    selector:
+      item: "a[href*='/p/']"
+      url_attr: href
+      title_attr: text
+    pagination:
+      type: json_api
+      method: POST
+      api_url: "https://gateway.36kr.com/api/mis/nav/ifm/subNav/flow"
+      headers:
+        Origin: "https://www.36kr.com"
+        Referer: "https://www.36kr.com/information/AI/"
+        Content-Type: "application/json"
+      json:
+        partner_id: "web"
+        timestamp: "{ts}"
+        param:
+          subnavType: 1
+          subnavNick: "AI"
+          pageSize: 30
+          pageEvent: "{page_event}"
+          pageCallback: "{page_callback}"
+          siteId: 1
+          platformId: 100
+      list_path: "data.itemList"
+      title_paths: ["itemTitle", "templateMaterial.title", "templateMaterial.widgetTitle", "title"]
+      url_paths: ["routeUri", "itemUrl", "templateMaterial.url"]
+      base_url: "https://www.36kr.com"
+      next_vars:
+        page_callback: ["data.pageCallback", "data.nextPageCallback", "data.data.pageCallback"]
+      max_pages: 30
+      stop_on_empty: true
+    filters:
+      include_keywords: [AI, 人工智能, 大模型]
+    tags: [国内, 媒体, 商业]
+    enabled: true
+
+  - name: 阿里云开发者社区（AI）
+    url: https://developer.aliyun.com/
+    selector:
+      item: "a[href*='/article/']"
+      url_attr: href
+      title_attr: text
+    filters:
+      include_keywords: [AI, 人工智能, 大模型, 机器学习]
+    tags: [国内, 厂商, 技术]
+    enabled: true
+
+  - name: 腾讯云开发者（AI）
+    url: https://cloud.tencent.com/developer
+    selector:
+      item: "a[href*='/developer/article/']"
+      url_attr: href
+      title_attr: text
+    filters:
+      include_keywords: [AI, 人工智能, 大模型, 机器学习]
+    tags: [国内, 厂商, 技术]
+    enabled: true
+
+  - name: 36氪（AI）
+    url: https://www.36kr.com/information/AI/
+    selector:
+      item: "a[href*='/p/']"
+      url_attr: href
+      title_attr: text
+    filters:
+      include_keywords: [AI, 人工智能, 大模型]
+    tags: [国内, 媒体, 商业]
+    enabled: true
+
+  - name: AIbase 资讯
+    url: https://news.aibase.com/zh/news
+    selector:
+      item: "a[href^='/zh/news/'], article a[href]"
+      url_attr: href
+      title_attr: text
+    filters:
+      include_keywords: [AI, 人工智能, 大模型]
+    tags: [国内, 聚合, 行业]
+    enabled: true
+
+wechat:
+  - name: 微信公众号（大模型）
+    query: 大模型 AI
+    tags: [wechat, 搜索]
+    max_pages: 5
+    enabled: true
+  - name: 微信公众号（智能体）
+    query: 智能体 Agent LLM
+    tags: [wechat, 搜索]
+    max_pages: 5
+    enabled: true

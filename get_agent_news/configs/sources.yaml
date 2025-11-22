@@ -1,0 +1,56 @@
+rss: []
+
+web:
+  - name: AIbase 资讯
+    url: https://news.aibase.com/zh/news
+    selector:
+      item: "a[href^='/zh/news/'], article a[href]"
+      url_attr: href
+      title_attr: text
+    filters:
+      include_keywords: [AI, 人工智能, 大模型]
+    pagination:
+      type: json_api
+      method: GET
+      api_url: "https://mcpapi.aibase.cn/api/aiInfo/aiNews"
+      headers:
+        Referer: "https://news.aibase.com/zh/news"
+        Origin: "https://news.aibase.com"
+      params:
+        t: "{ts}"
+        langType: "zh_cn"
+        pageNo: "{page}"
+      list_path: "data.list"
+      title_path: "title"
+      summary_path: "description"
+      published_path: "createTime"
+      url_template: "https://news.aibase.com/zh/news/{oid}"
+      base_url: "https://news.aibase.com"
+      max_pages: 10
+      stop_on_empty: true
+    tags: [国内, 聚合, 行业]
+    enabled: true
+
+
+daily:
+  - name: AIbase 日报
+    url: https://news.aibase.com/zh/daily
+    # 提示：当使用 CLI --export-markdown 时，日报会写入 content/daily/，此处 output_dir 将被忽略
+    output_dir: data/daily
+    max_pages: 3
+    api:
+      url: "https://mcpapi.aibase.cn/api/aiInfo/dailyNews"
+      method: GET
+      headers:
+        Referer: "https://news.aibase.com/zh/daily"
+        Origin: "https://news.aibase.com"
+      params:
+        t: "{ts}"
+        langType: "zh_cn"
+        pageNo: "{page}"
+      list_path: "data.list"
+      title_path: "title"
+      date_path: "createTime"
+      oid_path: "oid"
+      url_template: "https://news.aibase.com/zh/daily/{oid}"
+    enabled: true
