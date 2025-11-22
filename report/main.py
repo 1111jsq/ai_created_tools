@@ -129,39 +129,92 @@ def _sanitize_mermaid_text(text: str) -> str:
 # Readers
 # ----------------------------
 
-def read_papers(paper_root: Path, label: str, logger: logging.Logger) -> List[PaperItem]:
-    """Read papers from get_paper/data/exports/<label> if present."""
-    exports_dir = paper_root / "exports" / label
+def _parse_label_to_range(label: str) -> Optional[Tuple[datetime, datetime]]:
+    # YYYYMMDD-YYYYMMDD
+    m = re.match(r"^(\d{8})-(\d{8})$", label)
+    if m:
+        s = datetime.strptime(m.group(1), "%Y%m%d").replace(tzinfo=timezone.utc)
+        e = datetime.strptime(m.group(2), "%Y%m%d").replace(tzinfo=timezone.utc)
+        return (s, e) if e >= s else None
+    # YYYY-MM monthly
+    m2 = re.match(r"^(\d{4})-(\d{2})$", label)
+    if m2:
+        y, mo = int(m2.group(1)), int(m2.group(2))
+        start = datetime(y, mo, 1, tzinfo=timezone.utc)
+        if mo == 12:
+            end = datetime(y + 1, 1, 1, tzinfo=timezone.utc) - timedelta(seconds=1)
+        else:
+            end = datetime(y, mo + 1, 1, tzinfo=timezone.utc) - timedelta(seconds=1)
+        return (start, end)
+    return None
+
+
+def _read_paper_dir(dir_path: Path, logger: logging.Logger) -> List[Dict[str, Any]]:
+    """Return raw dict entries from ranked-all.json if exists; empty otherwise."""
+    data: List[Dict[str, Any]] = []
+    ranked_all = None
+    # find first *-ranked-all.json
+    for p in dir_path.glob("*-ranked-all.json"):
+        ranked_all = p
+        break
+    if ranked_all and ranked_all.exists():
+        try:
+            data = json.loads(ranked_all.read_text(encoding="utf-8")) or []
+            if not isinstance(data, list):
+                data = []
+        except Exception as e:
+            logger.exception("读取论文 ranked-all 失败: %s", e)
+    return data
+
+
+def read_papers(paper_root: Path, label: str, logger: logging.Logger, start_dt: Optional[datetime] = None, end_dt: Optional[datetime] = None) -> List[PaperItem]:
+    """Read papers from get_paper/data/exports/<label>; if missing, scan overlapping labels."""
+    exports_root = paper_root / "exports"
+    exports_dir = exports_root / label
     items: List[PaperItem] = []
-    if not exports_dir.exists():
-        logger.warning("Paper exports directory not found: %s", str(exports_dir))
+    # helper to convert dict -> PaperItem with date filter
+    def _append_from_dicts(dicts: List[Dict[str, Any]]) -> None:
+        for d in dicts:
+            pub = d.get("submitted_date") or d.get("published_at")
+            pub_dt = _parse_iso_flexible(pub or "")
+            if start_dt and end_dt:
+                if not _within_range(pub_dt, start_dt, end_dt):
+                    continue
+            items.append(
+                PaperItem(
+                    title=d.get("title") or d.get("normalized_title") or "",
+                    authors=d.get("authors") or d.get("normalized_authors"),
+                    source=d.get("source") or d.get("origin") or None,
+                    published_at=pub,
+                    tags=d.get("tags"),
+                    score=d.get("score"),
+                    rank=d.get("rank"),
+                )
+            )
+
+    if exports_dir.exists():
+        try:
+            _append_from_dicts(_read_paper_dir(exports_dir, logger))
+        except Exception as e:
+            logger.exception("读取论文目录失败: %s", e)
         return items
 
-    ranked_all = exports_dir / f"{label}-ranked-all.json"
-    stats_json = exports_dir / f"{label}-stats.json"
+    # fallback: scan overlapping labels under exports_root
+    if not exports_root.exists():
+        logger.info("Paper exports root not found: %s", str(exports_root))
+        return items
+    logger.info("Paper label dir missing, scan overlaps under: %s", str(exports_root))
     try:
-        if ranked_all.exists():
-            data = json.loads(ranked_all.read_text(encoding="utf-8"))
-            if isinstance(data, list):
-                for d in data:
-                    items.append(
-                        PaperItem(
-                            title=d.get("title") or d.get("normalized_title") or "",
-                            authors=d.get("authors") or d.get("normalized_authors"),
-                            source=d.get("source") or d.get("origin") or None,
-                            published_at=d.get("submitted_date") or d.get("published_at"),
-                            tags=d.get("tags"),
-                            score=d.get("score"),
-                            rank=d.get("rank"),
-                        )
-                    )
-        elif stats_json.exists():
-            # Fallback: only counts available; keep empty items list but allow stats usage later
-            logger.info("Paper ranked-all missing; will rely on stats.json for counts: %s", str(stats_json))
-        else:
-            logger.warning("No recognizable paper outputs under: %s", str(exports_dir))
+        for sub in sorted([p for p in exports_root.iterdir() if p.is_dir()]):
+            rng = _parse_label_to_range(sub.name)
+            if not rng or not (start_dt and end_dt):
+                continue
+            s2, e2 = rng
+            # overlap if ranges intersect
+            if not (e2 < start_dt or s2 > end_dt):
+                _append_from_dicts(_read_paper_dir(sub, logger))
     except Exception as e:
-        logger.exception("Failed reading papers: %s", e)
+        logger.exception("扫描论文导出目录失败: %s", e)
     return items
 
 
@@ -169,7 +222,7 @@ def read_news(news_exports_root: Path, start_dt: datetime, end_dt: datetime, log
     """Scan get_agent_news/data/exports/<run_dir>/news.jsonl and filter by range."""
     items: List[NewsAggItem] = []
     if not news_exports_root.exists():
-        logger.warning("News exports root not found: %s", str(news_exports_root))
+        logger.info("News exports root not found: %s", str(news_exports_root))
         return items
     try:
         for run_dir in sorted(news_exports_root.iterdir()):
@@ -210,7 +263,7 @@ def read_releases(sdk_data_root: Path, start_dt: datetime, end_dt: datetime, rep
     releases_dir = sdk_data_root / "releases"
     items: List[ReleaseAggItem] = []
     if not releases_dir.exists():
-        logger.warning("SDK releases directory not found: %s", str(releases_dir))
+        logger.info("SDK releases directory not found: %s", str(releases_dir))
         return items
     md_files = list(releases_dir.glob("*.md"))
     repo_pat = re.compile(r"^# Releases Page \d+ - ([\w\-/\.]+)", re.MULTILINE)
@@ -526,7 +579,7 @@ def main() -> int:
             return 0
 
         # Read sources
-        papers = read_papers(paper_root, label, logger)
+        papers = read_papers(paper_root, label, logger, start_dt=start_dt, end_dt=end_dt)
         news = read_news(news_root, start_dt, end_dt, logger)
         repos_filter = [s.strip() for s in args.repos.split(",") if s.strip()] if args.repos else None
         releases = read_releases(sdk_root, start_dt, end_dt, repos_filter, logger)
