@@ -2,3 +2,4 @@
 alwaysApply: true
 ---
 提交修改到github仓库的方式，使用git命令，如：git add . && git commit -m "feat: 添加 Arxiv 论文分析器及相关配置" && git push
+不要每次修改就提交，要求提交后再提交

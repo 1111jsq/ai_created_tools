@@ -3,6 +3,13 @@ get_paper/src/data/
 get_paper/NUL
 get_paper/data/
 
+# Generated reports and outputs
+reports/
+data/
+svg_generator/data/output/
+PPT/output/
+PPT/output.pptx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -210,3 +217,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+NUL
