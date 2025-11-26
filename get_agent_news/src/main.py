@@ -1,9 +1,24 @@
 from __future__ import annotations
 
 # 兼容直接运行 src/main.py 的路径引导
-import os as _os, sys as _sys
+# 确保可以从项目根目录或 get_agent_news 目录运行
+import os as _os
+import sys as _sys
+from pathlib import Path
+
+# 如果作为模块运行（python -m src.main），__package__ 不为 None
+# 如果直接运行（python src/main.py），__package__ 为 None
 if __package__ is None or __package__ == "":
-    _sys.path.append(_os.path.dirname(_os.path.dirname(__file__)))
+    # 直接运行模式：添加 get_agent_news 目录到路径
+    _current_file = Path(__file__).resolve()
+    _get_agent_news_dir = _current_file.parent.parent
+    if str(_get_agent_news_dir) not in _sys.path:
+        _sys.path.insert(0, str(_get_agent_news_dir))
+    
+    # 同时添加项目根目录，以便导入 common 模块
+    _project_root = _get_agent_news_dir.parent
+    if str(_project_root) not in _sys.path:
+        _sys.path.insert(0, str(_project_root))
 
 import argparse
 import logging
@@ -16,15 +31,13 @@ import yaml
 from src.models import NewsItem
 from src.pipelines.normalize import normalize_items
 from src.pipelines.deduplicate import deduplicate_items, get_deduplication_stats
-from src.pipelines.rank import rank_items
-from src.pipelines.analyze import analyze_items, write_analysis_files
 from src.sources.rss_adapter import fetch_rss
 from src.sources.web_adapter import fetch_web
 from src.sources.wechat_adapter import fetch_wechat_search
 from src.sources.aibase_daily import export_aibase_daily
 from src.storage.file_storage import save_items_to_directory, FileStorage
 from src.config import get_sources_path, get_log_path
-from src.pipelines.markdown_export import export_news_item_markdown
+from src.pipelines.markdown_export import export_news_items_by_date
 from src.pipelines.markdown_index import build_index
 
 
@@ -177,11 +190,9 @@ def main() -> int:
         logger.error("未找到 sources.yaml: %s", get_sources_path())
         return 2
 
-    # 创建本次运行目录（便于记录 LLM 输入输出日志）
+    # 创建本次运行目录（用于保存导出数据）
     run_time = datetime.now()
     run_dir_name = run_time.strftime("%Y%m%d_%H%M%S")
-    export_path_for_logs = os.path.join(args.export_dir, run_dir_name)
-    os.makedirs(export_path_for_logs, exist_ok=True)
 
     try:
         # 初始化文件系统存储
@@ -229,20 +240,17 @@ def main() -> int:
                 logger.info("候选项数量: %s", len(items))
             items = normalize_items(items)
             items = deduplicate_items(items)
-            items = rank_items(items, export_dir=export_path_for_logs)
             export_path = save_items_to_directory(items, base_dir=args.export_dir, run_time=run_time)
-            analysis = analyze_items(items)
-            write_analysis_files(analysis, export_path, items)
             logger.info("已保存到目录: %s", export_path)
 
-            # 可选：资讯 Markdown
-            if args.export_markdown:
-                for it in items:
-                    try:
-                        export_news_item_markdown(it, base_dir=content_root)
-                        new_news_written += 1
-                    except Exception:
-                        logger.exception("导出资讯 Markdown 失败: %s", it.url)
+            # 可选：资讯 Markdown（按日期分组）
+            if args.export_markdown and items:
+                try:
+                    exported_paths = export_news_items_by_date(items, base_dir=content_root)
+                    new_news_written = len(exported_paths)
+                    logger.info("已导出 %s 个日期的资讯文件", new_news_written)
+                except Exception:
+                    logger.exception("导出资讯 Markdown 失败")
 
         # 目录页
         if args.export_markdown:
@@ -276,9 +284,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    os.environ.setdefault('HTTP_PROXY', 'http://proxyhk.zte.com.cn:80')
-    os.environ.setdefault('HTTPS_PROXY', 'http://proxyhk.zte.com.cn:80')
-    ENCODING = os.environ.get('FILE_ENCODING', 'utf-8')
+    # 代理配置应从环境变量读取，不在此硬编码
+    # 如果需要在代码中设置默认值，应通过 common/config_loader 统一管理
     raise SystemExit(main())
 
 

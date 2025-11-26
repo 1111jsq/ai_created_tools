@@ -1,11 +1,10 @@
 from __future__ import annotations
 
 import logging
-from typing import List, Optional
+from typing import List
 from datetime import datetime, timezone
 
 from src.models import NewsItem
-from src.llm.deepseek_client import DeepSeekClient
 
 log = logging.getLogger("rank")
 
@@ -42,28 +41,11 @@ def _heuristic_score(item: NewsItem) -> float:
     return max(0.0, min(1.0, score))
 
 
-def rank_items(items: List[NewsItem], export_dir: Optional[str] = None, batch_size: int = 30) -> List[NewsItem]:
-    client = DeepSeekClient()
-    use_llm = client.available()
-
-    if use_llm:
-        log.info("使用 DeepSeek 批量打分（每批 %s 条）", batch_size)
-        for start in range(0, len(items), batch_size):
-            end = min(start + batch_size, len(items))
-            batch = items[start:end]
-            suffix = f"_{start // batch_size + 1}"
-            scores = client.score_batch(batch, export_dir=export_dir, batch_suffix=suffix)
-            if scores is None:
-                log.warning("批 %s 打分失败，使用启发式回退", suffix)
-                for it in batch:
-                    it.score = _heuristic_score(it)
-            else:
-                for it, sc in zip(batch, scores):
-                    it.score = sc
-    else:
-        log.info("未配置 DEEPSEEK_API_KEY，使用启发式打分")
-        for it in items:
-            it.score = _heuristic_score(it)
+def rank_items(items: List[NewsItem]) -> List[NewsItem]:
+    """使用启发式方法对新闻项进行排序"""
+    log.info("使用启发式打分")
+    for it in items:
+        it.score = _heuristic_score(it)
 
     items.sort(key=lambda x: (x.score or 0.0), reverse=True)
     return items

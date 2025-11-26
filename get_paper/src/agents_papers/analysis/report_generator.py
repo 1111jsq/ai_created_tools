@@ -102,8 +102,13 @@ def _generate_executive_summary(
         top_topic = stats.topics_distribution[0]
         lines.append(f"- **主要研究领域**: {top_topic[0]} ({top_topic[1]}篇论文)")
 
-    # 高评分论文数量
-    high_score_count = len([p for p, _, score in top_papers if score >= 3.0])
+    # 高评分论文数量（从 analysis 中获取 novelty_score）
+    high_score_count = 0
+    for paper, analysis in top_papers:
+        if analysis and isinstance(analysis, dict):
+            novelty_score = analysis.get("novelty_score")
+            if isinstance(novelty_score, (int, float)) and novelty_score >= 3.0:
+                high_score_count += 1
     if high_score_count > 0:
         lines.append(f"- **高质量论文**: {high_score_count}篇论文获得较高评分（≥3.0）")
 

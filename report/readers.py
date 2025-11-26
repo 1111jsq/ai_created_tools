@@ -101,16 +101,48 @@ def read_papers(
 
 def extract_summaries_from_markdown(content: str, title_to_summary: Dict[str, str]) -> None:
     """从markdown内容中提取标题和摘要"""
-    # 匹配格式：## 标题 ... ### 摘要 ... 摘要内容
-    pattern = r'##\s+(.+?)\n.*?###\s+摘要\s*\n\s*\n(.+?)(?=\n---|\n##|$)'
-    matches = re.finditer(pattern, content, re.DOTALL)
-    for match in matches:
+    # 支持多种格式：
+    # 1. ## 标题 ... ### 摘要 ... 摘要内容
+    # 2. ## 标题 ... **摘要** ... 摘要内容
+    # 3. ## 标题 ... 摘要: ... 摘要内容
+    
+    # 模式1：标准的 ## 标题 + ### 摘要
+    pattern1 = r'##\s+(.+?)\n.*?###\s+摘要\s*\n\s*\n(.+?)(?=\n---|\n##|$)'
+    matches1 = re.finditer(pattern1, content, re.DOTALL)
+    for match in matches1:
         title = match.group(1).strip()
         summary = match.group(2).strip()
         if title and summary:
             # 清理摘要文本
             summary = re.sub(r'\s+', ' ', summary).strip()
-            title_to_summary[title] = summary
+            # 移除可能的markdown格式标记
+            summary = re.sub(r'\*\*', '', summary)
+            if summary:
+                title_to_summary[title] = summary
+    
+    # 模式2：## 标题 + **摘要**
+    pattern2 = r'##\s+(.+?)\n.*?\*\*摘要\*\*\s*\n\s*\n(.+?)(?=\n---|\n##|$)'
+    matches2 = re.finditer(pattern2, content, re.DOTALL)
+    for match in matches2:
+        title = match.group(1).strip()
+        summary = match.group(2).strip()
+        if title and summary:
+            summary = re.sub(r'\s+', ' ', summary).strip()
+            summary = re.sub(r'\*\*', '', summary)
+            if summary and title not in title_to_summary:  # 避免覆盖已有的
+                title_to_summary[title] = summary
+    
+    # 模式3：## 标题 + 摘要:
+    pattern3 = r'##\s+(.+?)\n.*?摘要[:：]\s*\n\s*\n(.+?)(?=\n---|\n##|$)'
+    matches3 = re.finditer(pattern3, content, re.DOTALL)
+    for match in matches3:
+        title = match.group(1).strip()
+        summary = match.group(2).strip()
+        if title and summary:
+            summary = re.sub(r'\s+', ' ', summary).strip()
+            summary = re.sub(r'\*\*', '', summary)
+            if summary and title not in title_to_summary:
+                title_to_summary[title] = summary
 
 
 def read_news(

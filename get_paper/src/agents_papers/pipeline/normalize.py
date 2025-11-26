@@ -64,37 +64,6 @@ def normalize_records(entries: Iterable[Dict[str, Any]], month: str, start_date:
                 mapped_topics.append("cs.MA")
             paper.topics = sorted(set(mapped_topics))
             papers.append(paper)
-        else:
-            if e.get("source") == "openreview":
-                year, mon = _parse_year_month(e.get("published"), month)
-                # 如果提供显式日期窗口且 published 存在，则进行窗口过滤
-                if start_date and end_date and e.get("published"):
-                    try:
-                        pub = datetime.fromisoformat(e["published"].replace("Z", "+00:00"))
-                        if not (start_date <= pub.strftime("%Y-%m-%d") <= end_date):
-                            continue
-                    except Exception:
-                        pass
-                else:
-                    if year and mon:
-                        ym = f"{year:04d}-{mon:02d}"
-                        if ym != month:
-                            continue
-                paper = Paper.from_minimal(
-                    title=e.get("title") or "",
-                    authors=e.get("authors") or [],
-                    abstract=e.get("abstract") or "",
-                    venue=e.get("venue") or "OpenReview",
-                    year=year,
-                    month=mon,
-                    primaryUrl=e.get("primaryUrl"),
-                    pdfUrl=e.get("pdfUrl"),
-                    sources=["openreview"],
-                    doi=None,
-                )
-                papers.append(paper)
-            else:
-                continue
     return papers
 
 

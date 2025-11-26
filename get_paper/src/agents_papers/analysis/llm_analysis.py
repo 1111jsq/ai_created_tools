@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import logging
 from typing import Dict, List
+import os
 
 from agents_papers.models.paper import Paper
 from common.llm import LLMClient
@@ -18,10 +19,13 @@ SYSTEM_PROMPT = (
 
 
 def analyze_with_llm(papers: List[Paper], budget: int = 20) -> List[Dict[str, object]]:
-    client = LLMClient()
-    if not client.api_key:
+    # 先检查环境变量，避免在未配置密钥时初始化底层客户端报错
+    api_key = os.getenv("LLM_API_KEY", "").strip()
+    if not api_key:
         logger.warning("LLM_API_KEY 未设置，跳过大模型分析")
         return []
+
+    client = LLMClient()
 
     results: List[Dict[str, object]] = []
     limited = papers[:budget]

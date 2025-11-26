@@ -1,0 +1,135 @@
+# 博客源配置
+# 每个博客源包含以下字段：
+#   - name: 博客源名称（用于目录组织）
+#   - url: 博客首页 URL
+#   - type: 爬取类型（html 或 rss）
+#   - rss_url: RSS feed URL（可选，如果配置了会优先使用）
+#   - selectors: HTML 列表页选择器配置（type=html 时使用）
+#   - pagination: 翻页配置
+#   - content_selectors: 详情页内容选择器（type=html 时使用）
+#   - delay: 请求延迟（秒，默认 1.0）
+#   - timeout: 请求超时（秒，默认 30）
+#   - tags: 标签列表
+
+blogs:
+  - name: langchain
+    url: https://blog.langchain.com/
+    type: html
+    rss_url: https://blog.langchain.com/feed/  # 可选，如果存在会优先使用 RSS
+    selectors:
+      list_item: article  # 列表页文章项选择器
+      title: h2 a, h3 a, h1 a  # 标题选择器（多个选择器用逗号分隔）
+      link: h2 a, h3 a, h1 a  # 链接选择器
+      date: time  # 日期选择器
+      author: .author, [rel="author"]  # 作者选择器
+    pagination:
+      type: next  # 翻页类型：next（下一页链接）、param（查询参数）、page_links（页码链接）
+      next_selector: a[rel="next"], .next-page  # 下一页链接选择器（type=next 时使用）
+      max_pages: 10  # 最大页数
+    content_selectors:  # 详情页选择器
+      title: h1  # 标题选择器
+      content: article, .post-content, main  # 正文内容选择器
+      author: .author, [rel="author"]  # 作者选择器
+      date: time, .published-date  # 日期选择器
+    delay: 1.0  # 请求延迟（秒）
+    timeout: 30  # 请求超时（秒）
+    tags: [ai, langchain, agents]
+
+  - name: anthropic
+    url: https://www.anthropic.com/engineering
+    type: html
+    selectors:
+      list_item: a[href*="/engineering/"]  # 直接使用包含 /engineering/ 的链接作为文章项
+      title: a  # 标题和链接是同一个元素
+      link: a  # 链接选择器
+      date: a  # 日期也在链接文本中，会通过正则提取（格式：Nov 04, 2025）
+    pagination:
+      type: next  # 如果有翻页
+      next_selector: a[rel="next"], .next-page
+      max_pages: 10  # 最大页数
+    content_selectors:  # 详情页选择器
+      title: h1  # 标题选择器
+      content: article, main  # 正文内容选择器
+      date: time, [class*="date"]  # 日期选择器
+    delay: 1.5  # 请求延迟（秒，稍微长一点）
+    timeout: 30  # 请求超时（秒）
+    tags: [ai, anthropic, claude, engineering]
+
+  - name: cursor
+    url: https://cursor.com/cn/blog
+    type: html
+    selectors:
+      list_item: article  # 列表页文章项选择器
+      title: article a p.type-base:first-of-type  # 标题选择器（第一个 p 标签，主标题）
+      link: article a  # 链接选择器
+      date: article time  # 日期选择器（使用 datetime 属性）
+    pagination:
+      type: path  # 翻页类型：path（路径参数，如 /page/2）
+      path_template: /cn/blog/page/{page}  # 路径模板，{page} 会被替换为页码（绝对路径，替换整个路径）
+      start: 1  # 起始页码
+      step: 1  # 页码步长
+      max_pages: 10  # 最大页数（cursor 博客有4页）
+    content_selectors:  # 详情页选择器
+      title: h1  # 标题选择器
+      content: main, article  # 正文内容选择器
+      date: time  # 日期选择器
+    delay: 1.0  # 请求延迟（秒）
+    timeout: 30  # 请求超时（秒）
+    tags: [ai, cursor, coding, agent]
+
+  # 注意：OpenAI 的页面使用 JavaScript 渲染，静态 HTML 中没有内容
+  # 如果需要抓取 OpenAI，可能需要使用 Selenium 或 Playwright 等支持 JS 渲染的工具
+  # 或者等待 OpenAI 提供 RSS feed
+  # - name: openai-research
+  #   url: https://openai.com/news/research/
+  #   type: html
+  #   selectors:
+  #     list_item: article, [class*="article"], [class*="post"]
+  #     title: h2 a, h3 a, h1 a, a
+  #     link: h2 a, h3 a, h1 a, a
+  #     date: time, .date, [class*="date"]
+  #   pagination:
+  #     type: next
+  #     next_selector: a[rel="next"], .next-page
+  #     max_pages: 10
+  #   content_selectors:
+  #     title: h1
+  #     content: article, main, .content, .post-content
+  #     date: time, .date, [class*="date"]
+  #   delay: 1.0
+  #   timeout: 30
+  #   tags: [ai, openai, research]
+
+  # - name: openai-product-releases
+  #   url: https://openai.com/news/product-releases/
+  #   type: html
+  #   selectors:
+  #     list_item: article, [class*="article"], [class*="post"]
+  #     title: h2 a, h3 a, h1 a, a
+  #     link: h2 a, h3 a, h1 a, a
+  #     date: time, .date, [class*="date"]
+  #   pagination:
+  #     type: next
+  #     next_selector: a[rel="next"], .next-page
+  #     max_pages: 10
+  #   content_selectors:
+  #     title: h1
+  #     content: article, main, .content, .post-content
+  #     date: time, .date, [class*="date"]
+  #   delay: 1.0
+  #   timeout: 30
+  #   tags: [ai, openai, product]
+
+  - name: gemini
+    url: https://www.gemini.com/en-SG/blog
+    type: rss
+    rss_url: https://www.gemini.com/en-SG/blog/rss.xml
+    content_selectors:
+      title: h1
+      content: 'article, main, [data-testid="blog-post"]'
+      author: '[rel="author"], .author, [class*="author"]'
+      date: 'time, [class*="date"]'
+    delay: 1.0
+    timeout: 30
+    tags: [crypto, gemini, blog, engineering]
+

@@ -1,6 +1,6 @@
 # AI Agent Papers ETL
 
-最小月度/区间 ETL：抓取（arXiv、OpenReview）、解析/规范化、去重、质量筛选、分类与摘要、下载 PDF、导出 JSON/CSV/MD，并结合 LLM 分析与排名。
+最小月度/区间 ETL：抓取（arXiv）、解析/规范化、去重、质量筛选、分类与摘要、下载 PDF、导出 JSON/CSV/MD，并结合 LLM 分析与排名。
 
 ## 快速开始
 
@@ -20,9 +20,6 @@ uv pip install -r requirements.txt
 2) 运行（按区间）
 ```bash
 # Windows CMD 示例（可在源码中已默认设置时间窗口）
-set OPENREVIEW_ENABLED=1
-set OPENREVIEW_VENUE_ID=ICLR.cc/2025/Conference
-set OPENREVIEW_STATUS=accepted
 python -m src.monthly_run
 ```
 
@@ -36,7 +33,7 @@ python -m src.monthly_run --start 2025-11-01 --end 2025-11-16
 ```
 
 产物输出在 `get_paper/data/`（已统一，无论从哪里运行均输出到该处）：
-- `raw/` 原始抓取（含 `openreview/` 与 `arxiv/`）
+- `raw/` 原始抓取（含 `arxiv/`）
 - `exports/` JSON/CSV/Markdown、排名与统计
 
 ## 综述抓取（2020+，按年存放）
@@ -49,12 +46,6 @@ python -m src.run_arxiv_surveys
 # 自定义起止年份与输出目录
 python -m src.run_arxiv_surveys --start-year 2021 --end-year 2024 --output-base src/data/raw/arxiv_surveys
 ```
-
-## OpenReview（API v2）说明
-- 推荐使用官方客户端（`openreview-py`，已在 `requirements.txt` 中列出）
-- 必需：`OPENREVIEW_ENABLED=1` 与 `OPENREVIEW_VENUE_ID`（如 `ICLR.cc/2025/Conference`）
-- 仅发表/接收稿：`OPENREVIEW_STATUS=accepted`（别名：`published`/`final`）
-- 未提供 `OPENREVIEW_VENUE_ID` 时，程序会在日志中列出近期候选，便于选择
 
 ## LLM 配置（与 PPT 一致）
 - 环境变量：

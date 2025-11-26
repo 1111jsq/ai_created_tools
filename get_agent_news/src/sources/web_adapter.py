@@ -202,7 +202,6 @@ def fetch_web(
                                     if isinstance(raw_dt, str) and raw_dt.strip():
                                         s = raw_dt.strip().replace("/", "-")
                                         # 常见格式：YYYY-MM-DD HH:MM:SS
-                                        from datetime import datetime, timezone
                                         try:
                                             dt = datetime.strptime(s, "%Y-%m-%d %H:%M:%S")
                                         except Exception:

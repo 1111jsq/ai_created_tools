@@ -1,5 +1,5 @@
-python-pptx
-openai
-pydantic
-python-dotenv
+python-pptx>=0.6.21
+openai>=1.52.0
+pydantic>=2.5.0
+python-dotenv>=1.0.1
 

@@ -46,9 +46,6 @@ def main() -> None:
     args = parser.parse_args()
     # 若三者均未提供，后续将使用 utils.dates.derive_label 自动推导标签
 
-    # 启用 OpenReview 数据源（也可在外部通过环境变量设置）
-    os.environ.setdefault("OPENREVIEW_ENABLED", "1")
-
     configure_logging()
     logger = logging.getLogger("monthly_run")
 
@@ -136,8 +133,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    os.environ.setdefault('OPENREVIEW_VENUE_ID', 'ICLR.cc/2025/Conference')
-    os.environ.setdefault('OPENREVIEW_ENABLED', "0")
     main()
 
 

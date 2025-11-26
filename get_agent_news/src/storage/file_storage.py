@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import os
+from collections import defaultdict
 from datetime import datetime
 from typing import Iterable, List, Dict, Any, Optional
 
@@ -19,8 +20,64 @@ class FileStorage:
         self.date_format = date_format
         self.stats_collector = FileStatsCollector()
     
+    def save_news_items_by_date(self, items: List[NewsItem], sub_dir: str = "news") -> List[str]:
+        """按日期批量保存新闻项到文件系统，同一天的新闻合并到一个文件中
+        
+        Args:
+            items: 新闻项列表
+            sub_dir: 子目录名称
+            
+        Returns:
+            保存的文件路径列表
+        """
+        if not items:
+            return []
+        
+        # 按日期分组
+        items_by_date = defaultdict(list)
+        for item in items:
+            date_obj = (item.published_at or item.fetched_at).date()
+            items_by_date[date_obj].append(item)
+        
+        exported_paths = []
+        for date_obj, date_items in items_by_date.items():
+            # 创建日期分层目录
+            date_dir = ensure_date_structure(
+                os.path.join(self.base_dir, sub_dir),
+                datetime.combine(date_obj, datetime.min.time()),
+                self.date_format
+            )
+            
+            # 文件名：YYYY-MM-DD.md
+            filename = f"{date_obj.isoformat()}.md"
+            file_path = os.path.join(date_dir, filename)
+            
+            # 生成Markdown内容
+            lines = [f"# {date_obj.isoformat()} 资讯", ""]
+            
+            for idx, item in enumerate(date_items, 1):
+                lines.append(self._generate_markdown(item))
+                if idx < len(date_items):
+                    lines.append("---")
+                    lines.append("")
+            
+            content = "\n".join(lines)
+            
+            # 写入文件（覆盖模式）
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(content)
+            
+            # 记录统计
+            self.stats_collector.record_file_write(
+                file_path, len(content.encode('utf-8')), 0
+            )
+            
+            exported_paths.append(file_path)
+        
+        return exported_paths
+    
     def save_news_item(self, item: NewsItem, sub_dir: str = "news") -> str:
-        """保存新闻项到文件系统
+        """保存单个新闻项到文件系统（已废弃，保留用于兼容性）
         
         Args:
             item: 新闻项
@@ -29,46 +86,12 @@ class FileStorage:
         Returns:
             保存的文件路径
         """
-        import time
-        start_time = time.time()
-        
-        try:
-            # 创建日期分层目录
-            date_dir = ensure_date_structure(
-                os.path.join(self.base_dir, sub_dir),
-                item.fetched_at,
-                self.date_format
-            )
-            
-            # 生成文件名
-            from src.tools.slugify import slugify
-            filename = f"{slugify(item.title)}.md"
-            file_path = os.path.join(date_dir, filename)
-            
-            # 写入Markdown文件
-            content = self._generate_markdown(item)
-            with open(file_path, "w", encoding="utf-8") as f:
-                f.write(content)
-            
-            # 记录统计
-            operation_time = time.time() - start_time
-            self.stats_collector.record_file_write(
-                file_path, len(content.encode('utf-8')), operation_time
-            )
-            
-            return file_path
-            
-        except Exception as e:
-            operation_time = time.time() - start_time
-            self.stats_collector.record_file_write(
-                "unknown", 0, operation_time
-            )
-            raise e
+        return self.save_news_items_by_date([item], sub_dir)[0]
     
     def _generate_markdown(self, item: NewsItem) -> str:
-        """生成新闻项的Markdown内容"""
+        """生成单个新闻项的Markdown内容"""
         lines = []
-        lines.append(f"# {item.title}")
+        lines.append(f"## {item.title}")
         lines.append("")
         
         if item.published_at:
@@ -87,7 +110,7 @@ class FileStorage:
         lines.append("")
         
         if item.summary:
-            lines.append("## 摘要")
+            lines.append("### 摘要")
             lines.append("")
             lines.append(item.summary)
             lines.append("")
@@ -114,7 +137,6 @@ def _serialize_item(item: NewsItem) -> Dict[str, Any]:
         "source_type": item.source_type,
         "fetched_at": item.fetched_at.isoformat(),
         "url_hash": item.url_hash,
-        "score": item.score,
     }
 
 
@@ -148,7 +170,6 @@ def save_items_to_directory(
         "source_type",
         "fetched_at",
         "url_hash",
-        "score",
     ]
     with open(csv_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -158,29 +179,16 @@ def save_items_to_directory(
             row_out["tags"] = ",".join(row_out.get("tags") or [])
             writer.writerow(row_out)
 
-    # 排名输出（如果有分数）
-    if any(r.get("score") is not None for r in items_list):
-        ranked = sorted(items_list, key=lambda r: (r.get("score") or 0.0), reverse=True)
-        with open(os.path.join(run_dir, "news_ranked.jsonl"), "w", encoding="utf-8") as f:
-            for row in ranked:
-                f.write(json.dumps(row, ensure_ascii=False) + "\n")
-        with open(os.path.join(run_dir, "news_ranked.csv"), "w", encoding="utf-8", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            for row in ranked:
-                row_out = row.copy()
-                row_out["tags"] = ",".join(row_out.get("tags") or [])
-                writer.writerow(row_out)
-
-    # Markdown格式导出
+    # Markdown格式导出（按日期分组）
     markdown_dir = os.path.join(run_dir, "markdown")
     _ensure_dir(markdown_dir)
     storage = FileStorage(base_dir=markdown_dir)
-    for item in items:
+    items_list_for_md = list(items)
+    if items_list_for_md:
         try:
-            storage.save_news_item(item, "news")
+            storage.save_news_items_by_date(items_list_for_md, "news")
         except Exception:
-            pass  # 忽略单个文件写入失败
+            pass  # 忽略批量文件写入失败
 
     # 简单README
     readme_path = os.path.join(run_dir, "README.txt")
@@ -188,7 +196,7 @@ def save_items_to_directory(
         f.write(
             f"run_time: {run_time.isoformat()}\n"
             f"total_items: {len(items_list)}\n"
-            f"files: news.jsonl, news.csv, news_ranked.*(if any), markdown/, analysis.json, TOP.md\n"
+            f"files: news.jsonl, news.csv, markdown/\n"
         )
 
     return run_dir

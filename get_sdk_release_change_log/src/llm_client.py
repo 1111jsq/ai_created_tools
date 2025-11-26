@@ -70,7 +70,6 @@ class DeepSeekClient:
             version_sections.append(text[start:end].strip())
         if versions_per_chunk <= 0:
             versions_per_chunk = 20
-        print(f"version_sections len is:{len(version_sections)}")
         # 合并为块
         chunks: list[str] = []
         for i in range(0, len(version_sections), versions_per_chunk):

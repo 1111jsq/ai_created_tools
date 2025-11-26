@@ -9,7 +9,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from .insights import generate_insights, generate_insights_llm
 from .models import NewsAggItem, PaperItem, ReleaseAggItem
-from .processors import count_products_in_news, extract_paper_details, identify_important_news
+from .processors import count_products_in_news, extract_paper_details, extract_products_from_news, identify_important_news
 
 
 def write_report(
@@ -70,19 +70,47 @@ def write_report(
             lines.append(f"![论文功能分布图表]({position_to_image['after_papers']})")
             lines.append("")
         
-        # 合并所有论文到一个表格（按功能排序，相同功能的论文在一起）
-        lines.append("| 功能 | 论文标题 | 核心内容 |")
-        lines.append("|------|---------|---------|")
+        # 检查是否有发布时间或作者信息，决定表格列
+        has_published = any(p.get("published_at") for p in papers_with_details)
+        has_authors = any(p.get("authors") for p in papers_with_details)
+        
+        # 构建表格头
+        if has_published and has_authors:
+            lines.append("| 功能 | 发布时间 | 论文标题 | 作者/机构 | 核心内容 |")
+            lines.append("|------|---------|---------|----------|---------|")
+        elif has_published:
+            lines.append("| 功能 | 发布时间 | 论文标题 | 核心内容 |")
+            lines.append("|------|---------|---------|---------|")
+        elif has_authors:
+            lines.append("| 功能 | 论文标题 | 作者/机构 | 核心内容 |")
+            lines.append("|------|---------|----------|---------|")
+        else:
+            lines.append("| 功能 | 论文标题 | 核心内容 |")
+            lines.append("|------|---------|---------|")
+        
         # 先按功能分组排序，再按论文排序
         sorted_features = sorted(feature_groups.items(), key=lambda x: (len(x[1]), x[0]), reverse=True)
         for feature, paper_list in sorted_features:
             for paper_detail in paper_list:
                 title = paper_detail.get("title", "")
                 core_content = paper_detail.get("core_content", "")
+                published_at = paper_detail.get("published_at", "")
+                authors = paper_detail.get("authors", "")
+                
                 # 限制长度以便表格显示
                 title_short = title[:65] + "..." if len(title) > 65 else title
-                core_short = core_content[:130] + "..." if len(core_content) > 130 else core_content
-                lines.append(f"| {feature} | {title_short} | {core_short} |")
+                core_short = core_content[:250] + "..." if len(core_content) > 250 else core_content
+                authors_short = authors[:40] + "..." if len(authors) > 40 else authors
+                
+                # 根据列配置构建行
+                if has_published and has_authors:
+                    lines.append(f"| {feature} | {published_at or '-'} | {title_short} | {authors_short or '-'} | {core_short} |")
+                elif has_published:
+                    lines.append(f"| {feature} | {published_at or '-'} | {title_short} | {core_short} |")
+                elif has_authors:
+                    lines.append(f"| {feature} | {title_short} | {authors_short or '-'} | {core_short} |")
+                else:
+                    lines.append(f"| {feature} | {title_short} | {core_short} |")
         lines.append("")
     else:
         lines.append("- 数据缺失或不在时间范围内。")
@@ -100,14 +128,32 @@ def write_report(
         important_news = identify_important_news(news[:30], logger, use_llm)
         important_titles = {n.title for n in important_news}
         
+        # 提取产品信息
+        title_to_products = extract_products_from_news(news[:30], logger, use_llm)
+        
         # 插入图片（在资讯前）
         if position_to_image and "after_news" in position_to_image:
             lines.append(f"![资讯产品分布图表]({position_to_image['after_news']})")
             lines.append("")
         
-        # 使用表格展示资讯（去除来源和标签列，添加摘要）
-        lines.append("| 资讯标题 | 摘要/核心内容 |")
-        lines.append("|---------|-------------|")
+        # 检查是否有产品信息，决定表格列
+        has_products = any(title_to_products.get(n.title) for n in news[:30])
+        has_published = any(n.published_at for n in news[:30])
+        
+        # 构建表格头
+        if has_published and has_products:
+            lines.append("| 发布时间 | 资讯标题 | 涉及产品 | 摘要/核心内容 |")
+            lines.append("|---------|---------|---------|-------------|")
+        elif has_published:
+            lines.append("| 发布时间 | 资讯标题 | 摘要/核心内容 |")
+            lines.append("|---------|---------|-------------|")
+        elif has_products:
+            lines.append("| 资讯标题 | 涉及产品 | 摘要/核心内容 |")
+            lines.append("|---------|---------|-------------|")
+        else:
+            lines.append("| 资讯标题 | 摘要/核心内容 |")
+            lines.append("|---------|-------------|")
+        
         for n in news[:30]:
             title = n.title
             # 重要资讯标粗
@@ -132,10 +178,42 @@ def write_report(
                 else:
                     summary = "（暂无摘要）"
             
+            # 格式化发布时间
+            published_display = ""
+            if n.published_at:
+                try:
+                    if len(n.published_at) >= 10:
+                        published_display = n.published_at[:10]
+                    else:
+                        published_display = n.published_at
+                except Exception:
+                    pass
+            if not published_display and n.fetched_at:
+                try:
+                    if len(n.fetched_at) >= 10:
+                        published_display = n.fetched_at[:10]
+                except Exception:
+                    pass
+            
+            # 提取产品信息
+            products = title_to_products.get(n.title, [])
+            products_display = ", ".join(products[:2]) if products else "-"
+            if len(products) > 2:
+                products_display += " 等"
+            
             # 限制长度
             title_short = title[:70] + "..." if len(title) > 70 else title
-            summary_short = summary[:180] + "..." if len(summary) > 180 else summary
-            lines.append(f"| {title_short} | {summary_short} |")
+            summary_short = summary[:500] + "..." if len(summary) > 500 else summary
+            
+            # 根据列配置构建行
+            if has_published and has_products:
+                lines.append(f"| {published_display or '-'} | {title_short} | {products_display} | {summary_short} |")
+            elif has_published:
+                lines.append(f"| {published_display or '-'} | {title_short} | {summary_short} |")
+            elif has_products:
+                lines.append(f"| {title_short} | {products_display} | {summary_short} |")
+            else:
+                lines.append(f"| {title_short} | {summary_short} |")
         lines.append("")
     else:
         lines.append("- 数据缺失或不在时间范围内。")
