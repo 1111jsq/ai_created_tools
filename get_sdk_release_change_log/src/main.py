@@ -196,7 +196,7 @@ if __name__ == "__main__":
     parser.add_argument('--max-pages', type=int, default=2, help='最多抓取的页数（单仓库模式）')
     parser.add_argument('--start-page', type=int, default=1, help='起始页（默认 1，单仓库模式）')
     parser.add_argument('--model', type=str, default='deepseek-chat', help='大模型名称，默认 deepseek-chat，可设为 deepseek-reasoner')
-    parser.add_argument('--gh-token', type=str, default=os.getenv('GITHUB_TOKEN','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'),
+    parser.add_argument('--gh-token', type=str, default=os.getenv('GITHUB_TOKEN'),
                         help='GitHub 访问令牌，可提升限额；可用环境变量 GITHUB_TOKEN 提供')
     parser.add_argument('--enable-summary', type=lambda x: x.lower() in ('true', '1', 'yes'), default=None,
                         help='是否启用总结功能（默认从配置文件读取，True/False）')
