@@ -7,49 +7,77 @@ repositories:
   - url: https://github.com/langchain-ai/langchain.git
     name: LangChain
     enabled: true
-    max_pages: 2  # 可选，覆盖默认值
+    max_pages: 1  # 可选，覆盖默认值
     start_page: 1  # 可选，覆盖默认值
-    enable_summary: true  # 可选，是否启用总结功能（默认从全局配置读取）
+    enable_summary: false  # 可选，是否启用总结功能（默认从全局配置读取）
 
   - url: https://github.com/langchain-ai/langgraph
     name: LangGraph
     enabled: true
-    max_pages: 2  # 可选，覆盖默认值
+    max_pages: 1  # 可选，覆盖默认值
     start_page: 1  # 可选，覆盖默认值
-    enable_summary: true  # 可选，是否启用总结功能（默认从全局配置读取）
+    enable_summary: false  # 可选，是否启用总结功能（默认从全局配置读取）
+
+  - url: https://github.com/langchain-ai/langsmith-sdk
+    name: LangSmith
+    enabled: true
+    max_pages: 1  # 可选，覆盖默认值
+    start_page: 1  # 可选，覆盖默认值
+    enable_summary: false  # 可选，是否启用总结功能（默认从全局配置读取）
   
   - url: https://github.com/crewAIInc/crewAI
     name: crewAI
     enabled: true
-    max_pages: 2  # 可选，覆盖默认值
+    max_pages: 1  # 可选，覆盖默认值
     start_page: 1  # 可选，覆盖默认值
-    enable_summary: true  # 可选，是否启用总结功能（默认从全局配置读取）
+    enable_summary: false  # 可选，是否启用总结功能（默认从全局配置读取）
 
   - url: https://github.com/openai/openai-python.git
     name: OpenAI Python
     enabled: true
-    max_pages: 2  # 可选，覆盖默认值
+    max_pages: 1  # 可选，覆盖默认值
     start_page: 1  # 可选，覆盖默认值
-    enable_summary: true  # 可选，是否启用总结功能（默认从全局配置读取）
+    enable_summary: false  # 可选，是否启用总结功能（默认从全局配置读取）
 
   - url: https://github.com/agentscope-ai/agentscope.git
     name: AgentScope
     enabled: true
-    max_pages: 2  # 可选，覆盖默认值
+    max_pages: 1  # 可选，覆盖默认值
     start_page: 1  # 可选，覆盖默认值
-    enable_summary: true  # 可选，是否启用总结功能（默认从全局配置读取）
+    enable_summary: false  # 可选，是否启用总结功能（默认从全局配置读取）
 
-  - url: https://github.com/microsoft/autogen.git
-    name: Autogen
+  - url: https://github.com/microsoft/agent-framework
+    name: Microsoft Agent Framework
     enabled: true
-    max_pages: 2  # 可选，覆盖默认值
+    max_pages: 1  # 可选，覆盖默认值
     start_page: 1  # 可选，覆盖默认值
-    enable_summary: true  # 可选，是否启用总结功能（默认从全局配置读取）
+    enable_summary: false  # 可选，是否启用总结功能（默认从全局配置读取）
+
+  - url: https://github.com/strands-agents/sdk-python
+    name: Strands Agents Python
+    enabled: true
+    max_pages: 1  # 可选，覆盖默认值
+    start_page: 1  # 可选，覆盖默认值
+    enable_summary: false  # 可选，是否启用总结功能（默认从全局配置读取）
+
+  - url: https://github.com/google/adk-python
+    name: Google Agents Python
+    enabled: true
+    max_pages: 1  # 可选，覆盖默认值
+    start_page: 1  # 可选，覆盖默认值
+    enable_summary: false
+
+  - url: https://github.com/anthropics/claude-agent-sdk-python
+    name: Claude Agents Python
+    enabled: true
+    max_pages: 1  # 可选，覆盖默认值
+    start_page: 1  # 可选，覆盖默认值
+    enable_summary: false
 
   # 可以添加更多仓库
   # - url: https://github.com/another-org/another-repo.git
   #   name: Another Repo
   #   enabled: true
-  #   max_pages: 2
+  #   max_pages: 1
   #   enable_summary: false  # 示例：禁用该仓库的总结功能
 

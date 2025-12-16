@@ -1,5 +1,5 @@
 ---
-alwaysApply: true
+alwaysApply: false
 ---
 1. 安装python虚拟环境后，执行source ./.venv/Scripts/activate激活环境
 2. 安装pip方式：python -m ensurepip

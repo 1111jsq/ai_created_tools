@@ -37,7 +37,7 @@ daily:
     url: https://news.aibase.com/zh/daily
     # 提示：当使用 CLI --export-markdown 时，日报会写入 content/daily/，此处 output_dir 将被忽略
     output_dir: data/daily
-    max_pages: 3
+    max_pages: 30
     api:
       url: "https://mcpapi.aibase.cn/api/aiInfo/dailyNews"
       method: GET

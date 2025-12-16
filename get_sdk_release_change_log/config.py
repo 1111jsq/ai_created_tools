@@ -65,7 +65,7 @@ LLM_CONFIG: Dict[str, Any] = {
 # 总结功能配置
 SUMMARY_CONFIG: Dict[str, Any] = {
     # 是否启用总结功能（默认 True，如果 LLM 不可用则自动禁用）
-    'enable_summary': get_env('ENABLE_SUMMARY', True, bool),
+    'enable_summary': get_env('ENABLE_SUMMARY', False, bool),
 }
 
 # 文件编码

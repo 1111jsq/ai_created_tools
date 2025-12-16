@@ -18,6 +18,7 @@ uv pip install -r requirements.txt
 
 # 方式1：从配置文件批量处理多个仓库（推荐）
 # 在 get_sdk_release_change_log 目录下运行
+source .venv/Scripts/activate
 uv run python -m src.main
 
 # 方式2：处理单个仓库（向后兼容）
