@@ -222,5 +222,3 @@ if __name__ == "__main__":
             exit(1)
         logger.info("从配置文件加载了 %s 个仓库", len(repositories))
         run_batch(repositories=repositories, model=args.model, gh_token=args.gh_token)
-
-
